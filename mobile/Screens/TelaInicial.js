@@ -3,22 +3,18 @@ import { Text, View, StyleSheet, Image, ScrollView, TouchableOpacity, Pressable 
 import { Calendar } from 'react-native-calendars';
 
 import Header from "../Organizado/Header"
+import {FontAwesome} from "@expo/vector-icons";
 
 export default function Home({ navigation }) {
-    const [viagens, setViagens] = useState([]);
+    const [selectedDate, setSelectedDate] = useState(null); // Estado para armazenar a data selecionada
 
     const adicionarViagem = (dataInicio, dataFinal) => {
-        const novaViagem = { dataInicio, dataFinal };
-        setViagens([...viagens, novaViagem]);
+        setSelectedDate(dataInicio); // Define a data selecionada
     };
 
     const removerViagem = (index) => {
-        const novasViagens = [...viagens];
-        novasViagens.splice(index, 1);
-        setViagens(novasViagens);
+        setSelectedDate(null); // Limpa a data selecionada
     };
-
-
 
     return (
         <ScrollView style={css.container}>
@@ -31,40 +27,45 @@ export default function Home({ navigation }) {
                     <Calendar
                         style={css.calendar}
                         onDayPress={(day) => {
-                            if (!viagens.some((viagem) => viagem.dataInicio === day.dateString)) {
-                                if (viagens.length === 0 || viagens[viagens.length - 1].dataFinal) {
-                                    adicionarViagem(day.dateString, null);
-                                } else {
-                                    const novasViagens = [...viagens];
-                                    novasViagens[novasViagens.length - 1].dataFinal = day.dateString;
-                                    setViagens(novasViagens);
-                                }
+                            if (!selectedDate) {
+                                adicionarViagem(day.dateString, null);
+                            } else {
+                                setSelectedDate(null);
                             }
+                        }}
+                        markedDates={{
+                            [selectedDate]: { selected: true } // Marca a data selecionada no calendário
                         }}
                     />
                 </View>
             </View>
 
             <View style={css.informacoes}>
-                <Text>Olá, Fulano Cicrano</Text>
-                <Text>O que você tem para hoje?</Text>
-                <Text>Selecione uma data</Text>
-                <Text>para começar</Text>
-            </View>
+                <Text style={css.textoFulano}>Olá, Fulano{'\n'}Cicrano</Text>
+                <Text style={css.textoFulano2}>O que você tem para hoje?</Text>
 
+                {selectedDate ? ( // Renderiza divInformacoes apenas se houver uma data selecionada
+                    <View style={css.divInformacoes}>
+                        <View style={css.divLado}>
+                            <Text style={{ fontSize: 40, marginTop: 30}}>Dia 1 - 5 </Text>
+                            <Text style={{fontSize: 40, marginLeft: 60, marginTop: 30,}}>15:00 </Text>
+                        </View>
 
+                        <View style={css.divLado}>
+                            <Text style={{ fontSize: 20}}>Curso Tal </Text>
+                            <Text style={{fontSize: 20, marginLeft: 130}}>Sala Tal </Text>
+                        </View>
 
-            <View style={css.datesContainer}>
-                {viagens.map((viagem, index) => (
-                    <View key={index} style={css.viagemContainer}>
-                        <Text>{`Viagem ${index + 1}: ${viagem.dataInicio} - ${viagem.dataFinal || 'Em andamento'}`}</Text>
-                        <Pressable onPress={() => removerViagem(index)}>
-                            <Text style={css.removerText}>Remover</Text>
-                        </Pressable>
+                        <View style={css.divLado2}>
+                            <Text style={{fontSize: 20,  marginLeft: 10}}>Professor: </Text>
+                            <Text style={css.professores}><FontAwesome name="user-circle-o" size={30} color="black" /> Inácio </Text>
+                        </View>
                     </View>
-                ))}
-            </View>
+                ) : (
+                    <Text style={css.textoData}>Selecione uma data {'\n'}      para começar</Text>
+                )}
 
+            </View>
         </ScrollView>
     );
 }
@@ -76,6 +77,7 @@ const css = StyleSheet.create({
     },
 
     calendarContainer: {
+        position: 'fixed',
         justifyContent: 'center',
         alignItems: 'center',
         width: '100%',
@@ -90,35 +92,52 @@ const css = StyleSheet.create({
     informacoes: {
         backgroundColor: "#fff",
         marginTop: 25,
-        borderRadius: 60,
-        height: 500
+        borderTopLeftRadius: 60,
+        borderTopRightRadius: 60,
+        height: 500,
     },
 
-
-
-
-
-
-
-
-
-
-    datesContainer: {
-        marginHorizontal: 10,
-        marginTop: 20,
-        backgroundColor:'white',
-        width: '95%',
+    divInformacoes: {
+        marginTop: 30,
+        borderWidth: 2,
+        borderColor: 'black',
+        borderRadius: 10,
         padding: 10,
-        borderRadius: 10
-    },
-    viagemContainer: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        marginBottom: 10,
-    },
-    removerText: {
-        color: 'red',
-        textDecorationLine: 'underline',
+        margin: 10,
     },
 
+    textoFulano: {
+        fontSize: 40,
+        marginTop: 30,
+        marginLeft: 30
+
+    },
+
+    textoFulano2: {
+        fontSize: 20,
+        marginLeft: 30,
+    },
+
+    textoData: {
+        fontSize: 20,
+        marginTop: 60,
+        marginLeft: 95
+    },
+
+    divLado: {
+        flexDirection: 'row',
+    },
+
+    divLado2: {
+        alignItems: 'center',
+        marginTop: 10
+    },
+
+    professores: {
+        fontSize: 20,
+        marginTop: 10,
+        backgroundColor: '#DDD3F3',
+        padding: 10,
+        borderRadius: 15
+    },
 });
