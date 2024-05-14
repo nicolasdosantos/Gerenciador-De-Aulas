@@ -1,0 +1,19 @@
+import './App.css';
+import CadastroAlunos from "./pages/CadastroAlunos";
+import CadastroSalas from "./pages/CadastroSalas";
+import CadastroProfessores from "./pages/CadastroProfessores";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+
+function App() {
+  return (
+    <BrowserRouter>
+        <Routes>
+            <Route element={<CadastroSalas />} path="/"></Route>
+            <Route element={<CadastroAlunos/>} path="/alunos"></Route>
+            <Route element={<CadastroProfessores/>} path="/professores"></Route>
+        </Routes>
+    </BrowserRouter>
+  );
+}
+
+export default App;
