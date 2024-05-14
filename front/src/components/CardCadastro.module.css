@@ -1,0 +1,68 @@
+.fundo {
+    background: #fff;
+    border-radius: 25px;
+    width: 85vw;
+    display: flex;
+    box-shadow: -3px 7px 8px -2px rgba(0,0,0,0.82);
+}
+
+.fundo img {
+    max-width: 100%;
+}
+
+.fundoFormulario {
+    background: #8080801f;
+}
+
+.lateral {
+    margin-right: 50px;
+    margin-top: 25px;
+}
+
+.nome {
+    color: #8C52FF;
+    margin-bottom: 0;
+    margin-top: -45px;
+    font-size: xxx-large;
+    font-weight: bold;
+}
+.nome2{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.titulo {
+    color: #8C52FF;
+    margin-top: -60px;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-left: 90px;
+}
+
+.botao {
+    width: 200px;
+    height: 45px;
+    background: #8C52FF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: larger;
+    margin-left: 55px;
+}
+
+.botao2 {
+    width: 200px;
+    height: 45px;
+    background: #8C52FF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: larger;
+
+}

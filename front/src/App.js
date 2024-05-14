@@ -1,16 +1,14 @@
 import './App.css';
-import {BrowserRouter, Route, Routes} from "react-router-dom";
-import Login from "./pages/Login";
-import CadastroProfessores from './pages/CadastroProfessores'
+import Banner from "./components/Banner";
+import CardCadastro from "./components/CardCadastro";
 
 function App() {
   return (
-    <BrowserRouter>
-        <Routes>
-            <Route path="/login" element={<Login />} />
-            <Route path="/cadastro_professores" element={<CadastroProfessores />} />
-        </Routes>
-    </BrowserRouter>
+    <div className="App">
+      <Banner>
+          <CardCadastro nome="Alunos" formAdicional="Data de Nascimento: "></CardCadastro>
+      </Banner>
+    </div>
   );
 }
 
