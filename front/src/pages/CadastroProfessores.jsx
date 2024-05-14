@@ -116,7 +116,7 @@ function CadastroProfessores() {
                         margin: "5px",
                         borderRadius: "5px",
                         border: "none"
-                    }}
+                    }}/>
                 </CardCadastro>
             </Banner>
         </div>
