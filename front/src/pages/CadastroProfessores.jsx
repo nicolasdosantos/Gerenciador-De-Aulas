@@ -1,5 +1,5 @@
 import Banner from "../components/Banner";
-import CardProfissionais from "../components/CardCadastro";
+import CardCadastro from "../components/CardCadastro";
 
 function CadastroProfessores() {
     return(
