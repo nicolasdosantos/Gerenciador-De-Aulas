@@ -76,22 +76,6 @@ function CadastroProfessores() {
                         textAlign: "left",
                         margin: "5px"
                     }}>
-                        CPF
-                    </label>
-                    <input type="number" style={{
-                        padding: "5px",
-                        width: "600px",
-                        margin: "5px",
-                        borderRadius: "5px",
-                        border: "none"
-                    }}/>
-
-                    <label style={{
-                        fontWeight: "bold",
-                        marginTop: "15px",
-                        textAlign: "left",
-                        margin: "5px"
-                    }}>
                         NIF
                     </label>
                     <input type="number" style={{
