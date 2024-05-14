@@ -1,11 +1,11 @@
 import Banner from "../components/Banner";
-import CardProfissionais from "../components/CardProfissionais";
+import CardProfissionais from "../components/CardCadastro";
 
 function CadastroProfessores() {
     return(
         <div className="App">
             <Banner>
-                <CardProfissionais nome="Professores" formAdicional="NIF" />
+                <CardCadastro nome="Professores" formAdicional="NIF" />
             </Banner>
         </div>
     )
