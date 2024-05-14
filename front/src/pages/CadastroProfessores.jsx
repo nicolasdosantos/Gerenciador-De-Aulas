@@ -5,7 +5,12 @@ function CadastroProfessores() {
     return(
         <div className="App">
             <Banner>
-                <CardCadastro nome="Professores" formAdicional="NIF" />
+                <CardCadastro nome="Professores" 
+                              formNome="Nome: " 
+                              email="E-mail: " 
+                              senha="senha" cpf="CPF: " 
+                              formAdicional="NIF" 
+                              dataNascimento="Data de Nascimento"/>
             </Banner>
         </div>
     )
