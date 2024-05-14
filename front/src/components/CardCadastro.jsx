@@ -19,7 +19,7 @@ function CardCadastro(prop){
                         marginTop: "15px",
                         textAlign: "left",
                         margin: "5px"}}>
-                        Nome:
+                        {prop.formNome}
                     </label>
                     <input type="text" style={{
                         padding: "5px",
@@ -34,7 +34,7 @@ function CardCadastro(prop){
                         marginTop: "15px",
                         textAlign: "left",
                         margin: "5px"}}>
-                        E-mail:
+                        {prop.email}
                     </label>
                     <input type="text" style={{
                         padding: "5px",
@@ -49,7 +49,7 @@ function CardCadastro(prop){
                         marginTop: "15px",
                         textAlign: "left",
                         margin: "5px"}}>
-                        Senha:
+                        {prop.senha}
                     </label>
                     <input type="text" style={{
                         padding: "5px",
@@ -64,7 +64,7 @@ function CardCadastro(prop){
                         marginTop: "15px",
                         textAlign: "left",
                         margin: "5px"}}>
-                        CPF:
+                        {prop.cpf}
                     </label>
                     <input type="text" style={{
                         padding: "5px",
