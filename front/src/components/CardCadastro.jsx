@@ -88,6 +88,21 @@ function CardCadastro(prop){
                         borderRadius: "5px",
                         border: "none"}}/>
 
+                    <label style={{
+                        fontWeight: "bold",
+                        marginTop: "15px",
+                        textAlign: "left",
+                        margin: "5px"}}>
+                        {prop.dataNascimento}
+                    </label>
+                    <input type="text" style={{
+                        padding: "5px",
+                        width: "600px",
+                        margin: "5px",
+                        borderRadius: "5px",
+                        border: "none"}}/>
+
+
                 </form>
 
                 <button className={style3.botao2}>Concluir</button>
