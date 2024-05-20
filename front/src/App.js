@@ -6,7 +6,6 @@ import CadastroProfessores from "./pages/CadastroProfessores";
 import EdicaoProfessores from "./pages/EdicaoProfessores";
 import EdicaoAlunos from "./pages/EdicaoAlunos";
 import EdicaoSalas from "./pages/EdicaoSalas";
-import CardCadastroGrande from "./components/CardCadastroGrande";
 import CadastroCurso from "./pages/CadastroCurso";
 import EdicaoCurso from "./pages/EdicaoCurso";
 import CadastroMateria from "./pages/CadastroMateria";
