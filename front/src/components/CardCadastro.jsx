@@ -9,7 +9,7 @@ function CardCadastro(prop){
                 <button className={style3.botao}>Voltar</button>
             </div>
             <div className={style3.fundoFormulario}>
-                <p className={style3.nome2}>Cadastro de</p>
+                <p className={style3.nome2}>{prop.nome2}</p>
                 <p className={style3.nome}>{prop.nome}</p>
 
                 <form style={{display: "flex", flexDirection: "column", width: "100%"}}>

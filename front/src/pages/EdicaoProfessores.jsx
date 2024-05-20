@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Banner from "../components/Banner";
 import CardCadastro from "../components/CardCadastro";
 
-function CadastroProfessores() {
+function EdicaoProfessores() {
     const [selectedDays, setSelectedDays] = useState([]);
 
     const handleDayClick = (day) => {
@@ -18,7 +18,7 @@ function CadastroProfessores() {
     return(
         <div className="App">
             <Banner>
-                <CardCadastro nome={"Professores"} nome2={"Cadastro de"}>
+                <CardCadastro nome={"Professores"} nome2={"Edição de"}>
 
                     <label style={{
                         fontWeight: "bold",
@@ -56,6 +56,20 @@ function CadastroProfessores() {
 
                         <div>
 
+                            <label style={{
+                                fontWeight: "bold",
+                                marginTop: "15px",
+                                margin: "5px"
+                            }}>
+                                Senha:
+                            </label>
+                            <input type="text" style={{
+                                padding: "5px",
+                                width: "300px",
+                                margin: "5px",
+                                borderRadius: "5px",
+                                border: "none"
+                            }}/>
 
                             <label style={{
                                 fontWeight: "bold",
@@ -86,25 +100,6 @@ function CadastroProfessores() {
                                 borderRadius: "5px",
                                 border: "none"
                             }}/>
-                            <label style={{
-                                fontWeight: "bold",
-                                marginTop: "15px",
-                                margin: "5px"
-                            }}>
-                                Turno:
-                            </label>
-                            <select style={{
-                                padding: "5px",
-                                width: "300px",
-                                margin: "5px",
-                                borderRadius: "5px",
-                                border: "none"
-                            }}>
-                                <option></option>
-                                <option>Manha</option>
-                                <option>Tarde</option>
-                                <option>Noite</option>
-                            </select>
 
                         </div>
 
@@ -140,6 +135,25 @@ function CadastroProfessores() {
                                 border: "none"
                             }}/>
 
+                            <label style={{
+                                fontWeight: "bold",
+                                marginTop: "15px",
+                                margin: "5px"
+                            }}>
+                                Turno:
+                            </label>
+                            <select style={{
+                                padding: "5px",
+                                width: "300px",
+                                margin: "5px",
+                                borderRadius: "5px",
+                                border: "none"
+                            }}>
+                                <option></option>
+                                <option>Manha</option>
+                                <option>Tarde</option>
+                                <option>Noite</option>
+                            </select>
                         </div>
 
                     </div>
@@ -177,4 +191,4 @@ function CadastroProfessores() {
     )
 }
 
-export default CadastroProfessores
+export default EdicaoProfessores

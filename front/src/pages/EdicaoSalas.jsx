@@ -1,11 +1,11 @@
 import Banner from "../components/Banner";
 import CardCadastro from "../components/CardCadastro";
 
-function CadastroSalas(){
+function EdicaoSalas(){
     return(
         <div className="App">
             <Banner>
-                <CardCadastro nome={"Salas"} nome2={"Cadastro de"}>
+                <CardCadastro nome={"Salas"} nome2={"Edicão de"}>
 
                     <label style={{
                         fontWeight: "bold",
@@ -45,4 +45,4 @@ function CadastroSalas(){
     )
 }
 
-export default CadastroSalas
+export default EdicaoSalas
