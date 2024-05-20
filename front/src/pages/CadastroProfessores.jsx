@@ -104,6 +104,9 @@ function CadastroProfessores() {
                                 <option>Manha</option>
                                 <option>Tarde</option>
                                 <option>Noite</option>
+                                <option>Integral(Manhã e tarde)</option>
+                                <option>Manhã e Noite</option>
+                                <option>Tarde e Noite</option>
                             </select>
 
                         </div>
