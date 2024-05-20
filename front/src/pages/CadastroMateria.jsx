@@ -49,12 +49,12 @@ function CadastroMateria() {
                             </select>
                         </div>
 
-                        <div style={{display: "flex"}}>
+                        <div style={{display: "flex", gap: "150px"}}>
                             <div className={style3.formGroup} style={{ flexDirection: "column" }}>
                                 <p>Quantidade de horas</p>
                                 <input type="number" style={{width: "100%"}}/>
                             </div>
-                            <div className={style3.formGroup} style={{ flexDirection: "column" }}>
+                            <div className={style3.formGroup} style={{ flexDirection: "column", textAlign: "left" }}>
                                 <p>Turno</p>
                                 <select style={{width: "100%"}}>
                                     <option>Selecione o turno</option>
