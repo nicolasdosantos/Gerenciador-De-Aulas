@@ -1,7 +1,19 @@
-.cor_barra{
-    background-image: url("/public/banner 3.png");
+.barraLateral {
+    background-color: #6C63FF;
+    color: white;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 0 25px 25px 0;
 }
 
-.botao{
-    border: none;
+.barraLateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+.barraLateral li {
+    margin: 15px 0;
+    cursor: pointer;
 }
