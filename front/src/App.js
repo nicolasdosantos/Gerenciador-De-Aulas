@@ -15,20 +15,20 @@ function App() {
   return (
       <BrowserRouter>
           <Routes>
-              <Route element={<CadastroSalas/>} path="/"></Route>
-              <Route element={<EdicaoSalas/>} path="/edicaoSalas"></Route>
-              
-              <Route element={<CadastroAlunos/>} path="/alunos"></Route>
-              <Route element={<EdicaoAlunos/>} path="/edicaoAlunos"></Route>
-              
-              <Route element={<CadastroProfessores/>} path="/professores"></Route>
-              <Route element={<EdicaoProfessores/>} path="/edicaoProfessores"></Route>
-              
-              <Route element={<CadastroCurso/>} path="/curso"></Route>
-              <Route element={<EdicaoCurso/>} path="/edicaoCurso"></Route>
-              
-              <Route element={<CadastroMateria/>} path="/materia"></Route>
-              <Route element={<EdicaoMateria/>} path="/edicaoMateria"></Route>
+              <Route element={<CadastroSalas/>} path="/"/>
+              <Route element={<EdicaoSalas/>} path="/edicaoSalas"/>
+
+              <Route element={<CadastroAlunos/>} path="/alunos"/>
+              <Route element={<EdicaoAlunos/>} path="/edicaoAlunos"/>
+
+              <Route element={<CadastroProfessores/>} path="/professores"/>
+              <Route element={<EdicaoProfessores/>} path="/edicaoProfessores"/>
+
+              <Route element={<CadastroCurso/>} path="/curso"/>
+              <Route element={<EdicaoCurso/>} path="/edicaoCurso"/>
+
+              <Route element={<CadastroMateria/>} path="/materia"/>
+              <Route element={<EdicaoMateria/>} path="/edicaoMateria"/>
           </Routes>
       </BrowserRouter>
   );
