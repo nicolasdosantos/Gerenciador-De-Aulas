@@ -1,23 +1,19 @@
-import style from './BarraLateral.module.css'
+import React from 'react';
+import './BarraLateral.module.css';
 
-function BarraLateral (prop){
-    return(
-        <div>
-            <div className={style.cor_barra}>
-                <img src="/logo1.png"/>
-                <button className={style.botao}>Calendário</button>
-                <button className={style.botao}>Alunos</button>
-                <button className={style.botao}>Cursos</button>
-                <button className={style.botao}>Salas</button>
-                <button className={style.botao}>Sair</button>
-            </div>
-            <div>
-                <p>{prop.nome}</p>
-                <button>+</button>
-                <div></div>
-            </div>
+function BarraLateral() {
+    return (
+        <div className="barraLateral">
+            <ul>
+                <li>Calendário</li>
+                <li>Professores</li>
+                <li>Cursos</li>
+                <li>Matérias</li>
+                <li>Salas</li>
+                <li>Alunos</li>
+            </ul>
         </div>
-    )
+    );
 }
 
-export default BarraLateral
+export default BarraLateral;

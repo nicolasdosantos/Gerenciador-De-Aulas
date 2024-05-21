@@ -1,0 +1,61 @@
+/* CardCadastro.module.css */
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(180deg, #6A1B9A 0%, #8E24AA 100%);
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 40px 50px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+.logoSection {
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #8C52FF;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #8C52FF;
+    margin-bottom: 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.button {
+    background: #8C52FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
