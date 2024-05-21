@@ -1,12 +1,13 @@
 .size {
     display: flex;
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
     margin: 0;
     background-size: cover;
     background-position: center;
     justify-content: center;
     align-items: center;
+    background-repeat: no-repeat;
 }
 
 ::-webkit-scrollbar{
