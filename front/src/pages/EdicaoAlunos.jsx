@@ -1,91 +1,48 @@
 import Banner from "../components/Banner";
 import CardCadastro from "../components/CardCadastro";
+import css from "../components/CadastroAlunos.module.css";
+import BtnCadastro from "../components/BtnCadastro";
+import TituloCadastro from "../components/TituloCadastro";
+import InputCadastro from "../components/InputCadastro";
 
 function EdicaoAlunos() {
-    return(
+    return (
         <div className="App">
             <Banner>
-                <CardCadastro nome={"Alunos"} nome2={"Edicão de"}>
-                    <label style={{
-                        fontWeight: "bold",
-                        marginTop: "15px",
-                        textAlign: "left",
-                        margin: "5px"
-                    }}>
-                        Nome:
-                    </label>
-                    <input type="text" style={{
-                        padding: "5px",
-                        width: "600px",
-                        margin: "5px",
-                        borderRadius: "5px",
-                        border: "none"
-                    }}/>
-
-                    <label style={{
-                        fontWeight: "bold",
-                        marginTop: "15px",
-                        textAlign: "left",
-                        margin: "5px"
-                    }}>
-                        E-mail:
-                    </label>
-                    <input type="text" style={{
-                        padding: "5px",
-                        width: "600px",
-                        margin: "5px",
-                        borderRadius: "5px",
-                        border: "none"
-                    }}/>
-
-                    <label style={{
-                        fontWeight: "bold",
-                        marginTop: "15px",
-                        textAlign: "left",
-                        margin: "5px"
-                    }}>
-                        Senha:
-                    </label>
-                    <input type="text" style={{
-                        padding: "5px",
-                        width: "600px",
-                        margin: "5px",
-                        borderRadius: "5px",
-                        border: "none"
-                    }}/>
-
-                    <label style={{
-                        fontWeight: "bold",
-                        marginTop: "15px",
-                        textAlign: "left",
-                        margin: "5px"
-                    }}>
-                        CPF:
-                    </label>
-                    <input type="text" style={{
-                        padding: "5px",
-                        width: "600px",
-                        margin: "5px",
-                        borderRadius: "5px",
-                        border: "none"
-                    }}/>
-
-                    <label style={{
-                        fontWeight: "bold",
-                        marginTop: "15px",
-                        textAlign: "left",
-                        margin: "5px"
-                    }}>
-                        Data de Nascimento
-                    </label>
-                    <input type="date" style={{
-                        padding: "5px",
-                        width: "600px",
-                        margin: "5px",
-                        borderRadius: "5px",
-                        border: "none"
-                    }}/>
-                </CardCadastro>
+                <div>
+                    <Banner>
+                        <div className={css.card}>
+                            <div className={css.divesquerda}>
+                                <img src="/Frame%206.svg" alt="Logo"/>
+                                <BtnCadastro nome="Voltar"/>
+                            </div>
+                            <div className={css.divdireita}>
+                                <div>
+                                    <TituloCadastro titulo="Cadastro de" titulo2="Alunos"/>
+                                </div>
+                                <div className={css.inputs}>
+                                    <div >
+                                        <InputCadastro nome="Nome: "/>
+                                    </div>
+                                    <div>
+                                        <InputCadastro nome="Email: "/>
+                                    </div>
+                                    <div className={css.grid}>
+                                        <div>
+                                            <InputCadastro nome="CPF: "/>
+                                        </div>
+                                        <div >
+                                            <InputCadastro tipo="date" nome="Data de Nascimento: "/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <BtnCadastro nome="Cadastrar"/>
+                                </div>
+                            </div>
+                        </div>
+                    </Banner>
+                </div>
             </Banner>
         </div>
     )
