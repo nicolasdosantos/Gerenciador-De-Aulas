@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .dashboardContainer {
     margin-top: 30px;
     height: 100vh;
@@ -41,4 +43,123 @@ footer {
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+}
+.q{
+    background-color: #D9D9D9;
+    width: 150px;
+    height: 100px;
+}
+.qq{
+    background-color: #D9D9D9;
+    width: 150px;
+    height: 100px;
+}
+.qqq{
+    background-color: #D9D9D9;
+    width: 150px;
+    height: 100px;
+}
+.qqqq{
+    background-color: #D9D9D9;
+    width: 150px;
+    height: 100px;
+}
+.quad{
+    position: relative;
+    display: flex;
+    gap: 100px;
+    top: 20px;
+}
+#cadastrosd{
+    position: relative;
+    top: 60px;
+    color: #959db0;
+    right: 430px;
+}
+.professores{
+    font-family: "Poppins", sans-serif;
+    border-radius: 8px;
+    width: 180px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    background-color: #8C52FF;
+}
+.alunos{
+    font-family: "Poppins", sans-serif;
+    border-radius: 8px;
+    width: 180px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    background-color: #8C52FF;
+}
+.cursos{
+    font-family: "Poppins", sans-serif;
+    border-radius: 8px;
+    width: 180px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    background-color: #8C52FF;
+}
+.salas{
+    font-family: "Poppins", sans-serif;
+    border-radius: 8px;
+    width: 180px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    background-color: #8C52FF;
+}
+.cadss{
+    position: relative;
+    top: 70px;
+    right: 50px;
+    display: flex;
+    gap: 50px;
+}
+#cad1{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    border-radius: 8px;
+    width: 180px;
+    height: 60px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#cad2{
+    font-family: "Poppins", sans-serif;
+    border-radius: 8px;
+    text-align: center;
+    width: 180px;
+    height: 60px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#cad3{
+    font-family: "Poppins", sans-serif;
+    border-radius: 8px;
+    text-align: center;
+    width: 180px;
+    height: 60px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#cad4{
+    font-family: "Poppins", sans-serif;
+    border-radius: 8px;
+    text-align: center;
+    width: 180px;
+    height: 60px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.qbranco{
+    position: relative;
+    top: 70px;
+    right: 50px;
+    display: flex;
+    gap: 50px;
+    padding: 4px;
 }

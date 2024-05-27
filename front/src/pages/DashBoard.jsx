@@ -13,7 +13,7 @@ const DashBoard = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 5000
+        autoplaySpeed: 4000
     };
 
     return (
@@ -42,13 +42,36 @@ const DashBoard = () => {
                 </div>
                 <h2 style={{color: "#959db0", position: "relative", right: "450px"}}>Cursos</h2>
 
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div className={css.quad}>
+
+                <div className={css.q}></div>
+                <div className={css.qq}></div>
+                <div className={css.qqq}></div>
+                <div className={css.qqqq}></div>
+
+                </div>
+
+                <h2 id={css.cadastrosd}>Cadastros:</h2>
+
+                <div className={css.cadss}>
+                    <div className={css.professores}>Professores:</div>
+                    <div className={css.alunos}>Alunos:</div>
+                    <div className={css.cursos}>Cursos:</div>
+                    <div className={css.salas}>Salas:</div>
+                </div>
+
+                <div className={css.qbranco}>
+                    <div id={css.cad1}>12 cadastrados</div>
+                    <div id={css.cad2}>1120 cadastrados</div>
+                    <div id={css.cad3}>08 cadastrados</div>
+                    <div id={css.cad4}>14 cadastrados</div>
+                </div>
+
+
+
             </div>
             <footer>
-                <img style={{width:"100px",position:"relative",top:"185px",left:"50px"}} src="/lEARN.png"/>
+                <img style={{width: "100px", position: "relative", top:"185px",left:"50px"}} src="/lEARN.png"/>
             </footer>
         </div>
     );
