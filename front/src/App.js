@@ -39,6 +39,8 @@ function App() {
               <Route element={<DashBoard/>} path="/dashboard"/>
 
               <Route element={<Calendario/>} path="/calendario"/>
+
+              <Route element={<NotFoundPage/>} path="/*"/>
           </Routes>
       </BrowserRouter>
   );

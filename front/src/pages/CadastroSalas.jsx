@@ -9,35 +9,22 @@ function CadastroSalas() {
     return (
         <div className="App">
             <Banner>
-                <div>
-                    <Banner>
-                        <div className={css.card}>
-                            <div className={css.divesquerda}>
-                                <img src="/Frame%206.svg"/>
-                                <BtnCadastro nome="Voltar"></BtnCadastro>
-                            </div>
-                            <div className={css.divdireita}>
-                                <div>
-                                    <TituloCadastro titulo="Cadastro de" titulo2="Classes"></TituloCadastro>
-                                </div>
-                                <div className={css.divinput}>
-                                    <div className={css.inputs}>
-                                        <InputCadastro tipo="number" nome="Número: "></InputCadastro>
-                                    </div>
-                                    <div>
-                                        <InputCadastro tipo="number" nome="Capacidade: "></InputCadastro>
-                                    </div>
-                                    <div>
-                                        <InputCadastro nome="Descrição: "></InputCadastro>
-                                    </div>
-                                </div>
-                                <div>
-                                    <BtnCadastro nome="Cadastrar"></BtnCadastro>
-                                </div>
+                <div className={css.card}>
+                    <div className={css.divesquerda}>
+                        <img src="/Frame%206.svg" alt="Banner" />
+                        <BtnCadastro nome="Voltar" />
+                    </div>
+                    <div className={css.divdireita}>
+                        <TituloCadastro titulo="Cadastro de" titulo2="Classes" />
+                        <div className={css.divinput}>
+                            <div className={css.inputs}>
+                                <InputCadastro nome="Número: " />
+                                <InputCadastro nome="Capacidade: " />
+                                <InputCadastro nome="Descrição: " />
                             </div>
                         </div>
                         <BtnCadastro nome="Cadastrar" />
-                    </Banner>
+                    </div>
                 </div>
             </Banner>
         </div>
