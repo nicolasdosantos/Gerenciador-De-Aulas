@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.notFoundContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/public/banner.png');
+}
+
+.notFoundContent {
+    text-align: center;
+    width: 450px;
+    height: 450px;
+    color: white;
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    border: 5px solid #6452c2;
+}
+
+.notFoundContent h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.notFoundContent h2 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    color: #8C52FF;
+}
+
+.notFoundContent p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.imageContainer img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 2rem;
+}
+
+#oops {
+    position: relative;
+    color: #2C09E4;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+#naoE {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    position: relative;
+    top: -40px;
+    color: #2C09E4;
+}
+
+#pessoas {
+    width: 231px;
+    height: 178px;
+    position: relative;
+    top: -50px;
+}
+
+#numerro {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 126px;
+    position: relative;
+    top: -30px;
+}
+
+.coruja {
+    position: absolute;
+    top: 540px;
+    width: 75px;
+    height: auto;
+    right: 605px;
+}

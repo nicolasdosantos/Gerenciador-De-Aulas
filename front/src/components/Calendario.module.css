@@ -1,17 +1,69 @@
-.Calendario {
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.calendario {
     display: flex;
-    height: 100vh;
 }
 
 .content {
-    flex-grow: 1;
     padding: 20px;
+    margin-left: 215px;
 }
 
-.calendar-container {
+.calendarContainer {
     background: #fff;
     border-radius: 25px;
     padding: 20px;
     box-shadow: -3px 7px 8px -2px rgba(0,0,0,0.82);
     margin-top: 20px;
+    width: 600px;
+}
+
+.calendar {
+    margin-bottom: 0;
+}
+
+.tituloHoliday {
+    margin-top: 25px;
+    font-size: 25px;
+}
+
+.holidayList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.holidayContent {
+    display: flex;
+    align-items: center;
+}
+
+.holidayItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid;
+    box-shadow: -3px 7px 8px -2px rgba(0,0,0,0.30);
+}
+
+.holidayItemImage {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid;
+    box-shadow: -3px 7px 8px -2px rgba(0,0,0,0.30);
+    width: 50%;
+    margin-left: 15px;
+}
+
+.holidayImage {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
 }
