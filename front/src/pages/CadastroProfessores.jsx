@@ -17,7 +17,7 @@ function CadastroAlunos() {
                             </div>
                             <div className={css.divdireita}>
                                 <div>
-                                    <TituloCadastro titulo="Cadastro de" titulo2="Professor"></TituloCadastro>
+                                    <TituloCadastro css={{margin: "-15px"}} titulo="Cadastro de" titulo2="Professor"></TituloCadastro>
                                 </div>
                                 <div className={css.inputs}>
                                     <div>
@@ -39,12 +39,12 @@ function CadastroAlunos() {
                                     </div>
                                     <div className={css.grid}>
                                         <div>
-                                            <InputCadastro nome="Carga horario: "></InputCadastro>
+                                            <InputCadastro nome="Carga horária: "></InputCadastro>
                                         </div>
                                         <div>
                                             <div>
-                                                <h1>Turno</h1>
-                                                <select>
+                                                <h1 style={{fontSize: "17px", display: "flex", fontWeight: "normal"}} >Turno:</h1>
+                                                <select className={css.select}>
                                                     <option>Selecione um Turno</option>
                                                     <option>Manhã</option>
                                                     <option>Tarde</option>
