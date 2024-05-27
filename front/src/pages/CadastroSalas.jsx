@@ -1,11 +1,12 @@
+import React from 'react';
 import Banner from "../components/Banner";
-import css from "../components/CadastroSalas.module.css"
+import css from "../components/CadastroSalas.module.css";
 import BtnCadastro from "../components/BtnCadastro";
 import TituloCadastro from "../components/TituloCadastro";
 import InputCadastro from "../components/InputCadastro";
 
-function CadastroSalas(){
-    return(
+function CadastroSalas() {
+    return (
         <div className="App">
             <Banner>
                 <div>
@@ -33,14 +34,14 @@ function CadastroSalas(){
                                 <div>
                                     <BtnCadastro nome="Cadastrar"></BtnCadastro>
                                 </div>
-
                             </div>
                         </div>
+                        <BtnCadastro nome="Cadastrar" />
                     </Banner>
                 </div>
             </Banner>
         </div>
-    )
+    );
 }
 
-export default CadastroSalas
+export default CadastroSalas;
