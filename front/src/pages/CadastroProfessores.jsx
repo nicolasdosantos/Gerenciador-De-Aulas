@@ -5,17 +5,17 @@ import BtnCadastro from "../components/BtnCadastro";
 import TituloCadastro from "../components/TituloCadastro";
 import InputCadastro from "../components/InputCadastro";
 
-function CadastroProfessores() {
+function CadastroAlunos() {
     return (
         <div className={css.app}>
             <Banner>
                 <div className={css.card}>
                     <div className={css.divesquerda}>
                         <img src="/Frame%206.svg" alt="Logo"/>
-                        <BtnCadastro nome="Voltar"/>
+                        <BtnCadastro nome="Voltar"></BtnCadastro>
                     </div>
                     <div className={css.divdireita}>
-                        <TituloCadastro titulo="Cadastro de" titulo2="Professor"/>
+                        <TituloCadastro titulo="Cadastro de" titulo2="Professor"></TituloCadastro>
                         <div className={css.inputs}>
                             <InputCadastro nome="Nome: " />
                             <InputCadastro nome="Email: " />
@@ -40,7 +40,7 @@ function CadastroProfessores() {
                                 </div>
                             </div>
                         </div>
-                        <BtnCadastro nome="Cadastrar"/>
+                        <BtnCadastro nome="Cadastrar"></BtnCadastro>
                     </div>
                 </div>
             </Banner>
@@ -48,4 +48,4 @@ function CadastroProfessores() {
     );
 }
 
-export default CadastroProfessores;
+export default CadastroAlunos;

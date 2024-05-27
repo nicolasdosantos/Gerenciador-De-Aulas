@@ -7,11 +7,13 @@ import css from "../components/DashBoard.module.css";
 
 const DashBoard = () => {
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000
     };
 
     return (
@@ -38,7 +40,16 @@ const DashBoard = () => {
                         </div>
                     </Slider>
                 </div>
+                <h2 style={{color: "#959db0", position: "relative", right: "450px"}}>Cursos</h2>
+
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
+            <footer>
+                <img style={{width:"100px",position:"relative",top:"185px",left:"50px"}} src="/lEARN.png"/>
+            </footer>
         </div>
     );
 };
