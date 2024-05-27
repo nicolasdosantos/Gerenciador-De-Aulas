@@ -26,8 +26,8 @@ function EdicaoProfessores() {
                             <div className={css.grid}>
                                 <InputCadastro nome="Carga horária: " />
                                 <div>
-                                    <h1>Turno</h1>
-                                    <select>
+                                    <h1 style={{fontSize: 17, fontWeight: "normal"}}>Turno</h1>
+                                    <select className={css.select}>
                                         <option>Selecione um Turno</option>
                                         <option>Manhã</option>
                                         <option>Tarde</option>
