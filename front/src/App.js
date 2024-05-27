@@ -10,12 +10,16 @@ import CadastroCurso from "./pages/CadastroCurso";
 import EdicaoCurso from "./pages/EdicaoCurso";
 import CadastroMateria from "./pages/CadastroMateria";
 import EdicaoMateria from "./pages/EdicaoMateria";
+import Login from "./pages/Login";
+import NotFoundPage from "./pages/NotFoundPage";
+import Calendario from "./components/Calendario";
+import DashBoard from "./pages/DashBoard";
 
 function App() {
   return (
       <BrowserRouter>
           <Routes>
-              <Route element={<CadastroSalas/>} path="/"/>
+              <Route element={<Login/>} path="/"/>
               <Route element={<EdicaoSalas/>} path="/edicaoSalas"/>
 
               <Route element={<CadastroAlunos/>} path="/alunos"/>
@@ -29,6 +33,12 @@ function App() {
 
               <Route element={<CadastroMateria/>} path="/materia"/>
               <Route element={<EdicaoMateria/>} path="/edicaoMateria"/>
+
+              <Route element={<NotFoundPage/>} path="/notfoundpage"/>
+
+              <Route element={<DashBoard/>} path="/dashboard"/>
+
+              <Route element={<Calendario/>} path="/calendario"/>
           </Routes>
       </BrowserRouter>
   );
