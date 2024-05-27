@@ -21,10 +21,10 @@ function CadastroSalas(){
                                 </div>
                                 <div className={css.divinput}>
                                     <div className={css.inputs}>
-                                        <InputCadastro nome="Número: "></InputCadastro>
+                                        <InputCadastro tipo="number" nome="Número: "></InputCadastro>
                                     </div>
                                     <div>
-                                        <InputCadastro nome="Capacidade: "></InputCadastro>
+                                        <InputCadastro tipo="number" nome="Capacidade: "></InputCadastro>
                                     </div>
                                     <div>
                                         <InputCadastro nome="Descrição: "></InputCadastro>
