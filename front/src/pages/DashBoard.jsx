@@ -40,7 +40,16 @@ const DashBoard = () => {
                         </div>
                     </Slider>
                 </div>
+                <h2 style={{color: "#959db0", position: "relative", right: "450px"}}>Cursos</h2>
+
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
+            <footer>
+                <img style={{width:"100px",position:"relative",top:"185px",left:"50px"}} src="/lEARN.png"/>
+            </footer>
         </div>
     );
 };
