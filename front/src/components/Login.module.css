@@ -86,13 +86,6 @@
     flex-direction: column;
 }
 
-.input {
-    border: 1px solid #DDD;
-    border-radius: 5px;
-    padding: 1em;
-    margin-bottom: 1em;
-    font-size: 1em;
-}
 
 label {
     color: #999;
@@ -143,40 +136,11 @@ label {
 .button{
     width: 158px;
     height: 30px;
-    border-radius: 30px;
     background-color: #8C52FF;
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 1em;
     cursor: pointer;
     font-size: 1em;
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-    .card {
-        width: 90%;
-        padding: 6vw 8vw;
-    }
-
-    .logo {
-        width: 50%;
-    }
-}
-
-@media (max-width: 480px) {
-    .card {
-        width: 95%;
-        padding: 8vw 10vw;
-    }
-
-    .logo {
-        width: 60%;
-    }
-
-    .input, .button {
-        font-size: 0.9em;
-        padding: 0.8em;
-    }
+    transform: translate(49%, -65%);
 }
