@@ -1,5 +1,5 @@
 .dashboardContainer {
-    display: flex;
+    margin-top: 30px;
     height: 100vh;
 }
 
@@ -19,7 +19,6 @@
 }
 .ola{
     position: relative;
-    top: -130px;
     right: 220px;
 }
 
@@ -38,6 +37,6 @@
     position: relative;
     left: 100px;
     max-width: 100%;
-    width: 700px;
-    height: auto;
+    width: 980px;
+    height: 234px;
 }
