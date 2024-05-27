@@ -5,7 +5,7 @@ import BtnCadastro from "../components/BtnCadastro";
 import TituloCadastro from "../components/TituloCadastro";
 import InputCadastro from "../components/InputCadastro";
 
-function CadastroAlunos() {
+function CadastroProfessores() {
     return (
         <div className={css.app}>
             <Banner>
@@ -48,4 +48,4 @@ function CadastroAlunos() {
     );
 }
 
-export default CadastroAlunos;
+export default CadastroProfessores;
