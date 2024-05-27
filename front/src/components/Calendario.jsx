@@ -29,6 +29,7 @@ function Calendario() {
     return (
         <div className={style5.calendario}>
             <NavBar />
+
             <div className={style5.content}>
                 <h1 style={{fontSize: '40px'}}>Calendario: </h1>
 
@@ -53,7 +54,7 @@ function Calendario() {
                         {events.map((event, index) => (
                             <li key={index} >
                                 <div className={style5.holidayContent}>
-                                    <div className={style5.holidayItem}>
+                                    <div className={style5.holidayItemImage}>
                                         <img src="/banner.png" alt="Holiday" className={style5.holidayImage}/>
                                     </div>
 
