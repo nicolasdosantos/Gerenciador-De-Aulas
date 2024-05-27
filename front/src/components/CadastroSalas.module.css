@@ -1,38 +1,65 @@
-.card{
+.card {
     height: 75vh;
-    width: 75vw;
+    width: 90vw; /* Alterado para 90vw para melhor responsividade */
+    max-width: 1200px; /* Limite máximo de largura */
     background-color: white;
     border-radius: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     box-shadow: 0px 5px rgba(0, 0, 0, 0.4);
+    margin: 0 auto; /* Centraliza o card */
 }
 
-.divdireita{
+.divdireita {
     background-color: #E9E9E9;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 20px;
 }
 
-.divesquerda{
+.divesquerda {
     display: flex;
     flex-direction: column;
+    align-items: center; /* Alinha ao centro */
     justify-content: center;
-    gap: 70px;
+    gap: 20px; /* Ajuste do gap para uma distância mais razoável */
+    padding: 20px;
 }
 
-.divesquerda img{
-    height: 25vh;
+.divesquerda img {
+    height: 20vh; /* Reduzi o tamanho para melhor adaptação em telas menores */
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
 }
 
-.inputs{
+.inputs {
     display: flex;
     flex-direction: column;
+    gap: 10px; /* Espaço entre os inputs */
 }
 
-.divinput{
-    width: 300px;
+.divinput {
+    width: 100%;
+    max-width: 400px; /* Limita a largura dos inputs */
 }
 
+@media (max-width: 768px) {
+    .card {
+        grid-template-columns: 1fr; /* Torna o layout em uma coluna em telas menores */
+        height: auto; /* Ajusta a altura automaticamente */
+        width: 95vw; /* Largura mais ampla em telas menores */
+    }
+
+    .divdireita, .divesquerda {
+        padding: 10px; /* Reduz o padding em telas menores */
+    }
+
+    .divesquerda img {
+        height: 15vh; /* Reduz o tamanho da imagem em telas menores */
+    }
+
+    .divinput {
+        width: 90%; /* Largura mais flexível em telas menores */
+    }
+}

@@ -1,5 +1,4 @@
 import Banner from "../components/Banner";
-import CardCadastro from "../components/CardCadastro";
 import css from "../components/CadastroAlunos.module.css";
 import BtnCadastro from "../components/BtnCadastro";
 import TituloCadastro from "../components/TituloCadastro";
