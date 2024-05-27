@@ -1,5 +1,5 @@
 import Banner from "../components/Banner";
-import css from "./CadastroAlunos.module.css";
+import css from "../components/CadastroAlunos.module.css";
 import BtnCadastro from "../components/BtnCadastro";
 import TituloCadastro from "../components/TituloCadastro";
 import InputCadastro from "../components/InputCadastro";
@@ -12,7 +12,7 @@ function CadastroAlunos() {
                     <Banner>
                         <div className={css.card}>
                             <div className={css.divesquerda}>
-                                <img src="/Frame%206.svg"/>
+                                <img src="/Frame%206.svg" alt="Logo"/>
                                 <BtnCadastro nome="Voltar"></BtnCadastro>
                             </div>
                             <div className={css.divdireita}>
@@ -38,7 +38,6 @@ function CadastroAlunos() {
                                 <div>
                                     <BtnCadastro nome="Cadastrar"></BtnCadastro>
                                 </div>
-
                             </div>
                         </div>
                     </Banner>
@@ -48,4 +47,4 @@ function CadastroAlunos() {
     )
 }
 
-export default CadastroAlunos
+export default CadastroAlunos;

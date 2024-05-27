@@ -10,12 +10,13 @@ import CadastroCurso from "./pages/CadastroCurso";
 import EdicaoCurso from "./pages/EdicaoCurso";
 import CadastroMateria from "./pages/CadastroMateria";
 import EdicaoMateria from "./pages/EdicaoMateria";
+import Login from "./pages/Login";
 
 function App() {
   return (
       <BrowserRouter>
           <Routes>
-              <Route element={<CadastroSalas/>} path="/"/>
+              <Route element={<CadastroSalas/>} path="/salas"/>
               <Route element={<EdicaoSalas/>} path="/edicaoSalas"/>
 
               <Route element={<CadastroAlunos/>} path="/alunos"/>
@@ -29,6 +30,8 @@ function App() {
 
               <Route element={<CadastroMateria/>} path="/materia"/>
               <Route element={<EdicaoMateria/>} path="/edicaoMateria"/>
+
+              <Route element={<Login/>} path="/"/>
           </Routes>
       </BrowserRouter>
   );
