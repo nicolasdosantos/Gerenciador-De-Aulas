@@ -8,10 +8,10 @@ const NotFoundPage = () => {
                 <h1 id={css.oops}>Oops...</h1>
                 <h2 id={css.numerro}>404</h2>
                 <p id={css.naoE}>Não encontramos essa página</p>
-                <img id={css.pessoas} src="/pessoas.png" alt="Pessoas"/>
+                <img id={css.pessoas} src="/pessoas.png" alt="Pessoas" />
                 <div className={css.imageContainer}></div>
             </div>
-            <img className={css.coruja} src="/LogoBranca.png" alt="Coruja"/>
+            <img className={css.coruja} src="/LogoBranca.png" alt="Coruja" />
         </div>
     );
 };
