@@ -1,5 +1,5 @@
 import Banner from "../components/Banner";
-import css from "../components/CadastroCard.module.css";
+import css from "./CadastroSalas.module.css"
 import BtnCadastro from "../components/BtnCadastro";
 import TituloCadastro from "../components/TituloCadastro";
 import InputCadastro from "../components/InputCadastro";
@@ -19,7 +19,7 @@ function CadastroSalas(){
                                 <div>
                                     <TituloCadastro titulo="Cadastro de" titulo2="Classes"></TituloCadastro>
                                 </div>
-                                <div>
+                                <div className={css.divinput}>
                                     <div className={css.inputs}>
                                         <InputCadastro nome="Número: "></InputCadastro>
                                     </div>
