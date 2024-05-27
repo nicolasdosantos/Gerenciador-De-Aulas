@@ -51,10 +51,15 @@ function Calendario() {
                     <h2 className={style5.tituloHoliday}>Feriados e ponto facultativo:</h2>
                     <ul className={style5.holidayList}>
                         {events.map((event, index) => (
-                            <li key={index} className={style5.holidayItem}>
+                            <li key={index} >
                                 <div className={style5.holidayContent}>
-                                    <img src="/banner.png" alt="Holiday" className={style5.holidayImage}/>
-                                    <span>{event.title} - {new Date(event.date).toLocaleDateString('pt-BR')}</span>
+                                    <div className={style5.holidayItem}>
+                                        <img src="/banner.png" alt="Holiday" className={style5.holidayImage}/>
+                                    </div>
+
+                                    <div className={style5.holidayItem}>
+                                        <span>{event.title} - {new Date(event.date).toLocaleDateString('pt-BR')}</span>
+                                    </div>
                                 </div>
                             </li>
                         ))}
