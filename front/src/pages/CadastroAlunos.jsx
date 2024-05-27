@@ -13,30 +13,30 @@ function CadastroAlunos() {
                         <div className={css.card}>
                             <div className={css.divesquerda}>
                                 <img src="/Frame%206.svg" alt="Logo"/>
-                                <BtnCadastro nome="Voltar"></BtnCadastro>
+                                <BtnCadastro nome="Voltar"/>
                             </div>
                             <div className={css.divdireita}>
                                 <div>
-                                    <TituloCadastro titulo="Cadastro de" titulo2="Alunos"></TituloCadastro>
+                                    <TituloCadastro titulo="Cadastro de" titulo2="Alunos"/>
                                 </div>
                                 <div className={css.inputs}>
                                     <div >
-                                        <InputCadastro nome="Nome: "></InputCadastro>
+                                        <InputCadastro nome="Nome: "/>
                                     </div>
                                     <div>
-                                        <InputCadastro nome="Email: "></InputCadastro>
+                                        <InputCadastro nome="Email: "/>
                                     </div>
                                     <div className={css.grid}>
                                         <div>
-                                            <InputCadastro nome="CPF: "></InputCadastro>
+                                            <InputCadastro nome="CPF: "/>
                                         </div>
                                         <div >
-                                            <InputCadastro tipo="date" nome="Data de Nascimento: "></InputCadastro>
+                                            <InputCadastro tipo="date" nome="Data de Nascimento: "/>
                                         </div>
                                     </div>
                                 </div>
                                 <div>
-                                    <BtnCadastro nome="Cadastrar"></BtnCadastro>
+                                    <BtnCadastro nome="Cadastrar"/>
                                 </div>
                             </div>
                         </div>
