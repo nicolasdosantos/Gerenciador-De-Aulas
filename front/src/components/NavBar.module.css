@@ -21,16 +21,16 @@
     width: 151px;
     height: auto;
     position: relative;
-    top: -39px;
+    top: -27px;
     right: 21px;
-    margin-bottom: 68px;
+    margin-bottom: 62px;
 }
 
 .navbarNav .navItem {
     position: relative;
     top: -100px;
     margin-bottom: 12px;
-    font-size: 17px;
+    font-size: 20px;
     opacity: 80%;
 }
 
