@@ -1,5 +1,5 @@
 .card{
-    height: 75vh;
+    min-height: 75vh;
     width: 75vw;
     background-color: white;
     border-radius: 15px;
@@ -14,6 +14,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 0px 15px 15px 0px;
+    padding: 10px;
+
 }
 
 .divesquerda{
@@ -36,4 +39,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+}
+
+.select{
+    padding: 6.5px;
+    border: none;
+    border-radius: 3.5px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
 }
