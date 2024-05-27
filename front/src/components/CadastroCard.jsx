@@ -16,7 +16,7 @@ function CadastroCard(){
                     </div>
                     <div className={css.divdireita}>
                         <div>
-                            <TituloCadastro titulo="Cadastro de" titulo2="Salas"></TituloCadastro>
+                            <TituloCadastro titulo="Cadastro de" titulo2="Classes"></TituloCadastro>
                         </div>
                         <div>
                             <div className={css.inputs}>
