@@ -1,48 +1,35 @@
 import Banner from "../components/Banner";
 import CardCadastro from "../components/CardCadastro";
+import css from "../components/CadastroSalas.module.css";
+import BtnCadastro from "../components/BtnCadastro";
+import TituloCadastro from "../components/TituloCadastro";
+import InputCadastro from "../components/InputCadastro";
+import React from "react";
 
 function EdicaoSalas(){
-    return(
+    return (
         <div className="App">
             <Banner>
-                <CardCadastro nome={"Salas"} nome2={"Edicão de"}>
-
-                    <label style={{
-                        fontWeight: "bold",
-                        marginTop: "15px",
-                        textAlign: "left",
-                        margin: "5px"
-                    }}>
-                        Nome/Número:
-                    </label>
-                    <input type="text" style={{
-                        padding: "5px",
-                        width: "600px",
-                        margin: "5px",
-                        borderRadius: "5px",
-                        border: "none"
-                    }}/>
-
-                    <label style={{
-                        fontWeight: "bold",
-                        marginTop: "15px",
-                        textAlign: "left",
-                        margin: "5px"
-                    }}>
-                        Capacidade de Alunos:
-                    </label>
-                    <input type="number" style={{
-                        padding: "5px",
-                        width: "600px",
-                        margin: "5px",
-                        borderRadius: "5px",
-                        border: "none"
-                    }}/>
-
-                </CardCadastro>
+                <div className={css.card}>
+                    <div className={css.divesquerda}>
+                        <img src="/Frame%206.svg" alt="Banner" />
+                        <BtnCadastro nome="Voltar" />
+                    </div>
+                    <div className={css.divdireita}>
+                        <TituloCadastro titulo="Cadastro de" titulo2="Classes" />
+                        <div className={css.divinput}>
+                            <div className={css.inputs}>
+                                <InputCadastro nome="Número: " />
+                                <InputCadastro nome="Capacidade: " />
+                                <InputCadastro nome="Descrição: " />
+                            </div>
+                        </div>
+                        <BtnCadastro nome="Cadastrar" />
+                    </div>
+                </div>
             </Banner>
         </div>
-    )
+    );
 }
 
 export default EdicaoSalas

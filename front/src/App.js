@@ -20,6 +20,7 @@ function App() {
       <BrowserRouter>
           <Routes>
               <Route element={<Login/>} path="/"/>
+
               <Route element={<CadastroSalas/>} path="/salas"/>
               <Route element={<EdicaoSalas/>} path="/edicaoSalas"/>
 
@@ -34,11 +35,12 @@ function App() {
 
               <Route element={<CadastroMateria/>} path="/materia"/>
               <Route element={<EdicaoMateria/>} path="/edicaoMateria"/>
-              <Route element={<NotFoundPage/>} path="/notfoundpage"/>
 
               <Route element={<DashBoard/>} path="/dashboard"/>
 
               <Route element={<Calendario/>} path="/calendario"/>
+
+              <Route element={<NotFoundPage/>} path="/*"/>
           </Routes>
       </BrowserRouter>
   );
