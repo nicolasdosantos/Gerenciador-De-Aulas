@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import css from '../components/Login.module.css';
 
-function BasicExample() {
+function Login() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
@@ -54,4 +54,4 @@ function BasicExample() {
     );
 }
 
-export default BasicExample;
+export default Login;
