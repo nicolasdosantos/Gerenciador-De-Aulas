@@ -12,7 +12,7 @@ import CadastroMateria from "./pages/CadastroMateria";
 import EdicaoMateria from "./pages/EdicaoMateria";
 import Login from "./pages/Login";
 import NotFoundPage from "./pages/NotFoundPage";
-import Calendario from "./components/Calendario";
+import Calendario from "./pages/Calendario";
 import DashBoard from "./pages/DashBoard";
 
 function App() {
