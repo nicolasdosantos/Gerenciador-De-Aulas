@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
+import CardCadastroGrande from "../components/CardCadastroGrande"
 import Banner from "../components/Banner";
-import css from "./CadastroProfessores.module.css";
+import style3 from "../components/CardCadastroGrande.module.css";
 import BtnCadastro from "../components/BtnCadastro";
 import TituloCadastro from "../components/TituloCadastro";
 import InputCadastro from "../components/InputCadastro";
-
 function CadastroMateria() {
     return (
         <div className="App">
