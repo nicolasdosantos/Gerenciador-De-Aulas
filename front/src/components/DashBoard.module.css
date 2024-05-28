@@ -23,6 +23,7 @@
     font-size: 30px;
     position: relative;
     right: 270px;
+    color: #262A41
 }
 
 
@@ -43,6 +44,11 @@ footer {
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+}
+
+.qqqq{
+    background-color: #D9D9D9;
+    min-width: 150px;
 }
 .q{
     background-color: #D9D9D9;
@@ -68,13 +74,19 @@ footer {
     margin-left: -90px;
     position: relative;
     display: flex;
+    flex-direction: row;
+    gap: 40px;
     gap: 50px;
     top: 20px;
+    overflow-x: auto;
+    width: 100%;
+    align-items: center;
+    margin-left: 90px;
 }
 #cadastrosd{
     position: relative;
     top: 60px;
-    color: #959db0;
+    color: #66697C;
     right: 430px;
 }
 .professores{
@@ -125,7 +137,7 @@ footer {
     text-align: center;
     border-radius: 8px;
     width: 180px;
-    height: 60px;
+    height: 45px;
     background-color: #FFFFFF;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -134,7 +146,7 @@ footer {
     border-radius: 8px;
     text-align: center;
     width: 180px;
-    height: 60px;
+    height: 45px;
     background-color: #FFFFFF;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -143,7 +155,7 @@ footer {
     border-radius: 8px;
     text-align: center;
     width: 180px;
-    height: 60px;
+    height: 45px;
     background-color: #FFFFFF;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -152,7 +164,7 @@ footer {
     border-radius: 8px;
     text-align: center;
     width: 180px;
-    height: 60px;
+    height: 45px;
     background-color: #FFFFFF;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -177,4 +189,5 @@ body::-webkit-scrollbar-thumb {
     background-color: #9364f3;
     border-radius: 20px;
     border: 3px solid #D9D9D9;
+    padding: 2px;
 }

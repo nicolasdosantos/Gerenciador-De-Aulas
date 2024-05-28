@@ -1,7 +1,9 @@
 import React from "react";
 import Banner from "../components/Banner";
-import CardCadastroGrande from "../components/CardCadastroGrande";
-import style3 from "../components/CardCadastroGrande.module.css";
+import css from "./CadastroProfessores.module.css";
+import BtnCadastro from "../components/BtnCadastro";
+import TituloCadastro from "../components/TituloCadastro";
+import InputCadastro from "../components/InputCadastro";
 
 function CadastroMateria() {
     return (
