@@ -40,18 +40,23 @@ const DashBoard = () => {
                         </div>
                     </Slider>
                 </div>
-                <h2 style={{color: "#959db0", position: "relative", right: "450px"}}>Cursos</h2>
+                <h2 style={{color: "#66697C", position: "relative", right: "450px"}}>Cursos</h2>
 
                 <div className={css.quad}>
 
-                <div className={css.q}></div>
-                <div className={css.qq}></div>
-                <div className={css.qqq}></div>
-                <div className={css.qqqq}></div>
+                    <div className={css.qqqq}></div>
+                    <div className={css.qqqq}></div>
+                    <div className={css.qqqq}></div>
+                    <div className={css.qqqq}></div>
+                    <div className={css.qqqq}></div>
+                    <div className={css.qqqq}></div>
+                    <div className={css.qqqq}></div>
+                    <div className={css.qqqq}></div>
+
 
                 </div>
 
-                <h2 id={css.cadastrosd}>Cadastros:</h2>
+                <h2 id={css.cadastrosd}>Cadastros</h2>
 
                 <div className={css.cadss}>
                     <div className={css.professores}>Professores:</div>

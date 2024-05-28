@@ -9,7 +9,7 @@ function NavBar() {
                 <br />
                 <br />
                 <li className={css.navItem}>
-                    <a className={css.navLink} href="/Home">Home</a>
+                    <a className={css.navLink} href="/dashboard">Home</a>
                 </li>
                 <li className={css.navItem}>
                     <a className={css.navLink} href="/calendario">Calendário</a>
@@ -18,7 +18,7 @@ function NavBar() {
                     <a className={css.navLink} href="/cadastro">Cadastro</a>
                 </li>
                 <li className={css.navItem}>
-                    <a id={css.sair} className={css.navLink} href="/inicial">Sair</a>
+                    <a id={css.sair} className={css.navLink} href="/">Sair</a>
                 </li>
             </ul>
         </div>
