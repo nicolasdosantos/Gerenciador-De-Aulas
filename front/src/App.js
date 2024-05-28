@@ -14,11 +14,14 @@ import Login from "./pages/Login";
 import NotFoundPage from "./pages/NotFoundPage";
 import Calendario from "./pages/Calendario";
 import DashBoard from "./pages/DashBoard";
+import ListaProfessores from "./components/ListaProfessores";
 
 function App() {
+
   return (
       <BrowserRouter>
           <Routes>
+
               <Route element={<Login/>} path="/"/>
 
               <Route element={<CadastroSalas/>} path="/salas"/>
@@ -41,6 +44,10 @@ function App() {
               <Route element={<Calendario/>} path="/calendario"/>
 
               <Route element={<NotFoundPage/>} path="/*"/>
+
+              <Route element={<ListaProfessores/>} path="/lista-professores"/>
+
+
           </Routes>
       </BrowserRouter>
   );

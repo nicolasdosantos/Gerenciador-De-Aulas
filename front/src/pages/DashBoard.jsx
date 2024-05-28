@@ -17,6 +17,7 @@ const DashBoard = () => {
     };
 
 
+
     return (
         <div className={css.dashboardContainer}>
             <NavBar />
@@ -45,10 +46,11 @@ const DashBoard = () => {
 
                 <div className={css.quad}>
 
-                <div className={css.q}></div>
-                <div className={css.qq}></div>
-                <div className={css.qqq}></div>
-                <div className={css.qqqq}></div>
+                    <div className={css.q}></div>
+                    <div className={css.qq}></div>
+                    <div className={css.qqq}></div>
+                    <div className={css.qqqq}></div>
+
 
                 </div>
 
