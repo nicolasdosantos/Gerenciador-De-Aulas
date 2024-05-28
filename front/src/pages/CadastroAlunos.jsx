@@ -3,6 +3,7 @@ import css from "../components/CadastroAlunos.module.css";
 import BtnCadastro from "../components/BtnCadastro";
 import TituloCadastro from "../components/TituloCadastro";
 import InputCadastro from "../components/InputCadastro";
+import Scrollbar from "../components/ScrollBar.module.css"
 
 function CadastroAlunos() {
     return (

@@ -16,7 +16,7 @@ function ListaProfessores() {
         <div className={css.container}>
             <NavBar />
             <div className={css.content}>
-                <h2>Cadastros:</h2>
+                <h2 className={css.titulozin}>Cadastros:</h2>
                 <div className={css.dropdown}>
                     <button onClick={toggleDropdown} className={css.dropdownButton}>
                         Professores:
@@ -26,7 +26,7 @@ function ListaProfessores() {
                             <div className={css.cardContainer}>
                                 {Array.from({ length: 3 }).map((_, idx) => (
                                     <CardGroup>
-                                        <Card>
+                                        <Card className={css.cardizin}>
                                             <Card.Img variant="top" src="/download.jpg" />
                                             <Card.Body>
                                                 <Card.Title id={css.nomePro}>Marla Prates Fernandes</Card.Title>

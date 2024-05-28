@@ -9,7 +9,8 @@
 
 .content {
     padding: 20px;
-    margin-left: 215px;
+    margin-left: 210px;
+    background-color: #F0F0F0;
 }
 
 .calendarContainer {
@@ -57,6 +58,7 @@
     width: 100%;
     margin-left: 15px;
     flex-direction: column;
+    background-color: #fff;
 }
 
 .holidayItemImage {
@@ -67,12 +69,12 @@
     padding: 10px;
     box-shadow: -3px 7px 8px -2px rgba(0,0,0,0.40);
     margin-left: 10px;
+    background-color: #fff;
 }
 
 .holidayImage {
     width: 30px;
     height: 30px;
-    object-fit: cover;
 }
 
 .holiday {
@@ -89,32 +91,26 @@
 
 
 
-
 .tituloProgra {
     font-size: 25px;
+    margin-left: 5px;
+    color: #8A8C98
 }
 
 .prograDia {
     border-left: 1px solid;
-    border-color: #8A8C98;
     padding: 20px;
-    color: #8A8C98
 }
 
 .prograList {
     margin-top: 15px;
-    list-style-type: none;
-    padding: 0;
-    flex-wrap: wrap;
-    gap: 10px;
     height: 600px;
     overflow: auto;
-    width: 650px;
 }
 
-.prograContent {
+.prograDiv {
     display: flex;
-    align-items: center;
+    width: 100%;
 }
 
 .prograItemImage {
@@ -122,25 +118,39 @@
     align-items: center;
     margin-bottom: 20px;
     border-radius: 10px;
-    padding: 10px;
-    border: 1px solid;
     box-shadow: -3px 7px 8px -2px rgba(0,0,0,0.30);
+    margin-left: 5px;
 }
 
 .prograItem {
-    display: flex;
     margin-bottom: 20px;
     border-radius: 10px;
     padding: 10px;
-    border: 1px solid;
     box-shadow: -3px 7px 8px -2px rgba(0,0,0,0.30);
     width: 100%;
     margin-left: 15px;
-    flex-direction: column;
+    color: #000;
 }
 
-
-.prograTexto {
+.prograTextoDiv {
     display: flex;
     justify-content: space-between;
+}
+
+.prograTextT {
+    font-weight: bold;
+}
+
+.prograTextC {
+    color: #9799A4;
+}
+
+.prograTextS {
+    color: #8C52FF;
+}
+
+.prograTextH {
+    color: #8C52FF;
+    font-size: 20px;
+    font-weight: bold;
 }

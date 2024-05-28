@@ -7,7 +7,10 @@
 .content {
     margin-left: 250px;
 }
-
+.titulozin{
+    margin-top: 34px;
+    font-size: 33px;
+}
 .dropdown {
     position: relative;
     display: inline-block;
@@ -64,4 +67,7 @@
     opacity: 60%;
     font-weight: bold;
     font-size: 17px;
+}
+.cardizin{
+    margin-right: 58px;
 }
