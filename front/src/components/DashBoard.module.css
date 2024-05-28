@@ -46,28 +46,28 @@ footer {
 }
 .q{
     background-color: #D9D9D9;
-    width: 150px;
+    width: 190px;
     height: 100px;
 }
 .qq{
     background-color: #D9D9D9;
-    width: 150px;
+    width: 190px;
     height: 100px;
 }
 .qqq{
     background-color: #D9D9D9;
-    width: 150px;
+    width: 190px;
     height: 100px;
 }
 .qqqq{
     background-color: #D9D9D9;
-    width: 150px;
+    width: 190px;
     height: 100px;
 }
 .quad{
     position: relative;
     display: flex;
-    gap: 100px;
+    gap: 60px;
     top: 20px;
 }
 #cadastrosd{
