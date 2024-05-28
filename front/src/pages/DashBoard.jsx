@@ -16,6 +16,7 @@ const DashBoard = () => {
         autoplaySpeed: 4000
     };
 
+
     return (
         <div className={css.dashboardContainer}>
             <NavBar />
