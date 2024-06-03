@@ -5,6 +5,8 @@ import Slider from 'react-slick';
 import NavBar from "../components/NavBar";
 import css from "../components/DashBoard.module.css";
 
+import NavBarPerfil from "../components/NavBarPerfil";
+
 const DashBoard = () => {
     const settings = {
         dots: false,
@@ -40,7 +42,7 @@ const DashBoard = () => {
                         </div>
                     </Slider>
                 </div>
-                <h2 style={{color: "rgb(102, 105, 124)", position: "relative", right: "464px", top: "28px"}}>Cursos</h2>
+                <h2 style={{color: "rgb(102, 105, 124)", position: "relative", right: "456px", top: "28px"}}>Cursos</h2>
 
                 <div className={css.scrollContainer}>
                     {[...Array(20)].map((_, index) => (
@@ -70,6 +72,8 @@ const DashBoard = () => {
                     <img src="/lEARN.png" style={{width: "212px", display: "flex", alignItems: "center", justifyContent: "center", position: "relative", top: "83px"}}/>
                 </footer>
             </div>
+
+            <NavBarPerfil />
         </div>
     );
 };

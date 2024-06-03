@@ -12,6 +12,7 @@
 .notFoundContent {
     text-align: center;
     width: 450px;
+    margin-top: -27px;
     height: 450px;
     color: white;
     background: #fff;
@@ -82,7 +83,7 @@
 
 .coruja {
     position: absolute;
-    top: 540px;
+    top: 533px;
     width: 75px;
     height: auto;
     right: 605px;

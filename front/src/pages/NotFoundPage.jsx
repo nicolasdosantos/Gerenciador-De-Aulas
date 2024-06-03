@@ -7,7 +7,7 @@ const NotFoundPage = () => {
             <div className={css.notFoundContent}>
                 <h1 id={css.oops}>Oops...</h1>
                 <h2 id={css.numerro}>404</h2>
-                <p id={css.naoE}>Não encontramos essa página</p>
+                <p id={css.naoE}>Não encontramos esta página!</p>
                 <img id={css.pessoas} src="/pessoas.png" alt="Pessoas" />
                 <div className={css.imageContainer}></div>
             </div>

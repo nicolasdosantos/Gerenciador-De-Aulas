@@ -26,8 +26,7 @@ function NavBarPerfil({ showPrograList }) {
                     </button>
 
                     <div className={style5.perfil}>
-                        <img src="/perfil.png" alt="perfil"
-                             style={{width: '150px', height: '150px', borderRadius: '70px'}}/>
+                        <img src="/perfil.png" alt="perfil" style={{width: '150px', height: '150px', borderRadius: '70px'}}/>
 
                         <p className={style5.perfilNome}>Gustavo Donato</p>
                         <p style={{color: '#8A8C98', marginBottom: '10px', fontSize: '18px'}}>Administrador</p>
@@ -58,6 +57,7 @@ function NavBarPerfil({ showPrograList }) {
                     </div>
                 </div>
             )}
+
         </div>
     );
 }

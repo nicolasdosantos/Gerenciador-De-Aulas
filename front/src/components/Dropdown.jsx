@@ -1,9 +1,10 @@
-// Dropdown.js
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import css from './Dropdown.module.css';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
+import { FaTrashAlt, FaEdit } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 function Dropdown({ title, items, redirectPath }) {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -18,6 +19,11 @@ function Dropdown({ title, items, redirectPath }) {
         navigate(redirectPath);
     };
 
+    const handleDeleteItem = (index) => {
+        const updatedList = itemList.filter((_, idx) => idx !== index);
+        setItemList(updatedList);
+    };
+
     return (
         <div className={css.container}>
             <div className={css.content}>
@@ -30,19 +36,30 @@ function Dropdown({ title, items, redirectPath }) {
                             <div className={css.cardContainer}>
                                 {itemList.map((item, idx) => (
                                     <CardGroup key={idx}>
+                                        <div className={css.editIcon}>
+                                            <Link to={item.editButton}>
+                                                <FaEdit />
+                                            </Link>
+                                        </div>
                                         <Card className={css.cardizin}>
-                                            <Card.Img variant="top" src={item.image} className={css.imgzinha}/>
+                                            <Card.Img variant="top" src={item.image} className={css.imgzinha} />
                                             <Card.Body>
                                                 <Card.Title id={css.nomePro}>{item.name}</Card.Title>
                                                 <Card.Text id={css.email}>
                                                     {item.email}
                                                 </Card.Text>
+                                                <div className={css.buttonContainer}>
+                                                    <button onClick={handleAddItem} className={css.addButton}>
+                                                        {item.buttin}
+                                                    </button>
+                                                    <button onClick={() => handleDeleteItem(idx)} className={css.deleteButton}>
+                                                        <FaTrashAlt />
+                                                    </button>
+                                                </div>
                                             </Card.Body>
                                             <Card.Footer>
                                                 <small className={css.textmuted}>{item.date}</small>
                                             </Card.Footer>
-                                            <button onClick={handleAddItem} className={css.addButton}>{item.buttin}
-                                            </button>
                                         </Card>
                                     </CardGroup>
                                 ))}

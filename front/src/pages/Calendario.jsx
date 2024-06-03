@@ -39,7 +39,7 @@ function Calendario() {
             <NavBar />
 
             <div className={style5.calendario}>
-                <h1 style={{ fontSize: '40px' }}>Calendario</h1>
+                <h1 style={{ fontSize: '40px' }}>Calendário</h1>
 
                 <div className={style5.calendarContainer}>
                     <FullCalendar
