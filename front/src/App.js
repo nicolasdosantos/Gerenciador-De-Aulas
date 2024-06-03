@@ -15,7 +15,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import Calendario from "./pages/Calendario";
 import DashBoard from "./pages/DashBoard";
 import Dropdown from "./components/Dropdown";
-import ListaProfessores from "./pages/ListaProfessores";
+import ListaCadastros from "./pages/ListaCadastros";
 
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
 
               <Route element={<CadastroProfessores/>} path="/professores"/>
               <Route element={<EdicaoProfessores/>} path="/edicaoProfessores"/>
-              <Route element={<ListaProfessores/>} path="/lista-professores"/>
+              <Route element={<ListaCadastros/>} path="/lista-cadastros"/>
 
               <Route element={<CadastroCurso/>} path="/curso"/>
               <Route element={<EdicaoCurso/>} path="/edicaoCurso"/>
