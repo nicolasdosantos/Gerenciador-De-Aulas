@@ -34,7 +34,9 @@ function App() {
 
               <Route element={<CadastroProfessores/>} path="/professores"/>
               <Route element={<EdicaoProfessores/>} path="/edicaoProfessores"/>
+
               <Route element={<ListaCadastros/>} path="/lista-professores"/>
+
 
               <Route element={<CadastroCurso/>} path="/curso"/>
               <Route element={<EdicaoCurso/>} path="/edicaoCurso"/>
@@ -45,6 +47,8 @@ function App() {
               <Route element={<DashBoard/>} path="/dashboard"/>
 
               <Route element={<Calendario/>} path="/calendario"/>
+
+              <Route element={<ListaCadastros/>} path="/lista-cadastros"/>
 
               <Route element={<NotFoundPage/>} path="/*"/>
 

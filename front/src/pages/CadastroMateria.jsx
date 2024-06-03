@@ -25,7 +25,7 @@ function CadastroCurso(){
                                     <option>Igor</option>
                                 </select>
                             </div>
-                            <div style={{display: "flex", gap: 10,marginBottom: "10px"}}>
+                            <div className={css.terceiroBlocoDireita}>
                                 <InputCadastro css={{background: "#ECEFF5", height: "35px", width: "16.5vw"}} className={css.inputP}
                                                tipo="time" nome="Horário - Início: "/>
                                 <InputCadastro css={{background: "#ECEFF5", height: "35px", width: "16.7vw"}} tipo="time"
@@ -44,9 +44,9 @@ function CadastroCurso(){
                                     <option>Caue</option>
                                 </select>
                             </div>
-                            <div style={{display:"grid", gridTemplateColumns: "1fr 1fr", gap: "10px"}}>
+                            <div className={css.segundoBlocoEsquerda}>
                                 <div>
-                                    <InputCadastro css={{background: "#ECEFF5", height: "35px", width: "15vw"}} className={css.inputP} tipo="time" nome="Horário - Início: "/>
+                                    <InputCadastro className={css.inputP} tipo="time" nome="Horário - Início: "/>
                                 </div>
                                 <div>
                                     <h1 style={{fontSize: "20px"}}>Turno:</h1>

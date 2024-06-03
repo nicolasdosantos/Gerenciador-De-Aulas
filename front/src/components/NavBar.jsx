@@ -15,7 +15,7 @@ function NavBar() {
                     <a className={css.navLink} href="/Calendario">Calendário</a>
                 </li>
                 <li className={css.navItem}>
-                    <a className={css.navLink} href="/cadastro">Cadastro</a>
+                    <a className={css.navLink} href="/lista-cadastros">Cadastro</a>
                 </li>
                 <li className={css.navItem}>
                     <a id={css.sair} className={css.navLink} href="/">Sair</a>
