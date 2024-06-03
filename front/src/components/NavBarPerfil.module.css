@@ -13,24 +13,22 @@
 
 .principal {
     display: flex;
-    flex-direction: row;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-shadow: -3px 7px 8px -2px rgba(0,0,0,0.30);
 }
 
 .logoNav {
-    display: flex;
-    align-items: center;
-}
-
-.botaoImgLogo {
-    border: none;
-    padding: 20px;
     width: 100px;
-    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
 }
 
 .principalPerfil {
-    margin-top: 20px;
-    width: 80%;
+
 }
 
 .perfil {
@@ -64,6 +62,29 @@
     width: 25px;
     height: 25px;
     box-shadow: -3px 7px 8px -2px rgba(0,0,0,0.30);
+}
+
+.botaoImgLogo {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.botaoImgVoltar {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.imgLogo {
+    width: 50px;
+    height: 50px;
+}
+
+.imgVoltar {
+    width: 25px;
+    height: 25px;
 }
 
 .tituloProgra {

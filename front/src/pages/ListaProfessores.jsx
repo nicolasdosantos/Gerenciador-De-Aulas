@@ -8,55 +8,50 @@ function ListaProfessores() {
     const professors = [
         {
             name: "Marla Prates Fernandes",
-            email: "marlaprates@gmail.com",
-            nif: "0123456789",
+            email: "MarlaPratesFernandes@gmail.com",
             image: "/imgTeste.jpg",
-            footer: "NIF: 0123456789"
+            button: "/materia"
         },
         {
             name: "João Silva",
-            email: "joaosilva@gmail.com",
-            nif: "9876543210",
+            email: "JoãoSilva@gmail.com",
             image: "/imgTeste.jpg",
-            footer: "NIF: 9876543210"
+            button: "/materia"
         },
         {
             name: "Ana Souza",
-            email: "anasouza@gmail.com",
-            nif: "1122334455",
+            email: "AnaSouza@gmail.com",
             image: "/imgTeste.jpg",
-            footer: "NIF: 1122334455"
+            button: "/materia"
         }
     ];
 
     const courses = [
         {
             name: "Course 1",
-            email: "course1@example.com",
-            nif: "C0123456789",
             image: "/imgTeste.jpg",
-            footer: "Course ID: C0123456789"
+            date: "Seg,Ter",
+            button: "/materia"
         },
         {
             name: "Course 2",
-            email: "course2@example.com",
-            nif: "C9876543210",
             image: "/imgTeste.jpg",
-            footer: "Course ID: C9876543210"
+            date: "Seg,Ter",
+            button: "/materia"
         },
         {
             name: "Course 3",
-            email: "course2@example.com",
-            nif: "C9876543210",
             image: "/imgTeste.jpg",
-            footer: "Course ID: C9876543210"
+            date: "Seg,Ter",
+            button: "/materia"
         }
     ];
 
     const subjects = [
         {
             name: "Subject 1",
-            email: "subject1@example.com",
+            email: "subject2@example.com",
+            professor: "subject1@example.com",
             nif: "S0123456789",
             image: "/imgTeste.jpg",
             footer: "Subject ID: S0123456789"
@@ -80,21 +75,18 @@ function ListaProfessores() {
     const rooms = [
         {
             name: "Room 1",
-            email: "room1@example.com",
             nif: "R0123456789",
             image: "/imgTeste.jpg",
             footer: "Room ID: R0123456789"
         },
         {
             name: "Room 2",
-            email: "room2@example.com",
             nif: "R9876543210",
             image: "/imgTeste.jpg",
             footer: "Room ID: R9876543210"
         },
         {
             name: "Room 3",
-            email: "room2@example.com",
             nif: "R9876543210",
             image: "/imgTeste.jpg",
             footer: "Room ID: R9876543210"
@@ -126,14 +118,14 @@ function ListaProfessores() {
     ];
 
     return (
-        <div className={css.divzinha}>
-            <NavBar/>
-            <h2 className={css.titulozin}>Cadastrados</h2>
-            <Dropdown title="Professores" items={professors}/>
-            <Dropdown title="Cursos" items={courses}/>
-            <Dropdown title="Matérias" items={subjects}/>
-            <Dropdown title="Salas" items={rooms}/>
-            <Dropdown title="Alunos" items={students}/>
+        <div className={css.container}>
+            <NavBar />
+            <h2 className={css.title}>Cadastrados</h2>
+            <Dropdown src="" title="Professores" items={professors} redirectPath="/professores" />
+            <Dropdown src="" title="Cursos" items={courses} redirectPath="/curso" />
+            <Dropdown src="" title="Matérias" items={subjects} redirectPath="/materia" />
+            <Dropdown src="" title="Salas" items={rooms} redirectPath="/salas" />
+            <Dropdown src="" title="Alunos" items={students} redirectPath="/alunos" />
         </div>
     );
 }

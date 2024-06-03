@@ -11,22 +11,29 @@ function NavBarPerfil({ showPrograList }) {
     return (
         <div className={style5.principal}>
 
-            <div className={style5.logoNav}>
-                <button onClick={togglePerfil}>
-                    <img src="/logoCoruja.png" alt="banner" className={style5.botaoImgLogo}/>
-                </button>
-            </div>
+            {!showPerfil && (
+                <div className={style5.logoNav}>
+                    <button onClick={togglePerfil} className={style5.botaoImgLogo}>
+                        <img src="/banner.png" alt="bannerLogo" className={style5.imgLogo}/>
+                    </button>
+                </div>
+            )}
 
             {showPerfil && (
                 <div className={style5.principalPerfil}>
+                    <button onClick={togglePerfil} className={style5.botaoImgVoltar}>
+                        <img src="/banner.png" alt="bannerVoltar" className={style5.imgVoltar}/>
+                    </button>
+
                     <div className={style5.perfil}>
-                        <img src="/perfil.png" alt="banner"
+                        <img src="/perfil.png" alt="perfil"
                              style={{width: '150px', height: '150px', borderRadius: '70px'}}/>
+
                         <p className={style5.perfilNome}>Gustavo Donato</p>
                         <p style={{color: '#8A8C98', marginBottom: '10px', fontSize: '18px'}}>Administrador</p>
 
                         <button className={style5.botao}>
-                            <img src="/mais.png" alt="banner" className={style5.botaoImg}/>
+                            <img src="/maisRoxo.png" alt="banner" className={style5.botaoImg}/>
                             Criar
                         </button>
                     </div>

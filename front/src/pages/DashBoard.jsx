@@ -40,35 +40,30 @@ const DashBoard = () => {
                         </div>
                     </Slider>
                 </div>
-                <h2 style={{color: "#66697C", position: "relative", right: "450px"}}>Cursos</h2>
+                <h2 style={{color: "rgb(102, 105, 124)", position: "relative", right: "464px", top: "28px"}}>Cursos</h2>
 
-                <div className={css.quad}>
-
-                    <div className={css.qqqq}></div>
-                    <div className={css.qqqq}></div>
-                    <div className={css.qqqq}></div>
-                    <div className={css.qqqq}></div>
-                    <div className={css.qqqq}></div>
-                    <div className={css.qqqq}></div>
-                    <div className={css.qqqq}></div>
-                    <div className={css.qqqq}></div>
-
+                <div className={css.scrollContainer}>
+                    {[...Array(10)].map((_, index) => (
+                        <div className={css.qqqq} key={index}>
+                            <img src={`/image${index + 1}.png`} alt={`Card ${index + 1}`} className={css.cardImage} />
+                        </div>
+                    ))}
                 </div>
 
                 <h2 id={css.cadastrosd}>Cadastros</h2>
 
                 <div className={css.cadss}>
-                    <div className={css.professores}>Professores:</div>
-                    <div className={css.alunos}>Alunos:</div>
-                    <div className={css.cursos}>Cursos:</div>
-                    <div className={css.salas}>Salas:</div>
+                    <div className={css.qazul}>Professores:</div>
+                    <div className={css.qazul}>Alunos:</div>
+                    <div className={css.qazul}>Cursos:</div>
+                    <div className={css.qazul}>Salas:</div>
                 </div>
 
                 <div className={css.qbranco}>
-                    <div id={css.cad1}>12 cadastrados</div>
-                    <div id={css.cad2}>1120 cadastrados</div>
-                    <div id={css.cad3}>08 cadastrados</div>
-                    <div id={css.cad4}>14 cadastrados</div>
+                    <div id={css.cad}>12 cadastrados</div>
+                    <div id={css.cad}>1120 cadastrados</div>
+                    <div id={css.cad}>08 cadastrados</div>
+                    <div id={css.cad}>14 cadastrados</div>
                 </div>
 
             </div>

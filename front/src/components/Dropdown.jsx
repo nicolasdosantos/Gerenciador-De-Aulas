@@ -1,20 +1,26 @@
 // Dropdown.js
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import css from './Dropdown.module.css';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 
-function Dropdown({ title, items }) { // Adicionando parâmetros title e items
+function Dropdown({ title, items, redirectPath }) {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const [itemList, setItemList] = useState(items);
+    const navigate = useNavigate();
 
     const toggleDropdown = () => {
         setIsDropdownOpen(!isDropdownOpen);
     };
 
+    const handleAddItem = () => {
+        navigate(redirectPath);
+    };
+
     return (
         <div className={css.container}>
             <div className={css.content}>
-
                 <div className={css.dropdown}>
                     <button onClick={toggleDropdown} className={css.dropdownButton}>
                         {title}
@@ -22,7 +28,7 @@ function Dropdown({ title, items }) { // Adicionando parâmetros title e items
                     {isDropdownOpen && (
                         <div className={css.dropdownContent}>
                             <div className={css.cardContainer}>
-                                {items.map((item, idx) => (
+                                {itemList.map((item, idx) => (
                                     <CardGroup key={idx}>
                                         <Card className={css.cardizin}>
                                             <Card.Img variant="top" src={item.image} className={css.imgzinha}/>
@@ -33,11 +39,15 @@ function Dropdown({ title, items }) { // Adicionando parâmetros title e items
                                                 </Card.Text>
                                             </Card.Body>
                                             <Card.Footer>
-                                                <small className={css.textmuted}>{item.footer}</small>
+                                                <small className={css.textmuted}>{item.date}</small>
                                             </Card.Footer>
+                                            <button onClick={handleAddItem} className={css.addButton}>Adicionar
+                                            </button>
                                         </Card>
                                     </CardGroup>
                                 ))}
+                            </div>
+                            <div className={css.addItemContainer}>
                             </div>
                         </div>
                     )}
