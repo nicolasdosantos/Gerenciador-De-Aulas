@@ -10,21 +10,21 @@ function ListaProfessores() {
             name: "Marla Prates Fernandes",
             email: "marlaprates@gmail.com",
             nif: "0123456789",
-            image: "/download.jpg",
+            image: "/imgTeste.jpg",
             footer: "NIF: 0123456789"
         },
         {
             name: "João Silva",
             email: "joaosilva@gmail.com",
             nif: "9876543210",
-            image: "/download.jpg",
+            image: "/imgTeste.jpg",
             footer: "NIF: 9876543210"
         },
         {
             name: "Ana Souza",
             email: "anasouza@gmail.com",
             nif: "1122334455",
-            image: "/download.jpg",
+            image: "/imgTeste.jpg",
             footer: "NIF: 1122334455"
         }
     ];
@@ -34,14 +34,21 @@ function ListaProfessores() {
             name: "Course 1",
             email: "course1@example.com",
             nif: "C0123456789",
-            image: "/download.jpg",
+            image: "/imgTeste.jpg",
             footer: "Course ID: C0123456789"
         },
         {
             name: "Course 2",
             email: "course2@example.com",
             nif: "C9876543210",
-            image: "/download.jpg",
+            image: "/imgTeste.jpg",
+            footer: "Course ID: C9876543210"
+        },
+        {
+            name: "Course 3",
+            email: "course2@example.com",
+            nif: "C9876543210",
+            image: "/imgTeste.jpg",
             footer: "Course ID: C9876543210"
         }
     ];
@@ -51,15 +58,22 @@ function ListaProfessores() {
             name: "Subject 1",
             email: "subject1@example.com",
             nif: "S0123456789",
-            image: "/download.jpg",
+            image: "/imgTeste.jpg",
             footer: "Subject ID: S0123456789"
         },
         {
             name: "Subject 2",
             email: "subject2@example.com",
             nif: "S9876543210",
-            image: "/download.jpg",
+            image: "/imgTeste.jpg",
             footer: "Subject ID: S9876543210"
+        },
+        {
+            name: "Subject 3",
+            email: "subject1@example.com",
+            nif: "S0123456789",
+            image: "/imgTeste.jpg",
+            footer: "Subject ID: S0123456789"
         }
     ];
 
@@ -68,14 +82,21 @@ function ListaProfessores() {
             name: "Room 1",
             email: "room1@example.com",
             nif: "R0123456789",
-            image: "/download.jpg",
+            image: "/imgTeste.jpg",
             footer: "Room ID: R0123456789"
         },
         {
             name: "Room 2",
             email: "room2@example.com",
             nif: "R9876543210",
-            image: "/download.jpg",
+            image: "/imgTeste.jpg",
+            footer: "Room ID: R9876543210"
+        },
+        {
+            name: "Room 3",
+            email: "room2@example.com",
+            nif: "R9876543210",
+            image: "/imgTeste.jpg",
             footer: "Room ID: R9876543210"
         }
     ];
@@ -85,14 +106,21 @@ function ListaProfessores() {
             name: "Student 1",
             email: "student1@example.com",
             nif: "ST0123456789",
-            image: "/download.jpg",
+            image: "/imgTeste.jpg",
             footer: "Student ID: ST0123456789"
         },
         {
             name: "Student 2",
             email: "student2@example.com",
             nif: "ST9876543210",
-            image: "/download.jpg",
+            image: "/imgTeste.jpg",
+            footer: "Student ID: ST9876543210"
+        },
+        {
+            name: "Student 3",
+            email: "student2@example.com",
+            nif: "ST9876543210",
+            image: "/imgTeste.jpg",
             footer: "Student ID: ST9876543210"
         }
     ];

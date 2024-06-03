@@ -25,7 +25,7 @@ function Dropdown({ title, items }) { // Adicionando parâmetros title e items
                                 {items.map((item, idx) => (
                                     <CardGroup key={idx}>
                                         <Card className={css.cardizin}>
-                                            <Card.Img variant="top" src={item.image} />
+                                            <Card.Img variant="top" src={item.image} className={css.imgzinha}/>
                                             <Card.Body>
                                                 <Card.Title id={css.nomePro}>{item.name}</Card.Title>
                                                 <Card.Text id={css.email}>

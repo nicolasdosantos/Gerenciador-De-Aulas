@@ -16,6 +16,30 @@ const DashBoard = () => {
         autoplaySpeed: 4000
     };
 
+    const carouselSettings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4, // Number of slides to show at once
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 4000,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    };
+
     return (
         <div className={css.dashboardContainer}>
             <NavBar />
@@ -43,18 +67,16 @@ const DashBoard = () => {
                 <h2 style={{color: "#66697C", position: "relative", right: "450px"}}>Cursos</h2>
 
                 <div className={css.quad}>
-
-                    <div className={css.qqqq}></div>
-                    <div className={css.qqqq}></div>
-                    <div className={css.qqqq}></div>
-                    <div className={css.qqqq}></div>
-                    <div className={css.qqqq}></div>
-                    <div className={css.qqqq}></div>
-                    <div className={css.qqqq}></div>
-                    <div className={css.qqqq}></div>
-
+                    <div className={css.qqqq}>
+                        <Slider {...carouselSettings} className={css.carousel}>
+                            <div className={css.carouselItem}><img src="/1.png" alt="Slide 1" className={css.carouselImage}/></div>
+                            <div className={css.carouselItem}><img src="/2.png" alt="Slide 2" className={css.carouselImage}/></div>
+                            <div className={css.carouselItem}><img src="/3.png" alt="Slide 3" className={css.carouselImage}/></div>
+                            <div className={css.carouselItem}><img src="/4.png" alt="Slide 4" className={css.carouselImage}/></div>
+                            <div className={css.carouselItem}><img src="/5.png" alt="Slide 5" className={css.carouselImage}/></div>
+                        </Slider>
+                    </div>
                 </div>
-
                 <h2 id={css.cadastrosd}>Cadastros</h2>
 
                 <div className={css.cadss}>

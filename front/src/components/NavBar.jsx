@@ -12,7 +12,7 @@ function NavBar() {
                     <a className={css.navLink} href="/dashboard">Home</a>
                 </li>
                 <li className={css.navItem}>
-                    <a className={css.navLink} href="/src/pages/Calendario">Calendário</a>
+                    <a className={css.navLink} href="/Calendario">Calendário</a>
                 </li>
                 <li className={css.navItem}>
                     <a className={css.navLink} href="/cadastro">Cadastro</a>
