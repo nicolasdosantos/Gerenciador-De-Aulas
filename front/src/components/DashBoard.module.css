@@ -90,7 +90,7 @@ footer {
     color: rgb(102, 105, 124);
     position: relative;
     right: 448px;
-    top: 60px;
+    top: 39px;
 }
 
 .qazul{
@@ -107,7 +107,7 @@ footer {
 }
 .cadss{
     position: relative;
-    top: 70px;
+    top: 55px;
     right: -2px;
     display: flex;
     gap: 91px;
@@ -126,7 +126,7 @@ footer {
 }
 .qbranco{
     position: relative;
-    top: 70px;
+    top: 55px;
     right: -2px;
     display: flex;
     gap: 91px;

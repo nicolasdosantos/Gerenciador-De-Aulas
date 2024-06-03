@@ -67,7 +67,7 @@ const DashBoard = () => {
                 </div>
 
                 <footer>
-                    <img src="/lEARN.png" style={{width: "212px", display: "flex", alignItems: "center", justifyContent: "center", position: "relative", top: "118px"}}/>
+                    <img src="/lEARN.png" style={{width: "212px", display: "flex", alignItems: "center", justifyContent: "center", position: "relative", top: "83px"}}/>
                 </footer>
             </div>
         </div>
