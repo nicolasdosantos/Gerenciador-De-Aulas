@@ -4,9 +4,9 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
 
+import NavBarPerfil from "../components/NavBarPerfil";
 import NavBar from "../components/NavBar";
 import style5 from '../components/Calendario.module.css';
-
 // feriados do Brasil
 import Hd from 'date-holidays';
 
@@ -30,15 +30,15 @@ function Calendario() {
     const [showPrograList, setShowPrograList] = useState(false);
 
     // Função para lidar com cliques em dias
-    function handleDateClick(arg) {
+    function handleDateClick() {
         setShowPrograList(true);
     }
 
     return (
-        <div className={style5.calendario}>
+        <div className={style5.principal}>
             <NavBar />
 
-            <div className={style5.content}>
+            <div className={style5.calendario}>
                 <h1 style={{ fontSize: '40px' }}>Calendario</h1>
 
                 <div className={style5.calendarContainer}>
@@ -78,28 +78,7 @@ function Calendario() {
                 </div>
             </div>
 
-            <div className={style5.prograDia}>
-                <h2 className={style5.tituloProgra}>Programação do dia:</h2>
-
-                <div className={style5.prograList} style={{ display: showPrograList ? 'block' : 'none' }}>
-                    <div className={style5.prograDiv}>
-                        <div className={style5.prograItemImage}>
-                            <img src="/sino.png" alt="sino" style={{ width: '50px', height: '50px' }} />
-                        </div>
-
-                        <div className={style5.prograItem}>
-                            <p className={style5.prograTextT}>Desenvolvimento de sistemas</p>
-                            <p className={style5.prograTextC}>Python</p>
-
-                            <div className={style5.prograTextoDiv}>
-                                <p className={style5.prograTextS}>Sala 2</p>
-                                <p className={style5.prograTextH}>07:30</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            <NavBarPerfil showPrograList={showPrograList}/>
         </div>
     );
 }
