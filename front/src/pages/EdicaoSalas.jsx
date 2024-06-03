@@ -15,7 +15,7 @@ function EdicaoSalas(){
                         <BtnCadastro nome="Voltar" />
                     </div>
                     <div className={css.divdireita}>
-                        <TituloCadastro titulo="Cadastro de" titulo2="Classes" />
+                        <TituloCadastro titulo="Edição de" titulo2="Classes" />
                         <div className={css.divinput}>
                             <div className={css.inputs}>
                                 <InputCadastro nome="Número: " />
