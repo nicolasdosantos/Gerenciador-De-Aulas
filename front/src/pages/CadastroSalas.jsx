@@ -5,6 +5,8 @@ import BtnCadastro from "../components/BtnCadastro";
 import TituloCadastro from "../components/TituloCadastro";
 import InputCadastro from "../components/InputCadastro";
 
+import NavBarPerfil from "../components/NavBarPerfil";
+
 function CadastroSalas() {
     return (
         <div className="App">
@@ -27,6 +29,8 @@ function CadastroSalas() {
                     </div>
                 </div>
             </Banner>
+
+            <NavBarPerfil />
         </div>
     );
 }

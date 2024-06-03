@@ -16,9 +16,9 @@ function Login() {
     };
 
     return (
-        <div className={css.container + " login"}>
-            <Card style={{width: '20rem', height: '28rem', boxShadow: '10px 10px 20px rgba(0, 0, 0, 0.1)', backgroundColor: 'white', borderRadius: '14px'}}>
-                <img className={css.loginImg} src="/lEARNadm.png" alt="Logo"/>
+        <div className={`${css.container} login`}>
+            <Card style={{ width: '20rem', height: '25rem', boxShadow: 'rgba(0, 0, 0, 0.1) 10px 10px 20px', backgroundColor: 'white', borderRadius: '14px' }}>
+                <Card.Img variant="top" src="/lEARNadm.png" alt="Logo" className={css.loginImg} />
                 <Card.Body>
                     <div className={css.espacao}></div>
                     <div className="">
