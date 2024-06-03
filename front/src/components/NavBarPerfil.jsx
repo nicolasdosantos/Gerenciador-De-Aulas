@@ -13,7 +13,7 @@ function NavBarPerfil({ showPrograList }) {
 
             <div className={style5.logoNav}>
                 <button onClick={togglePerfil}>
-                    <img src="/logoCoruja.png" alt="banner" className={style5.botaoImg}/>
+                    <img src="/logoCoruja.png" alt="banner" className={style5.botaoImgLogo}/>
                 </button>
             </div>
 

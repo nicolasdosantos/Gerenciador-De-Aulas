@@ -13,10 +13,7 @@
 
 .principal {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-
+    flex-direction: row;
 }
 
 .logoNav {
@@ -24,13 +21,15 @@
     display: flex;
     justify-content: center;
     margin: 10px 0;
-    box-shadow: -3px 7px 8px -2px rgba(0,0,0,0.30);
+}
+
+.botaoImgLogo {
+    
 }
 
 .principalPerfil {
     margin-top: 20px;
     width: 80%;
-    box-shadow: -3px 7px 8px -2px rgba(0,0,0,0.30);
 }
 
 .perfil {
