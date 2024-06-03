@@ -57,6 +57,8 @@
 
 .inputP{
     background-color: #ECEFF5;
+    height: 35px;
+    width: 15vw
 }
 
 .grid {
@@ -82,16 +84,23 @@
     gap: 80px;
 }
 
+.terceiroBlocoDireita{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.segundoBlocoEsquerda{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
 @media (max-width: 768px) {
-    .card {
-        grid-template-columns: 1fr;
-    }
-
-    .grid {
-        grid-template-columns: 1fr;
-    }
-
-    .divdireita, .divesquerda {
-        align-items: flex-start;
+    .terceiroBlocoDireita,
+    .segundoBlocoEsquerda,
+    .inputP{
+        display: block;
+        width: 34.5vw;
     }
 }
