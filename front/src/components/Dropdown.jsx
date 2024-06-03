@@ -41,7 +41,7 @@ function Dropdown({ title, items, redirectPath }) {
                                             <Card.Footer>
                                                 <small className={css.textmuted}>{item.date}</small>
                                             </Card.Footer>
-                                            <button onClick={handleAddItem} className={css.addButton}>Adicionar
+                                            <button onClick={handleAddItem} className={css.addButton}>{item.buttin}
                                             </button>
                                         </Card>
                                     </CardGroup>

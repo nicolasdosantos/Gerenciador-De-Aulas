@@ -43,7 +43,7 @@ const DashBoard = () => {
                 <h2 style={{color: "rgb(102, 105, 124)", position: "relative", right: "464px", top: "28px"}}>Cursos</h2>
 
                 <div className={css.scrollContainer}>
-                    {[...Array(10)].map((_, index) => (
+                    {[...Array(20)].map((_, index) => (
                         <div className={css.qqqq} key={index}>
                             <img src={`/image${index + 1}.png`} alt={`Card ${index + 1}`} className={css.cardImage} />
                         </div>
@@ -66,10 +66,10 @@ const DashBoard = () => {
                     <div id={css.cad}>14 cadastrados</div>
                 </div>
 
+                <footer>
+                    <img src="/lEARN.png" style={{width: "212px", display: "flex", alignItems: "center", justifyContent: "center", position: "relative", top: "118px"}}/>
+                </footer>
             </div>
-            <footer>
-                <img style={{width: "100px", position: "relative", top:"185px",left:"50px"}} src="/lEARN.png"/>
-            </footer>
         </div>
     );
 };

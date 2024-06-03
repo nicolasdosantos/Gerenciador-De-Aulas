@@ -83,15 +83,17 @@ border-radius: 7px;
     font-family: "Poppins", sans-serif;
     opacity: 60%;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 13px;
 }
 .cardizin{
     background-color: #fff;
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
+    height: 263px;
 }
 .addButton{
+    top: 15px;
     background-color: #8C52FF;
     width: 180px;
     height: 25px;

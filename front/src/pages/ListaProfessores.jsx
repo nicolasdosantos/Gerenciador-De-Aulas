@@ -10,19 +10,22 @@ function ListaProfessores() {
             name: "Marla Prates Fernandes",
             email: "MarlaPratesFernandes@gmail.com",
             image: "/imgTeste.jpg",
-            button: "/materia"
+            button: "/materia",
+            buttin: "Adicionar professor"
         },
         {
             name: "João Silva",
             email: "JoãoSilva@gmail.com",
             image: "/imgTeste.jpg",
-            button: "/materia"
+            button: "/materia",
+            buttin: "Adicionar professor"
         },
         {
             name: "Ana Souza",
             email: "AnaSouza@gmail.com",
             image: "/imgTeste.jpg",
-            button: "/materia"
+            button: "/materia",
+            buttin: "Adicionar professor"
         }
     ];
 
@@ -31,19 +34,22 @@ function ListaProfessores() {
             name: "Course 1",
             image: "/imgTeste.jpg",
             date: "Seg,Ter",
-            button: "/materia"
+            button: "/materia",
+            buttin: "Adicionar curso"
         },
         {
             name: "Course 2",
             image: "/imgTeste.jpg",
             date: "Seg,Ter",
-            button: "/materia"
+            button: "/materia",
+            buttin: "Adicionar curso"
         },
         {
             name: "Course 3",
             image: "/imgTeste.jpg",
             date: "Seg,Ter",
-            button: "/materia"
+            button: "/materia",
+            buttin: "Adicionar curso"
         }
     ];
 
@@ -54,21 +60,24 @@ function ListaProfessores() {
             professor: "subject1@example.com",
             nif: "S0123456789",
             image: "/imgTeste.jpg",
-            footer: "Subject ID: S0123456789"
+            footer: "Subject ID: S0123456789",
+            buttin: "Adicionar matéria"
         },
         {
             name: "Subject 2",
             email: "subject2@example.com",
             nif: "S9876543210",
             image: "/imgTeste.jpg",
-            footer: "Subject ID: S9876543210"
+            footer: "Subject ID: S9876543210",
+            buttin: "Adicionar matéria"
         },
         {
             name: "Subject 3",
             email: "subject1@example.com",
             nif: "S0123456789",
             image: "/imgTeste.jpg",
-            footer: "Subject ID: S0123456789"
+            footer: "Subject ID: S0123456789",
+            buttin: "Adicionar matéria"
         }
     ];
 
@@ -77,19 +86,22 @@ function ListaProfessores() {
             name: "Room 1",
             nif: "R0123456789",
             image: "/imgTeste.jpg",
-            footer: "Room ID: R0123456789"
+            footer: "Room ID: R0123456789",
+            buttin: "Adicionar sala"
         },
         {
             name: "Room 2",
             nif: "R9876543210",
             image: "/imgTeste.jpg",
-            footer: "Room ID: R9876543210"
+            footer: "Room ID: R9876543210",
+            buttin: "Adicionar sala"
         },
         {
             name: "Room 3",
             nif: "R9876543210",
             image: "/imgTeste.jpg",
-            footer: "Room ID: R9876543210"
+            footer: "Room ID: R9876543210",
+            buttin: "Adicionar sala"
         }
     ];
 
@@ -99,21 +111,24 @@ function ListaProfessores() {
             email: "student1@example.com",
             nif: "ST0123456789",
             image: "/imgTeste.jpg",
-            footer: "Student ID: ST0123456789"
+            footer: "Student ID: ST0123456789",
+            buttin: "Adicionar aluno"
         },
         {
             name: "Student 2",
             email: "student2@example.com",
             nif: "ST9876543210",
             image: "/imgTeste.jpg",
-            footer: "Student ID: ST9876543210"
+            footer: "Student ID: ST9876543210",
+            buttin: "Adicionar aluno"
         },
         {
             name: "Student 3",
             email: "student2@example.com",
             nif: "ST9876543210",
             image: "/imgTeste.jpg",
-            footer: "Student ID: ST9876543210"
+            footer: "Student ID: ST9876543210",
+            buttin: "Adicionar aluno"
         }
     ];
 
