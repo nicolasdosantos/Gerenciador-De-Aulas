@@ -76,9 +76,9 @@ function Calendario() {
                         ))}
                     </div>
                 </div>
-            </div>
 
-            <NavBarPerfil showPrograList={showPrograList}/>
+                <NavBarPerfil showPrograList={showPrograList}/>
+            </div>
         </div>
     );
 }

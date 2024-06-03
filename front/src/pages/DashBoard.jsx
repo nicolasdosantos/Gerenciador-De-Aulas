@@ -5,8 +5,6 @@ import Slider from 'react-slick';
 import NavBar from "../components/NavBar";
 import css from "../components/DashBoard.module.css";
 
-import NavBarPerfil from "../components/NavBarPerfil";
-
 const DashBoard = () => {
     const settings = {
         dots: false,
@@ -73,7 +71,7 @@ const DashBoard = () => {
                 </footer>
             </div>
 
-            <NavBarPerfil />
+
         </div>
     );
 };
