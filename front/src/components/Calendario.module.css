@@ -8,7 +8,7 @@
     --branco: #fff;
     --cinza-claro: #F0F0F0;
     --cinza-escuro: #8A8C98;
-    --preto: #000
+    --preto: #000;
 }
 
 .principal {
@@ -17,7 +17,7 @@
 
 .calendario {
     padding: 20px;
-    margin-left: 210px;
+    margin-left: 245px;
     background-color: var(--cinza-claro);
 }
 

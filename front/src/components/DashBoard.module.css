@@ -10,7 +10,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 210px;
+    margin-left: 264px;
+    width: 77%;
 }
 
 .sliderContainer {
@@ -23,7 +24,8 @@
     font-size: 30px;
     position: relative;
     right: 270px;
-    color: #262A41
+    color: #262A41;
+    margin-left: 20px;
 }
 
 .slide {
@@ -62,13 +64,14 @@ footer {
     border-radius: 8px;
 }
 .scrollContainer {
+    margin-left: -9px;
     display: flex;
-    height: 122px;
+    height: 124px;
     margin-top: 31px;
     overflow-x: auto;
-    width: 94%;
+    width: 99%;
     padding: 10px 0;
-    gap: 10px;
+    gap: 11px;
 }
 
 .scrollContainer::-webkit-scrollbar {
@@ -89,8 +92,8 @@ footer {
 #cadastrosd{
     color: rgb(102, 105, 124);
     position: relative;
-    right: 448px;
-    top: 39px;
+    right: 438px;
+    top: 30px;
 }
 
 .qazul{
@@ -107,10 +110,10 @@ footer {
 }
 .cadss{
     position: relative;
-    top: 55px;
-    right: -2px;
+    top: 37px;
+    right: 1px;
     display: flex;
-    gap: 91px;
+    gap: 83px;
 }
 #cad{
     font-family: "Poppins", sans-serif;
@@ -126,10 +129,10 @@ footer {
 }
 .qbranco{
     position: relative;
-    top: 55px;
-    right: -2px;
+    top: 39px;
+    right: 1px;
     display: flex;
-    gap: 91px;
+    gap: 83px;
     padding: 4px;
 }
 

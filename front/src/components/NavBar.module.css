@@ -8,7 +8,7 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 44px;
-    width: 120px;
+    width: 155px;
     font-family: "Poppins", sans-serif;
     height: 100vh;
     position: fixed;
@@ -20,18 +20,20 @@
 .logozinha {
     width: 151px;
     height: auto;
-    position: relative;
-    top: -27px;
-    right: 21px;
+    margin-top: -15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 62px;
 }
 
 .navbarNav .navItem {
     position: relative;
-    top: -100px;
+    top: -72px;
     margin-bottom: 12px;
     font-size: 20px;
     opacity: 80%;
+    margin-left: 13px;
 }
 
 .navbarNav .navLink {
@@ -43,7 +45,8 @@
     text-decoration: underline;
 }
 #sair{
+    top: 296px;
     position: relative;
+    font-weight: bold;
     bottom: -300px;
-    align-self: flex-end;
 }

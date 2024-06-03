@@ -11,21 +11,24 @@ function ListaCadastros() {
             email: "MarlaPratesFernandes@gmail.com",
             image: "/imgTeste.jpg",
             button: "/materia",
-            buttin: "Adicionar professor"
+            buttin: "Adicionar professor",
+            editButton: "/edicaoProfessores"
         },
         {
             name: "João Silva",
             email: "JoãoSilva@gmail.com",
             image: "/imgTeste.jpg",
             button: "/materia",
-            buttin: "Adicionar professor"
+            buttin: "Adicionar professor",
+            editButton: "/edicaoProfessores"
         },
         {
             name: "Ana Souza",
             email: "AnaSouza@gmail.com",
             image: "/imgTeste.jpg",
             button: "/materia",
-            buttin: "Adicionar professor"
+            buttin: "Adicionar professor",
+            editButton: "/edicaoProfessores"
         }
     ];
 
@@ -35,21 +38,24 @@ function ListaCadastros() {
             image: "/imgTeste.jpg",
             date: "Seg,Ter",
             button: "/materia",
-            buttin: "Adicionar curso"
+            buttin: "Adicionar curso",
+            editButton: "/edicaoCurso"
         },
         {
             name: "Course 2",
             image: "/imgTeste.jpg",
             date: "Seg,Ter",
             button: "/materia",
-            buttin: "Adicionar curso"
+            buttin: "Adicionar curso",
+            editButton: "/edicaoCurso"
         },
         {
             name: "Course 3",
             image: "/imgTeste.jpg",
             date: "Seg,Ter",
             button: "/materia",
-            buttin: "Adicionar curso"
+            buttin: "Adicionar curso",
+            editButton: "/edicaoCurso"
         }
     ];
 
@@ -61,7 +67,8 @@ function ListaCadastros() {
             nif: "S0123456789",
             image: "/imgTeste.jpg",
             footer: "Subject ID: S0123456789",
-            buttin: "Adicionar matéria"
+            buttin: "Adicionar matéria",
+            editButton: "/edicaoMateria"
         },
         {
             name: "Subject 2",
@@ -69,7 +76,8 @@ function ListaCadastros() {
             nif: "S9876543210",
             image: "/imgTeste.jpg",
             footer: "Subject ID: S9876543210",
-            buttin: "Adicionar matéria"
+            buttin: "Adicionar matéria",
+            editButton: "/edicaoMateria"
         },
         {
             name: "Subject 3",
@@ -77,7 +85,8 @@ function ListaCadastros() {
             nif: "S0123456789",
             image: "/imgTeste.jpg",
             footer: "Subject ID: S0123456789",
-            buttin: "Adicionar matéria"
+            buttin: "Adicionar matéria",
+            editButton: "/edicaoMateria"
         }
     ];
 
@@ -87,21 +96,24 @@ function ListaCadastros() {
             nif: "R0123456789",
             image: "/imgTeste.jpg",
             footer: "Room ID: R0123456789",
-            buttin: "Adicionar sala"
+            buttin: "Adicionar sala",
+            editButton: "/edicaoSalas"
         },
         {
             name: "Room 2",
             nif: "R9876543210",
             image: "/imgTeste.jpg",
             footer: "Room ID: R9876543210",
-            buttin: "Adicionar sala"
+            buttin: "Adicionar sala",
+            editButton: "/edicaoSalas"
         },
         {
             name: "Room 3",
             nif: "R9876543210",
             image: "/imgTeste.jpg",
             footer: "Room ID: R9876543210",
-            buttin: "Adicionar sala"
+            buttin: "Adicionar sala",
+            editButton: "/edicaoSalas"
         }
     ];
 
@@ -112,7 +124,8 @@ function ListaCadastros() {
             nif: "ST0123456789",
             image: "/imgTeste.jpg",
             footer: "Student ID: ST0123456789",
-            buttin: "Adicionar aluno"
+            buttin: "Adicionar aluno",
+            editButton: "/edicaoAlunos"
         },
         {
             name: "Student 2",
@@ -120,7 +133,8 @@ function ListaCadastros() {
             nif: "ST9876543210",
             image: "/imgTeste.jpg",
             footer: "Student ID: ST9876543210",
-            buttin: "Adicionar aluno"
+            buttin: "Adicionar aluno",
+            editButton: "/edicaoAlunos"
         },
         {
             name: "Student 3",
@@ -128,7 +142,8 @@ function ListaCadastros() {
             nif: "ST9876543210",
             image: "/imgTeste.jpg",
             footer: "Student ID: ST9876543210",
-            buttin: "Adicionar aluno"
+            buttin: "Adicionar aluno",
+            editButton: "/edicaoAlunos"
         }
     ];
 
