@@ -3,7 +3,7 @@ import css from "./BtnCadastro.module.css"
 function BtnCadastro(props){
     return(
         <div>
-            <button className={css.btn}>{props.nome}</button>
+            <button style={props.css} className={css.btn}>{props.nome}</button>
         </div>
     )
 }
