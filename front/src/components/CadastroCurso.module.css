@@ -105,7 +105,6 @@
 
 @media (max-width: 771px) {
     .primeiroBlocoDireita,
-    .blocosDireita,
     .segundoBlocoDireita,
     .terceiroBlocoDireita{
         display: block;

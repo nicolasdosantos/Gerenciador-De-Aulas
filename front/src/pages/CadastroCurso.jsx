@@ -11,7 +11,7 @@ function CadastroCurso(){
             <Banner>
                 <div className={css.divdireita}>
                     <TituloCadastro titulo="Cadastro de Curso" css={{margin: 0, marginBottom: 15}}/>
-                    <div style={{display: "grid", gridTemplateColumns: "3fr 2fr", gap: 20}} className={css.blocosDireita}>
+                    <div style={{display: "grid", gridTemplateColumns: "3fr 2fr", gap: 20}}>
                         <div>
                             <div className={css.primeiroBlocoDireita}>
                                 <InputCadastro css={{background: "#ECEFF5", height: "35px"}}
