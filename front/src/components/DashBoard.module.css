@@ -71,17 +71,15 @@ footer {
     height: 100px;
 }
 .quad{
-    margin-left: -90px;
     position: relative;
     display: flex;
     flex-direction: row;
-    gap: 40px;
     gap: 50px;
     top: 20px;
     overflow-x: auto;
-    width: 100%;
+    width: 90%;
     align-items: center;
-    margin-left: 90px;
+    margin-left: 0;
 }
 #cadastrosd{
     position: relative;

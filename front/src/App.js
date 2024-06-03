@@ -34,6 +34,7 @@ function App() {
 
               <Route element={<CadastroProfessores/>} path="/professores"/>
               <Route element={<EdicaoProfessores/>} path="/edicaoProfessores"/>
+              <Route element={<ListaProfessores/>} path="/lista-professores"/>
 
               <Route element={<CadastroCurso/>} path="/curso"/>
               <Route element={<EdicaoCurso/>} path="/edicaoCurso"/>
@@ -46,8 +47,6 @@ function App() {
               <Route element={<Calendario/>} path="/calendario"/>
 
               <Route element={<NotFoundPage/>} path="/*"/>
-
-              <Route element={<ListaProfessores/>} path="/lista-professores"/>
 
           </Routes>
       </BrowserRouter>
