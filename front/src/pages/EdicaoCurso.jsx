@@ -1,68 +1,62 @@
-import Banner from "../components/Banner";
-import CardCadastroGrande from "../components/CardCadastroGrande";
-import style3 from "../components/CardCadastroGrande.module.css";
+import css from "./CadastroCurso.module.css";
+import TituloCadastro from "../components/TituloCadastro";
+import InputCadastro from "../components/InputCadastro";
+import BtnCadastro from "../components/BtnCadastro";
 import React from "react";
+import Banner from "../components/Banner";
 
 function CadastroCurso(){
-    return(
-        <div className="App">
+    return (
+        <div style={{display: "grid", gridTemplateColumns: "1fr 1fr"}}>
             <Banner>
-                <CardCadastroGrande nome={"Curso"} nome2={"Edição de"}>
-                    <div style={{width: '50%'}}>
-
-                        <div className={style3.formGroup}>
-                            <input type="text" placeholder="Nome do curso"/>
-                            <input type="file"/>
+                <div className={css.divdireita}>
+                    <TituloCadastro titulo="Edição de Curso" css={{margin: 0, marginBottom: 15}} ></TituloCadastro>
+                    <div style={{display: "grid", gridTemplateColumns: "3fr 2fr", gap: 20}}>
+                        <div>
+                            <div style={{display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 15, marginBottom: "10px"}}>
+                                <InputCadastro css={{background: "#ECEFF5", height: "35px"}}
+                                               nome="Nome do curso: "/>
+                                <InputCadastro tipo="file"  nome="Capa:"></InputCadastro>
+                                <InputCadastro css={{background: "#ECEFF5", height: "35px"}} nome="Duração do curso:"/>
+                            </div>
+                            <div style={{display: "grid", gridTemplateColumns: "1fr 1fr ", gap: 10,marginBottom: "10px"}}>
+                                <InputCadastro css={{background: "#ECEFF5", height: "35px"}} className={css.inputP}
+                                               tipo="date" nome="Data - Início: "/>
+                                <InputCadastro css={{background: "#ECEFF5", height: "35px"}} tipo="date"
+                                               nome="Data - Término: "/>
+                            </div>
+                            <div style={{display: "grid", gridTemplateColumns: "1fr 1fr ", gap: 10,marginBottom: "10px"}}>
+                                <InputCadastro css={{background: "#ECEFF5", height: "35px"}} className={css.inputP}
+                                               tipo="date" nome="Ferias - Início: "/>
+                                <InputCadastro css={{background: "#ECEFF5", height: "35px"}} tipo="date"
+                                               nome="Ferias - Término: "/>
+                            </div>
+                            <BtnCadastro css={{width: "49.8vw", height: "7vh"}} nome="Cadastrar"></BtnCadastro>
                         </div>
+                        <div className={css.pessoas}>
+                            <div>
+                                <h2>Professores:</h2>
+                                <select className={css.select}>
+                                    <option>Selecione um Professor</option>
+                                    <option>Lais</option>
+                                    <option>Igor</option>
+                                </select>
+                            </div>
+                            <div>
+                                <h2>Alunos:</h2>
+                                <select className={css.select}>
+                                    <option>Selecione um Professor</option>
+                                    <option>Nicolas</option>
+                                    <option>Alexandre</option>
+                                    <option>Murilo</option>
+                                    <option>Caue</option>
+                                </select>
+                            </div>
 
-                        <div className={style3.formGroup}>
-                            <input type="date" placeholder="Data - Início"/>
-                            <input type="date" placeholder="Data - Término"/>
-                        </div>
-
-                        <div className={style3.formGroup}>
-                            <input type="date" placeholder="Férias - Início"/>
-                            <input type="date" placeholder="Férias - Término"/>
-                        </div>
-
-                        <div className={style3.formGroup}>
-                            <input type="date" placeholder="Férias - Início"/>
-                            <input type="date" placeholder="Férias - Término"/>
-                        </div>
-
-                        <div className={style3.periodo}>
-                            <button>S</button>
-                            <button>T</button>
-                            <button>Q</button>
-                            <button>Q</button>
-                            <button>S</button>
-                            <button>S</button>
-                            <button>D</button>
-                        </div>
-
-                        <button className={style3.botao}>Salvar</button>
-
-                    </div>
-                    <div style={{width: '50%', margin: "30px"}}>
-                        <div className={style3.formGroup} style={{flexDirection: "column", marginTop: "-45px"}}>
-                            <p>Professores</p>
-                            <select style={{width: '100%'}}>
-                                <option>Selecione um professor</option>
-                                <option>Laís Sinatra</option>
-                                <option>Fernando Silva</option>
-                            </select>
-                        </div>
-
-                        <div className={style3.formGroup} style={{flexDirection: "column"}}>
-                            <p>Participantes</p>
-                            <select style={{width: '100%'}}>
-                                <option>Selecione um participante</option>
-                                <option>Cauê Barbosa</option>
-                                <option>Matheus Polato</option>
-                            </select>
                         </div>
                     </div>
-                </CardCadastroGrande>
+
+                </div>
             </Banner>
         </div>
     )
