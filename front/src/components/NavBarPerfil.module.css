@@ -18,6 +18,10 @@
     box-shadow: -3px 7px 8px -2px rgba(0,0,0,0.30);
 }
 
+.logoNav {
+
+}
+
 .principalPerfil {
     margin-top: 20px;
 }
@@ -28,12 +32,8 @@
 }
 
 .perfilNome {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 20px;
+    font-size: 23px;
     font-weight: bold;
-    justify-content: center;
 }
 
 .botao {
