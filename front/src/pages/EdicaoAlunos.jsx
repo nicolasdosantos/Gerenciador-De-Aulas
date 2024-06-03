@@ -17,7 +17,7 @@ function EdicaoAlunos() {
                             </div>
                             <div className={css.divdireita}>
                                 <div>
-                                    <TituloCadastro titulo="Cadastro de" titulo2="Alunos"/>
+                                    <TituloCadastro titulo="Edição de" titulo2="Alunos"/>
                                 </div>
                                 <div className={css.inputs}>
                                     <div >
