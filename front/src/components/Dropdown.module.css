@@ -3,6 +3,8 @@
 .container {
     display: flex;
     margin: 10px;
+    position: relative;
+    top: 70px;
 }
 .imgzinha{
 width: 230px;

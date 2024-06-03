@@ -6,8 +6,8 @@ function navBarPerfil({showPrograList}) {
         <div className={style5.principal}>
 
             <div className={style5.logoNav}>
-                <img src="/perfil.png" alt="banner"
-                     style={{width: '20px', height: '20px'}}/>
+                <button><img src="/logoCoruja.png" alt="banner" className={style5.botaoImg}/>
+                </button>
             </div>
 
             <div className={style5.principalPerfil}>
@@ -17,7 +17,7 @@ function navBarPerfil({showPrograList}) {
                     <p className={style5.perfilNome}>Gustavo Donato</p>
                     <p style={{color: '#8A8C98', marginBottom: '10px', fontSize: '18px'}}>Administrador</p>
 
-                    <button className={style5.botao}><img src="/mais.png" alt="banner" className={style5.botaoImg}/>
+                    <button className={style5.botao}><img src="/maisRoxo.png" alt="banner" className={style5.botaoImg}/>
                         Criar
                     </button>
                 </div>
