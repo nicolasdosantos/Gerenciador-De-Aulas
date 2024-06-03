@@ -7,7 +7,7 @@ function InputCadastro(props){
                 <label>{props.nome}</label>
             </div>
             <div >
-                <input type={props.tipo} className={css.inputs} />
+                <input style={props.css} type={props.tipo} className={css.inputs} />
             </div>
         </div>
     )
