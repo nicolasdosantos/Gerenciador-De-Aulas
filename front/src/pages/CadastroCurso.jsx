@@ -11,21 +11,21 @@ function CadastroCurso(){
             <Banner>
                 <div className={css.divdireita}>
                     <TituloCadastro titulo="Cadastro de Curso" css={{margin: 0, marginBottom: 15}}/>
-                    <div style={{display: "grid", gridTemplateColumns: "3fr 2fr", gap: 20}}>
+                    <div style={{display: "grid", gridTemplateColumns: "3fr 2fr", gap: 20}} className={css.blocosDireita}>
                         <div>
-                            <div style={{display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 15, marginBottom: "10px"}}>
+                            <div className={css.primeiroBlocoDireita}>
                                 <InputCadastro css={{background: "#ECEFF5", height: "35px"}}
                                                nome="Nome do curso: "/>
                                 <InputCadastro tipo="file"  nome="Capa:"></InputCadastro>
                                 <InputCadastro css={{background: "#ECEFF5", height: "35px"}} nome="Duração do curso:"/>
                             </div>
-                            <div style={{display: "grid", gridTemplateColumns: "1fr 1fr ", gap: 10,marginBottom: "10px"}}>
+                            <div className={css.segundoBlocoDireita}>
                                 <InputCadastro css={{background: "#ECEFF5", height: "35px"}} className={css.inputP}
                                                tipo="date" nome="Data - Início: "/>
                                 <InputCadastro css={{background: "#ECEFF5", height: "35px"}} tipo="date"
                                                nome="Data - Término: "/>
                             </div>
-                            <div style={{display: "grid", gridTemplateColumns: "1fr 1fr ", gap: 10,marginBottom: "10px"}}>
+                            <div className={css.terceiroBlocoDireita}>
                                 <InputCadastro css={{background: "#ECEFF5", height: "35px"}} className={css.inputP}
                                                tipo="date" nome="Ferias - Início: "/>
                                 <InputCadastro css={{background: "#ECEFF5", height: "35px"}} tipo="date"
