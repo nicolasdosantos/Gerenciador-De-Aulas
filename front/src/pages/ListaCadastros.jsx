@@ -1,10 +1,10 @@
-// ListaProfessores.js
+// ListaCadastros.js
 import React from "react";
 import NavBar from "../components/NavBar";
 import Dropdown from "../components/Dropdown";
 import css from '../components/ListaProfessores.module.css';
 
-function ListaProfessores() {
+function ListaCadastros() {
     const professors = [
         {
             name: "Marla Prates Fernandes",
@@ -160,4 +160,4 @@ function ListaProfessores() {
     );
 }
 
-export default ListaProfessores;
+export default ListaCadastros;
