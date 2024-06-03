@@ -3,18 +3,26 @@
     margin: 0;
 }
 
-.calendario {
+:root {
+    --cor-principal: #8C52FF;
+    --branco: #fff;
+    --cinza-claro: #F0F0F0;
+    --cinza-escuro: #8A8C98;
+    --preto: #000
+}
+
+.principal {
     display: flex;
 }
 
-.content {
+.calendario {
     padding: 20px;
     margin-left: 210px;
-    background-color: #F0F0F0;
+    background-color: var(--cinza-claro);
 }
 
 .calendarContainer {
-    background: #fff;
+    background-color: var(--branco);
     border-radius: 25px;
     padding: 20px;
     margin-top: 20px;
@@ -28,7 +36,7 @@
 .tituloHoliday {
     margin-top: 25px;
     font-size: 25px;
-    color: #8A8C98;
+    color: var(--cinza-escuro);
     margin-left: 10px;
 }
 
@@ -58,7 +66,7 @@
     width: 100%;
     margin-left: 15px;
     flex-direction: column;
-    background-color: #fff;
+    background: var(--branco);
 }
 
 .holidayItemImage {
@@ -69,7 +77,7 @@
     padding: 10px;
     box-shadow: -3px 7px 8px -2px rgba(0,0,0,0.40);
     margin-left: 10px;
-    background-color: #fff;
+    background: var(--branco);
 }
 
 .holidayImage {
@@ -87,70 +95,4 @@
 
 .holidayItemNovo {
     width: 48%;
-}
-
-
-
-.tituloProgra {
-    font-size: 25px;
-    margin-left: 5px;
-    color: #8A8C98
-}
-
-.prograDia {
-    border-left: 1px solid;
-    padding: 20px;
-}
-
-.prograList {
-    margin-top: 15px;
-    height: 600px;
-    overflow: auto;
-}
-
-.prograDiv {
-    display: flex;
-    width: 100%;
-}
-
-.prograItemImage {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: -3px 7px 8px -2px rgba(0,0,0,0.30);
-    margin-left: 5px;
-}
-
-.prograItem {
-    margin-bottom: 20px;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: -3px 7px 8px -2px rgba(0,0,0,0.30);
-    width: 100%;
-    margin-left: 15px;
-    color: #000;
-}
-
-.prograTextoDiv {
-    display: flex;
-    justify-content: space-between;
-}
-
-.prograTextT {
-    font-weight: bold;
-}
-
-.prograTextC {
-    color: #9799A4;
-}
-
-.prograTextS {
-    color: #8C52FF;
-}
-
-.prograTextH {
-    color: #8C52FF;
-    font-size: 20px;
-    font-weight: bold;
 }

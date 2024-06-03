@@ -1,11 +1,10 @@
+// Dropdown.js
 import React, { useState } from "react";
-import NavBar from "../components/NavBar";
-import css from './ListaProfessores.module.css';
+import css from './Dropdown.module.css';
 import Card from 'react-bootstrap/Card';
-import ScrollBar from "./ScrollBar";
 import CardGroup from 'react-bootstrap/CardGroup';
 
-function ListaProfessores() {
+function Dropdown({ title, items }) { // Adicionando parâmetros title e items
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     const toggleDropdown = () => {
@@ -14,28 +13,27 @@ function ListaProfessores() {
 
     return (
         <div className={css.container}>
-            <NavBar />
             <div className={css.content}>
-                <h2 className={css.titulozin}>Cadastros:</h2>
+
                 <div className={css.dropdown}>
                     <button onClick={toggleDropdown} className={css.dropdownButton}>
-                        Professores:
+                        {title}
                     </button>
                     {isDropdownOpen && (
                         <div className={css.dropdownContent}>
                             <div className={css.cardContainer}>
-                                {Array.from({ length: 3 }).map((_, idx) => (
-                                    <CardGroup>
+                                {items.map((item, idx) => (
+                                    <CardGroup key={idx}>
                                         <Card className={css.cardizin}>
-                                            <Card.Img variant="top" src="/download.jpg" />
+                                            <Card.Img variant="top" src={item.image} />
                                             <Card.Body>
-                                                <Card.Title id={css.nomePro}>Marla Prates Fernandes</Card.Title>
+                                                <Card.Title id={css.nomePro}>{item.name}</Card.Title>
                                                 <Card.Text id={css.email}>
-                                                    marlaprates@gmail.com
+                                                    {item.email}
                                                 </Card.Text>
                                             </Card.Body>
                                             <Card.Footer>
-                                                <small className={css.textmuted}>NIF: 0123456789</small>
+                                                <small className={css.textmuted}>{item.footer}</small>
                                             </Card.Footer>
                                         </Card>
                                     </CardGroup>
@@ -49,4 +47,4 @@ function ListaProfessores() {
     );
 }
 
-export default ListaProfessores;
+export default Dropdown;

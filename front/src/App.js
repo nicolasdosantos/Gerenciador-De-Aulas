@@ -14,7 +14,9 @@ import Login from "./pages/Login";
 import NotFoundPage from "./pages/NotFoundPage";
 import Calendario from "./pages/Calendario";
 import DashBoard from "./pages/DashBoard";
-import ListaProfessores from "./components/ListaProfessores";
+import Dropdown from "./components/Dropdown";
+import ListaProfessores from "./pages/ListaProfessores";
+
 
 function App() {
 

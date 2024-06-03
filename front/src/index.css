@@ -17,4 +17,33 @@ code {
     monospace;
 }
 
+/*============== ESTILIZAÇÂO CALENDARIO ===================*/
+.fc-direction-ltr .fc-button-group > .fc-button:not(:last-child),
+.fc-direction-ltr .fc-button-group > .fc-button:not(:first-child),
+.fc-direction-ltr .fc-toolbar > * > :not(:first-child){
+  background-color: #8C52FF;
+  border: none;
+  box-shadow: -3px 7px 8px -4px rgba(0,0,0,0.80);
+  margin-left: 5px;
+}
+
+.fc .fc-daygrid-day-frame:hover {
+  background-color: #F0F0F0;
+  cursor: pointer;
+}
+
+.fc-day-sun .fc-daygrid-day-number,
+.fc-day-sat .fc-daygrid-day-number {
+  color: #FF0000;
+}
+
+.fc-day-today {
+  background-color: rgba(199, 171, 236, 0.75) !important; /* roxo mais claro */
+}
+
+.fc .fc-daygrid-day-number {
+  color: #000;
+}
+/*=================================*/
+
 
