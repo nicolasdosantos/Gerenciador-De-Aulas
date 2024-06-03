@@ -8,22 +8,29 @@
     --branco: #fff;
     --cinza-claro: #F0F0F0;
     --cinza-escuro: #8A8C98;
-    --preto: #000
+    --preto: #000;
 }
 
 .principal {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    box-shadow: -3px 7px 8px -2px rgba(0,0,0,0.30);
+
 }
 
 .logoNav {
-
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    box-shadow: -3px 7px 8px -2px rgba(0,0,0,0.30);
 }
 
 .principalPerfil {
     margin-top: 20px;
+    width: 80%;
+    box-shadow: -3px 7px 8px -2px rgba(0,0,0,0.30);
 }
 
 .perfil {
