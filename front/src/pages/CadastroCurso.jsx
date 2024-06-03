@@ -17,7 +17,7 @@ function CadastroCurso(){
                                 <InputCadastro css={{background: "#ECEFF5", height: "35px"}}
                                                nome="Nome do curso: "/>
                                 <InputCadastro tipo="file"  nome="Capa:"></InputCadastro>
-                                <InputCadastro css={{background: "#ECEFF5", height: "35px"}} nome="Duração do curso:"/>
+                                <InputCadastro css={{background: "#ECEFF5", height: "35px"}} tipo="number" nome="Duração do curso:"/>
                             </div>
                             <div className={css.segundoBlocoDireita}>
                                 <InputCadastro css={{background: "#ECEFF5", height: "35px"}} className={css.inputP}
