@@ -1,4 +1,4 @@
-import css from "./CadastroCurso.module.css";
+import css from "../components/CadastroCurso.module.css";
 import TituloCadastro from "../components/TituloCadastro";
 import InputCadastro from "../components/InputCadastro";
 import BtnCadastro from "../components/BtnCadastro";
@@ -10,7 +10,7 @@ function CadastroCurso(){
         <div style={{display: "grid", gridTemplateColumns: "1fr 1fr"}}>
             <Banner>
                 <div className={css.divdireita}>
-                    <TituloCadastro titulo="Cadastro de Curso" css={{margin: 0, marginBottom: 15}} ></TituloCadastro>
+                    <TituloCadastro titulo="Cadastro de Curso" css={{margin: 0, marginBottom: 15}}/>
                     <div style={{display: "grid", gridTemplateColumns: "3fr 2fr", gap: 20}}>
                         <div>
                             <div style={{display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 15, marginBottom: "10px"}}>
