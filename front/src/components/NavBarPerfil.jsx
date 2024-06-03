@@ -1,14 +1,14 @@
-import Calendario from "../pages/Calendario";
 import style5 from '../components/NavBarPerfil.module.css';
-import React, {useState} from "react";
 
-function navBarPerfil(showPrograList) {
+function navBarPerfil({showPrograList}) {
+
     return (
         <div className={style5.principal}>
-            <div className={style5.programa}>
+
+            <div className={style5.principalPerfil}>
                 <div className={style5.perfil}>
-                    <img src="/banner.png" alt="banner"
-                         style={{width: '140px', height: '140px', borderRadius: '70px'}}/>
+                    <img src="/perfil.png" alt="banner"
+                             style={{width: '140px', height: '140px', borderRadius: '70px'}}/>
 
                     <div className={style5.perfilNome}>
                         <p>Gustavo Donato</p>
@@ -16,15 +16,14 @@ function navBarPerfil(showPrograList) {
                              style={{width: '15px', height: '15px'}}/>
                     </div>
 
-                    <p style={{color: '#8A8C98'}}>Administrador</p>
+                    <p style={{color: '#8A8C98', marginBottom: '10px', fontSize: '17px'}}>Administrador</p>
 
-                    <button className={style5.botao}><img src="/banner.png" alt="banner" className={style5.botaoImg}/>
+                    <button className={style5.botao}><img src="/mais.png" alt="banner" className={style5.botaoImg}/>
                         Criar
                     </button>
                 </div>
 
                 <h2 className={style5.tituloProgra}>Programação do dia:</h2>
-
                 <div className={style5.prograList} style={{ display: showPrograList ? 'block' : 'none' }}>
                     <div className={style5.prograDiv}>
                         <div className={style5.prograItemImage}>
@@ -43,7 +42,6 @@ function navBarPerfil(showPrograList) {
                     </div>
                 </div>
             </div>
-
         </div>
     );
 }
