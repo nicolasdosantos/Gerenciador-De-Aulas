@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from "../components/Banner";
-import css from "./CadastroProfessores.module.css";
+import css from "../components/CadastroProfessores.module.css";
 import BtnCadastro from "../components/BtnCadastro";
 import TituloCadastro from "../components/TituloCadastro";
 import InputCadastro from "../components/InputCadastro";

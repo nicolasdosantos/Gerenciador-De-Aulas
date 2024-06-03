@@ -55,7 +55,6 @@ const DashBoard = () => {
                     <div className={css.qqqq}></div>
                     <div className={css.qqqq}></div>
 
-
                 </div>
 
                 <h2 id={css.cadastrosd}>Cadastros</h2>
@@ -73,8 +72,6 @@ const DashBoard = () => {
                     <div id={css.cad3}>08 cadastrados</div>
                     <div id={css.cad4}>14 cadastrados</div>
                 </div>
-
-
 
             </div>
             <footer>

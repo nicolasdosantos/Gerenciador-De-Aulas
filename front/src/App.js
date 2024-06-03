@@ -47,7 +47,6 @@ function App() {
 
               <Route element={<ListaProfessores/>} path="/lista-professores"/>
 
-
           </Routes>
       </BrowserRouter>
   );
