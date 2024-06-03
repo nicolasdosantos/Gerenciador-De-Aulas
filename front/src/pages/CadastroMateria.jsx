@@ -49,13 +49,15 @@ function CadastroCurso(){
                                     <InputCadastro css={{background: "#ECEFF5", height: "35px", width: "15vw"}} className={css.inputP} tipo="time" nome="Horário - Início: "/>
                                 </div>
                                 <div>
-                                    <h1 style={{fontSize: "20px"}}>Salas:</h1>
+                                    <h1 style={{fontSize: "20px"}}>Turno:</h1>
                                     <select className={css.select} style={{width: "17vw"}}>
-                                        <option>Selecione um Professor</option>
-                                        <option>Nicolas</option>
-                                        <option>Alexandre</option>
-                                        <option>Murilo</option>
-                                        <option>Caue</option>
+                                        <option>Selecione um turno</option>
+                                        <option>Manhã</option>
+                                        <option>Tarde</option>
+                                        <option>Noite</option>
+                                        <option>Matutino (Manhã e Tarde)</option>
+                                        <option>Vespertino (Tarde e Noite)</option>
+                                        <option>Manhã e Noite</option>
                                     </select>
                                 </div>
                             </div>
