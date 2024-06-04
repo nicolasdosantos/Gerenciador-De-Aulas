@@ -30,7 +30,6 @@ function CadastroSalas() {
                 </div>
             </Banner>
 
-            <NavBarPerfil />
         </div>
     );
 }

@@ -23,7 +23,7 @@ function CheckBoxDias(props){
                     <input type="checkbox"/>Sexta
                 </div>
                 <div>
-                    <input type="checkbox"/>Sabado
+                    <input type="checkbox"/>Sábado
                 </div>
             </div>
         </div>

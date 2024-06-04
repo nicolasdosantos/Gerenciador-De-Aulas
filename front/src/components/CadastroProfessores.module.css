@@ -10,9 +10,9 @@
     background-color: white;
     border-radius: 15px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.7fr 2fr;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
-    width: 100%;
+    width: 70vw;
     max-width: 1200px;
     margin: 20px;
 }
@@ -39,7 +39,7 @@
 }
 
 .divesquerda img {
-    max-width: 100%;
+    max-width: 25vw;
     height: auto;
 }
 
