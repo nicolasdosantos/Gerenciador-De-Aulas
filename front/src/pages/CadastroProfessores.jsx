@@ -4,6 +4,7 @@ import css from "../components/CadastroProfessores.module.css";
 import BtnCadastro from "../components/BtnCadastro";
 import TituloCadastro from "../components/TituloCadastro";
 import InputCadastro from "../components/InputCadastro";
+import CheckBoxDias from "../components/CheckBoxDias";
 
 function CadastroProfessores() {
     return (
@@ -25,7 +26,7 @@ function CadastroProfessores() {
                                 <InputCadastro tipo="date" nome="Data de Nascimento: " />
                             </div>
                             <div className={css.grid}>
-                                <InputCadastro nome="Carga horária: " />
+                                <InputCadastro nome="Carga horária: " tipo="number" />
                                 <div>
                                     <h1 style={{fontSize: 17, fontWeight: "normal",}}>Turno:</h1>
                                     <select className={css.select}>
@@ -38,6 +39,9 @@ function CadastroProfessores() {
                                         <option>Manhã e Noite</option>
                                     </select>
                                 </div>
+                            </div>
+                            <div>
+                                <CheckBoxDias titulo="Dias de trabalho:"></CheckBoxDias>
                             </div>
                         </div>
                         <BtnCadastro nome="Cadastrar"></BtnCadastro>

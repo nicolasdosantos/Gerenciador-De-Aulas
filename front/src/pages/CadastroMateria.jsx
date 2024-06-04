@@ -4,6 +4,7 @@ import InputCadastro from "../components/InputCadastro";
 import BtnCadastro from "../components/BtnCadastro";
 import React from "react";
 import Banner from "../components/Banner";
+import CheckBoxDias from "../components/CheckBoxDias";
 
 function CadastroCurso(){
     return (
@@ -17,19 +18,25 @@ function CadastroCurso(){
                                 <InputCadastro css={{background: "#ECEFF5", height: "35px", width: "34vw"}}
                                                nome="Nome do curso: "/>
                             </div>
-                            <div style={{display: "flex", flexDirection: "column", gap: 10,marginBottom: "10px"}}>
+                            <div style={{display: "flex", flexDirection: "column", gap: 10, marginBottom: "10px"}}>
                                 <h2>Salas:</h2>
                                 <select className={css.select}>
-                                    <option>Selecione um Professor</option>
-                                    <option>Lais</option>
-                                    <option>Igor</option>
+                                    <option>Selecione uma sala</option>
+                                    <option>Informatica</option>
+                                    <option>Biblioteca</option>
+                                    <option>Sala 5</option>
                                 </select>
                             </div>
                             <div className={css.terceiroBlocoDireita}>
-                                <InputCadastro css={{background: "#ECEFF5", height: "35px", width: "16.5vw"}} className={css.inputP}
+                                <InputCadastro css={{background: "#ECEFF5", height: "35px", width: "16.5vw"}}
+                                               className={css.inputP}
                                                tipo="time" nome="Horário - Início: "/>
-                                <InputCadastro css={{background: "#ECEFF5", height: "35px", width: "16.7vw"}} tipo="time"
+                                <InputCadastro css={{background: "#ECEFF5", height: "35px", width: "16.7vw"}}
+                                               tipo="time"
                                                nome="Horário - Término: "/>
+                            </div>
+                            <div>
+                                <CheckBoxDias titulo="Dias de trabalho:"></CheckBoxDias>
                             </div>
                             <BtnCadastro css={{width: "34vw", height: "7vh"}} nome="Cadastrar"></BtnCadastro>
                         </div>
@@ -46,7 +53,7 @@ function CadastroCurso(){
                             </div>
                             <div className={css.segundoBlocoEsquerda}>
                                 <div>
-                                    <InputCadastro className={css.inputP} tipo="time" nome="Horário - Início: "/>
+                                    <InputCadastro className={css.inputP} tipo="number" nome="Carga horaria: "/>
                                 </div>
                                 <div>
                                     <h1 style={{fontSize: "20px"}}>Turno:</h1>

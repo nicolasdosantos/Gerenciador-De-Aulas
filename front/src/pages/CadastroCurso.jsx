@@ -4,6 +4,7 @@ import InputCadastro from "../components/InputCadastro";
 import BtnCadastro from "../components/BtnCadastro";
 import React from "react";
 import Banner from "../components/Banner";
+import CheckBoxDias from "../components/CheckBoxDias";
 
 function CadastroCurso(){
     return (
@@ -16,8 +17,9 @@ function CadastroCurso(){
                             <div className={css.primeiroBlocoDireita}>
                                 <InputCadastro css={{background: "#ECEFF5", height: "35px"}}
                                                nome="Nome do curso: "/>
-                                <InputCadastro tipo="file"  nome="Capa:"></InputCadastro>
-                                <InputCadastro css={{background: "#ECEFF5", height: "35px"}} tipo="number" nome="Duração do curso:"/>
+                                <InputCadastro tipo="file" nome="Capa:"></InputCadastro>
+                                <InputCadastro css={{background: "#ECEFF5", height: "35px"}} tipo="number"
+                                               nome="Duração do curso:"/>
                             </div>
                             <div className={css.segundoBlocoDireita}>
                                 <InputCadastro css={{background: "#ECEFF5", height: "35px"}} className={css.inputP}
@@ -30,6 +32,9 @@ function CadastroCurso(){
                                                tipo="date" nome="Ferias - Início: "/>
                                 <InputCadastro css={{background: "#ECEFF5", height: "35px"}} tipo="date"
                                                nome="Ferias - Término: "/>
+                            </div>
+                            <div>
+                                <CheckBoxDias titulo="Dias de trabalho:"></CheckBoxDias>
                             </div>
                             <BtnCadastro css={{width: "49.8vw", height: "7vh"}} nome="Cadastrar"></BtnCadastro>
                         </div>
