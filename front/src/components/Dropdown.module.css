@@ -136,3 +136,6 @@ border-radius: 7px;
 #card-footer{
     margin-top: -23px;
 }
+.editIcon a {
+    color: white !important;
+}
