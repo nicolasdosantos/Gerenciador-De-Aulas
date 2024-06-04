@@ -11,6 +11,27 @@
     --preto: #000;
 }
 
+/*SCROOLSBARS========================*/
+.holidayList::-webkit-scrollbar {
+    width: 10px;
+}
+
+.holidayList::-webkit-scrollbar-track {
+    background: var(--cinza-claro);
+    border-radius: 5px;
+}
+
+.holidayList::-webkit-scrollbar-thumb {
+    background-color: var(--cor-principal);
+    border-radius: 5px;
+    border: 2px solid var(--cinza-claro);
+}
+
+.holidayList::-webkit-scrollbar-thumb:hover {
+    background-color: var(--preto);
+}
+/*=======================*/
+
 .principal {
     display: flex;
 }
@@ -34,10 +55,10 @@
 }
 
 .tituloHoliday {
-    margin-top: 25px;
+    margin: 15px;
     font-size: 25px;
     color: var(--cinza-escuro);
-    margin-left: 10px;
+    margin-left: 0;
 }
 
 .holidayListsContainer {

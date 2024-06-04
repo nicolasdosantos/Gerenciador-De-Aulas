@@ -165,10 +165,6 @@
     justify-content: center;
     cursor: pointer;
 }
-.dropdownButton {
-    transition: transform 1.5s ease;
-}
-
-.dropdownButton::after {
-    transform: translateY(5px);
+.container{
+    max-width: 10%;
 }
