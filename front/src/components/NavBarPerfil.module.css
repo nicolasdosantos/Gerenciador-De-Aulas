@@ -13,24 +13,20 @@
 
 .principal {
     background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 20px;
-    height: 100vh;
     position: fixed;
+    padding: 20px;
     top: 0;
     right: 0;
     z-index: 1;
 }
 
 .logoNav {
-
+    display: flex;
+    height: 100vh;
 }
 
 .principalPerfil {
-
+    height: 100vh;
 }
 
 
@@ -81,8 +77,7 @@
 }
 
 .imgLogo {
-    width: 50px;
-    height: 50px;
+    width: 80px;
 }
 
 .imgVoltar {
@@ -90,14 +85,10 @@
     height: 25px;
 }
 
-
-
-
-
-
-
-
-
+.card {
+    background-color: var(--cor-principal);
+    padding: 20px;
+}
 
 
 /*PROGRAMA*/

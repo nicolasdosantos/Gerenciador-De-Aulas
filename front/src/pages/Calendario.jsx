@@ -11,7 +11,7 @@ import style5 from '../components/Calendario.module.css';
 import Hd from 'date-holidays';
 
 // Função para obter os feriados do Brasil
-function getBrazilianHolidays(year) {
+function getBrasilHolidays(year) {
     const hd = new Hd('BR');
     const holidays = hd.getHolidays(year);
 
@@ -23,10 +23,10 @@ function getBrazilianHolidays(year) {
 }
 
 function Calendario() {
-    // Estado para armazenar os eventos
-    const [events, setEvents] = useState(getBrazilianHolidays(2024));
+    // Estado para armazenar os feriados
+    const [events, setEvents] = useState(getBrasilHolidays(2024));
 
-    // Estado para controlar a visibilidade da prograList
+    // Estado para controlar a visibilidade da programaçãoLista
     const [showPrograList, setShowPrograList] = useState(false);
 
     // Função para lidar com cliques em dias
@@ -53,31 +53,50 @@ function Calendario() {
                         }}
                         events={events}
                         height="auto"
-                        dateClick={handleDateClick} // Adicionando a função de clique no dia
+                        dateClick={handleDateClick}
                     />
                 </div>
 
                 <div>
                     <h2 className={style5.tituloHoliday}>Feriados e ponto facultativo:</h2>
-                    <div className={style5.holidayList}>
-                        {events.map((event, index) => (
-                            <div className={style5.holidayItemNovo} key={index}>
+
+                    <div className={style5.holidayListsContainer}>
+                        <div className={style5.holidayList}>
+                            {events.map((event, index) => (
+                                <div className={style5.holidayItemNovo} key={index}>
+                                    <div className={style5.holidayContent}>
+                                        <div className={style5.holidayItemImage}>
+                                            <img src="/casinha.png" alt="casinha" className={style5.holidayImage}/>
+                                        </div>
+
+                                        <div className={style5.holidayItem}>
+                                            <span className={style5.holiday}>{event.title}</span>
+                                            <span className={style5.holidayData}>{new Date(event.date).toLocaleDateString('pt-BR')}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+
+                        <div className={style5.holidayList}>
+                            <div className={style5.holidayItemNovo}>
                                 <div className={style5.holidayContent}>
                                     <div className={style5.holidayItemImage}>
-                                        <img src="/casinha.png" alt="casinha" className={style5.holidayImage} />
+                                        <img src="/casinha.png" alt="casinha" className={style5.holidayImage}/>
                                     </div>
 
                                     <div className={style5.holidayItem}>
-                                        <span className={style5.holiday}>{event.title}</span>
-                                        <span className={style5.holidayData}>{new Date(event.date).toLocaleDateString('pt-BR')}</span>
+                                        <span className={style5.holiday}>Ponto facultativo</span>
+                                        <span className={style5.holidayData}>aaa</span>
                                     </div>
                                 </div>
                             </div>
-                        ))}
+                        </div>
+
                     </div>
                 </div>
 
-                <NavBarPerfil showPrograList={showPrograList}/>
+                <NavBarPerfil showPrograList={showPrograList} isCalendario={true}/>
             </div>
         </div>
     );

@@ -1,40 +1,59 @@
 import style5 from '../components/NavBarPerfil.module.css';
 import React, { useState } from 'react';
 
-function NavBarPerfil({ showPrograList }) {
-    const [showPerfil, setShowPerfil] = useState(false);
+function NavBarPerfil({ showPrograList, isCalendario }) {
+    const [exibirPerfil, setExibirPerfil] = useState(isCalendario);
+    const [exibirCard, setExibirCard] = useState(false);
 
     const togglePerfil = () => {
-        setShowPerfil(!showPerfil);
+        if (!isCalendario) {
+            setExibirPerfil(!exibirPerfil);
+        }
+    };
+    const toggleCard = () => {
+        setExibirCard(!exibirCard);
     };
 
     return (
         <div className={style5.principal}>
 
-            {!showPerfil && (
+            {!exibirPerfil && !isCalendario && (
                 <div className={style5.logoNav}>
                     <button onClick={togglePerfil} className={style5.botaoImgLogo}>
-                        <img src="/banner.png" alt="bannerLogo" className={style5.imgLogo}/>
+                        <img src="/logoCorujaEmPng.png" alt="bannerLogo" className={style5.imgLogo}/>
                     </button>
                 </div>
             )}
 
-            {showPerfil && (
+            {exibirPerfil && (
                 <div className={style5.principalPerfil}>
-                    <button onClick={togglePerfil} className={style5.botaoImgVoltar}>
-                        <img src="/banner.png" alt="bannerVoltar" className={style5.imgVoltar}/>
-                    </button>
+                    {!isCalendario && (
+                        <button onClick={togglePerfil} className={style5.botaoImgVoltar}>
+                            <img src="/banner.png" alt="bannerVoltar" className={style5.imgVoltar}/>
+                        </button>
+                    )}
 
                     <div className={style5.perfil}>
-                        <img src="/perfil.png" alt="perfil" style={{width: '150px', height: '150px', borderRadius: '70px'}}/>
+                        <img src="/perfilPng.png" alt="perfil" style={{width: '150px', height: '150px', borderRadius: '70px'}}/>
 
                         <p className={style5.perfilNome}>Gustavo Donato</p>
                         <p style={{color: '#8A8C98', marginBottom: '10px', fontSize: '18px'}}>Administrador</p>
 
-                        <button className={style5.botao}>
-                            <img src="/maisRoxo.png" alt="banner" className={style5.botaoImg}/>
-                            Criar
-                        </button>
+                        <div>
+                            <button className={style5.botao} onClick={toggleCard}>
+                                <img src="/maisRoxo.png" alt="banner" className={style5.botaoImg}/>
+                                Criar
+                            </button>
+                            
+                            {exibirCard && (
+                                <div className={style5.card}>
+                                    <button className={style5.cardBotao}>Botão 1</button>
+                                    <button className={style5.cardBotao}>Botão 2</button>
+                                    <button className={style5.cardBotao}>Botão 3</button>
+                                    <button className={style5.cardBotao}>Botão 4</button>
+                                </div>
+                            )}
+                        </div>
                     </div>
 
                     <h2 className={style5.tituloProgra}>Programação do dia:</h2>
@@ -57,7 +76,6 @@ function NavBarPerfil({ showPrograList }) {
                     </div>
                 </div>
             )}
-
         </div>
     );
 }

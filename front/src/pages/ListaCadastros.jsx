@@ -40,7 +40,7 @@ function ListaCadastros() {
             date: "Seg, Ter",
             image: "/imgTeste.jpg",
             button: "/materia",
-            buttin: "Adicionar curso",
+            buttin: "Adicionar matéria",
             editButton: "/edicaoCurso"
         },
         {
@@ -48,7 +48,7 @@ function ListaCadastros() {
             date: "Qua, Qui",
             image: "/imgTeste.jpg",
             button: "/materia",
-            buttin: "Adicionar curso",
+            buttin: "Adicionar matéria",
             editButton: "/edicaoCurso"
         },
         {
@@ -56,7 +56,7 @@ function ListaCadastros() {
             date: "Sex",
             image: "/imgTeste.jpg",
             button: "/materia",
-            buttin: "Adicionar curso",
+            buttin: "Adicionar matéria",
             editButton: "/edicaoCurso"
         }
     ];

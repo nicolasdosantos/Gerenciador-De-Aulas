@@ -1,15 +1,9 @@
 .titulo{
-    font-size: 60px;
-    margin: -30px;
+    font-size: 54px;
+    margin: 4px;
     font-weight: bold;
-    margin-top: -22px;
-}
-
-.titulo2{
-    font-size: 70px;
-    margin: 0px;
-    color: #8C52FF;
-    font-weight: bold;
+    margin-top: -9px;
+    color: #8C52FF
 }
 
 @media (max-width: 768px) {

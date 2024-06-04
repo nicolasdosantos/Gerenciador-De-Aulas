@@ -14,17 +14,17 @@ function EdicaoProfessores() {
                         <BtnCadastro nome="Voltar"></BtnCadastro>
                     </div>
                     <div className={css.divdireita}>
-                        <TituloCadastro titulo="Edição de" titulo2="Professor"></TituloCadastro>
+                        <TituloCadastro titulo="Edição de Professores"></TituloCadastro>
                         <div className={css.inputs}>
-                            <InputCadastro nome="Nome: " />
-                            <InputCadastro nome="Email: " />
-                            <InputCadastro nome="CPF: " />
+                            <InputCadastro nome="Nome "/>
+                            <InputCadastro nome="Email "/>
+                            <InputCadastro nome="CPF "/>
                             <div className={css.grid}>
-                                <InputCadastro nome="NIF: " />
-                                <InputCadastro tipo="date" nome="Data de Nascimento: " />
+                                <InputCadastro nome="NIF "/>
+                                <InputCadastro tipo="date" nome="Data de Nascimento "/>
                             </div>
                             <div className={css.grid}>
-                                <InputCadastro nome="Carga horária: " />
+                                <InputCadastro nome="Carga horária "/>
                                 <div>
                                     <h1 style={{fontSize: 17, fontWeight: "normal"}}>Turno</h1>
                                     <select className={css.select}>

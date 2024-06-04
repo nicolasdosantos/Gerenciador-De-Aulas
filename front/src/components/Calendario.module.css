@@ -12,7 +12,7 @@
 }
 
 .principal {
-    /*display: flex;*/
+    display: flex;
 }
 
 .calendario {
@@ -40,16 +40,18 @@
     margin-left: 10px;
 }
 
+.holidayListsContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 650px;
+}
+
 .holidayList {
-    margin-top: 15px;
     list-style-type: none;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    width: 48%;
     height: 200px;
     overflow: auto;
-    width: 650px;
 }
 
 .holidayContent {
@@ -92,5 +94,5 @@
 }
 
 .holidayItemNovo {
-    width: 48%;
+    width: 100%;
 }
