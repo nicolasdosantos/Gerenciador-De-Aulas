@@ -1,4 +1,3 @@
-// ListaCadastros.js
 import React from "react";
 import NavBar from "../components/NavBar";
 import Dropdown from "../components/Dropdown";
@@ -8,7 +7,8 @@ function ListaCadastros() {
     const professors = [
         {
             name: "Marla Prates Fernandes",
-            email: "MarlaPratesFernandes@gmail.com",
+            nif: "123456789",
+            turno: "manhã",
             image: "/imgTeste.jpg",
             button: "/materia",
             buttin: "Adicionar professor",
@@ -16,7 +16,8 @@ function ListaCadastros() {
         },
         {
             name: "João Silva",
-            email: "JoãoSilva@gmail.com",
+            nif: "987654321",
+            turno: "tarde",
             image: "/imgTeste.jpg",
             button: "/materia",
             buttin: "Adicionar professor",
@@ -24,7 +25,8 @@ function ListaCadastros() {
         },
         {
             name: "Ana Souza",
-            email: "AnaSouza@gmail.com",
+            nif: "567891234",
+            turno: "noite",
             image: "/imgTeste.jpg",
             button: "/materia",
             buttin: "Adicionar professor",
@@ -35,24 +37,24 @@ function ListaCadastros() {
     const courses = [
         {
             name: "Course 1",
+            date: "Seg, Ter",
             image: "/imgTeste.jpg",
-            date: "Seg,Ter",
             button: "/materia",
             buttin: "Adicionar curso",
             editButton: "/edicaoCurso"
         },
         {
             name: "Course 2",
+            date: "Qua, Qui",
             image: "/imgTeste.jpg",
-            date: "Seg,Ter",
             button: "/materia",
             buttin: "Adicionar curso",
             editButton: "/edicaoCurso"
         },
         {
             name: "Course 3",
+            date: "Sex",
             image: "/imgTeste.jpg",
-            date: "Seg,Ter",
             button: "/materia",
             buttin: "Adicionar curso",
             editButton: "/edicaoCurso"
@@ -62,9 +64,7 @@ function ListaCadastros() {
     const subjects = [
         {
             name: "Subject 1",
-            email: "subject2@example.com",
-            professor: "subject1@example.com",
-            nif: "S0123456789",
+            professor: "Course 1",
             image: "/imgTeste.jpg",
             footer: "Subject ID: S0123456789",
             buttin: "Adicionar matéria",
@@ -72,8 +72,7 @@ function ListaCadastros() {
         },
         {
             name: "Subject 2",
-            email: "subject2@example.com",
-            nif: "S9876543210",
+            professor: "Course 2",
             image: "/imgTeste.jpg",
             footer: "Subject ID: S9876543210",
             buttin: "Adicionar matéria",
@@ -81,8 +80,7 @@ function ListaCadastros() {
         },
         {
             name: "Subject 3",
-            email: "subject1@example.com",
-            nif: "S0123456789",
+            professor: "Course 3",
             image: "/imgTeste.jpg",
             footer: "Subject ID: S0123456789",
             buttin: "Adicionar matéria",
@@ -93,7 +91,7 @@ function ListaCadastros() {
     const rooms = [
         {
             name: "Room 1",
-            nif: "R0123456789",
+            description: "Sala de Aula 101",
             image: "/imgTeste.jpg",
             footer: "Room ID: R0123456789",
             buttin: "Adicionar sala",
@@ -101,7 +99,7 @@ function ListaCadastros() {
         },
         {
             name: "Room 2",
-            nif: "R9876543210",
+            description: "Laboratório de Química",
             image: "/imgTeste.jpg",
             footer: "Room ID: R9876543210",
             buttin: "Adicionar sala",
@@ -109,7 +107,7 @@ function ListaCadastros() {
         },
         {
             name: "Room 3",
-            nif: "R9876543210",
+            description: "Biblioteca",
             image: "/imgTeste.jpg",
             footer: "Room ID: R9876543210",
             buttin: "Adicionar sala",
@@ -120,8 +118,6 @@ function ListaCadastros() {
     const students = [
         {
             name: "Student 1",
-            email: "student1@example.com",
-            nif: "ST0123456789",
             image: "/imgTeste.jpg",
             footer: "Student ID: ST0123456789",
             buttin: "Adicionar aluno",
@@ -129,8 +125,6 @@ function ListaCadastros() {
         },
         {
             name: "Student 2",
-            email: "student2@example.com",
-            nif: "ST9876543210",
             image: "/imgTeste.jpg",
             footer: "Student ID: ST9876543210",
             buttin: "Adicionar aluno",
@@ -138,8 +132,6 @@ function ListaCadastros() {
         },
         {
             name: "Student 3",
-            email: "student2@example.com",
-            nif: "ST9876543210",
             image: "/imgTeste.jpg",
             footer: "Student ID: ST9876543210",
             buttin: "Adicionar aluno",
