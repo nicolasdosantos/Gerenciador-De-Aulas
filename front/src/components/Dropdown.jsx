@@ -46,20 +46,23 @@ function Dropdown({ title, items, redirectPath }) {
                                             <Card.Img variant="top" src={item.image} className={css.imgzinha} />
                                             <Card.Body>
                                                 <Card.Title id={css.nomePro}>{item.name}</Card.Title>
-                                                <Card.Text id={css.email}>
-                                                    {item.email}
-                                                </Card.Text>
+                                                {item.nif && <Card.Text id={css.email}>NIF: {item.nif}</Card.Text>}
+                                                {item.turno && <Card.Text id={css.email}>Turno: {item.turno}</Card.Text>}
+                                                {item.date && <Card.Text id={css.email}>Dia do curso: {item.date}</Card.Text>}
+                                                {item.professor && <Card.Text id={css.email}>Curso: {item.professor}</Card.Text>}
+                                                {item.description && <Card.Text id={css.email}>Descrição: {item.description}</Card.Text>}
                                                 <div className={css.buttonContainer}>
                                                     <button onClick={handleAddItem} className={css.addButton}>
                                                         {item.buttin}
                                                     </button>
-                                                    <button onClick={() => handleDeleteItem(idx)} className={css.deleteButton}>
+                                                    <button onClick={() => handleDeleteItem(idx)}
+                                                            className={css.deleteButton}>
                                                         <FaTrashAlt />
                                                     </button>
                                                 </div>
                                             </Card.Body>
                                             <Card.Footer>
-                                                <small className={css.textmuted}>{item.date}</small>
+                                                <small className={css.textmuted}>{item.email}</small>
                                             </Card.Footer>
                                         </Card>
                                     </CardGroup>
