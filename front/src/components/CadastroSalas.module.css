@@ -5,7 +5,8 @@
     background-color: white;
     border-radius: 15px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.6fr 2fr;
+    width: 70vw;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
     margin: 0 auto; /* Centraliza o card */
 }
@@ -30,7 +31,7 @@
 }
 
 .divesquerda img {
-    height: 20vh; /* Reduzi o tamanho para melhor adaptação em telas menores */
+    height: 25vh; /* Reduzi o tamanho para melhor adaptação em telas menores */
     max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
 }
 

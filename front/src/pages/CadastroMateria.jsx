@@ -11,7 +11,7 @@ function CadastroCurso(){
         <div style={{display: "grid", gridTemplateColumns: "1fr 1fr"}}>
             <Banner>
                 <div className={css.divdireita}>
-                    <TituloCadastro titulo="Cadastro de Materia" css={{margin: 0, marginBottom: 15}}/>
+                    <TituloCadastro titulo="Cadastro de Matéria" css={{margin: 0, marginBottom: 15}}/>
                     <div style={{display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20}}>
                         <div>
                             <div style={{gap: 15, marginBottom: "10px"}}>
@@ -19,7 +19,7 @@ function CadastroCurso(){
                                                nome="Nome do curso: "/>
                             </div>
                             <div style={{display: "flex", flexDirection: "column", gap: 10, marginBottom: "10px"}}>
-                                <h2>Salas:</h2>
+                                <h2 style={{ fontSize: "18px", fontWeight: "normal" }}>Salas:</h2>
                                 <select className={css.select}>
                                     <option>Selecione uma sala</option>
                                     <option>Informatica</option>
@@ -42,7 +42,7 @@ function CadastroCurso(){
                         </div>
                         <div className={css.pessoas}>
                             <div>
-                                <h2>Professores:</h2>
+                                <h2 style={{ fontSize: "18px", fontWeight: "normal" }} >Professores:</h2>
                                 <select className={css.select}>
                                     <option>Selecione um Professor</option>
                                     <option>Nicolas</option>
@@ -53,11 +53,11 @@ function CadastroCurso(){
                             </div>
                             <div className={css.segundoBlocoEsquerda}>
                                 <div>
-                                    <InputCadastro className={css.inputP} tipo="number" nome="Carga horaria: "/>
+                                    <InputCadastro css={{background: "#ECEFF5", height: "6vh", width: "16.7vw"}} className={css.inputP} tipo="number" nome="Carga horária: "/>
                                 </div>
                                 <div>
-                                    <h1 style={{fontSize: "20px"}}>Turno:</h1>
-                                    <select className={css.select} style={{width: "17vw"}}>
+                                    <h1 style={{fontSize: "18px", fontWeight: "normal"}}>Turno:</h1>
+                                    <select className={css.select} style={{width: "17vw", height: "6vh"}}>
                                         <option>Selecione um turno</option>
                                         <option>Manhã</option>
                                         <option>Tarde</option>

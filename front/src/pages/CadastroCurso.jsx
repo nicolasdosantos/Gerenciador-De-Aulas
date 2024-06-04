@@ -40,7 +40,7 @@ function CadastroCurso(){
                         </div>
                         <div className={css.pessoas}>
                             <div>
-                                <h2>Professores:</h2>
+                                <h2 style={{fontSize: "18px", fontWeight: "normal"}}>Professores:</h2>
                                 <select className={css.select}>
                                     <option>Selecione um Professor</option>
                                     <option>Lais</option>
@@ -48,7 +48,7 @@ function CadastroCurso(){
                                 </select>
                             </div>
                             <div>
-                                <h2>Alunos:</h2>
+                                <h2 style={{fontSize: "18px", fontWeight: "normal"}}>Alunos:</h2>
                                 <select className={css.select}>
                                     <option>Selecione um Professor</option>
                                     <option>Nicolas</option>
