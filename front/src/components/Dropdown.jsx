@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import css from './Dropdown.module.css';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
-import { FaTrashAlt, FaEdit } from 'react-icons/fa';
+import { FaTrashAlt, FaEdit, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 function Dropdown({ title, items, redirectPath }) {
@@ -29,7 +29,8 @@ function Dropdown({ title, items, redirectPath }) {
             <div className={css.content}>
                 <div className={css.dropdown}>
                     <button onClick={toggleDropdown} className={css.dropdownButton}>
-                        {title}
+                        <span className={css.dropdownTitle}>{title}</span>
+                        <span className={css.dropdownIcon}>{isDropdownOpen ? <FaChevronUp /> : <FaChevronDown />}</span>
                     </button>
                     {isDropdownOpen && (
                         <div className={css.dropdownContent}>
@@ -38,7 +39,7 @@ function Dropdown({ title, items, redirectPath }) {
                                     <CardGroup key={idx}>
                                         <div className={css.editIcon}>
                                             <Link to={item.editButton}>
-                                                <FaEdit />
+                                                <FaEdit style={{ color: 'white' }} />
                                             </Link>
                                         </div>
                                         <Card className={css.cardizin}>
