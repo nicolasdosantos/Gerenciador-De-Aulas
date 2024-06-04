@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import css from './Dropdown.module.css';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
-import { FaTrashAlt, FaEdit } from 'react-icons/fa';
+import { FaTrashAlt, FaEdit,FaArrowUp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 function Dropdown({ title, items, redirectPath }) {
@@ -34,6 +34,9 @@ function Dropdown({ title, items, redirectPath }) {
                     {isDropdownOpen && (
                         <div className={css.dropdownContent}>
                             <div className={css.cardContainer}>
+                                <FaArrowUp/>
+
+
                                 {itemList.map((item, idx) => (
                                     <CardGroup key={idx}>
                                         <div className={css.editIcon}>
