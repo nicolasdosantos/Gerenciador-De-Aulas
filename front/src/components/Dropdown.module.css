@@ -179,9 +179,8 @@
     background-color: #F0F0F0;
 }
 .search{
-    position: absolute;
     left: 180px;
-    top: -10px;
+    top: auto;
     width: 600px;
     height: 35px;
     border-radius: 42px;
