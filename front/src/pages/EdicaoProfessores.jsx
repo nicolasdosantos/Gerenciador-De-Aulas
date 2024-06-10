@@ -14,7 +14,7 @@ function EdicaoProfessores() {
                         <BtnCadastro nome="Voltar"></BtnCadastro>
                     </div>
                     <div className={css.divdireita}>
-                        <TituloCadastro titulo="Edição de Professores"></TituloCadastro>
+                        <TituloCadastro css={{margin: "22px", display: "flex", alignItems: "center", fontSize: "42px"}} titulo="Edição de Professores"></TituloCadastro>
                         <div className={css.inputs}>
                             <InputCadastro nome="Nome "/>
                             <InputCadastro nome="Email "/>

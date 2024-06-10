@@ -6,7 +6,6 @@ import interactionPlugin from '@fullcalendar/interaction';
 
 import NavBarPerfil from "../components/NavBarPerfil";
 import NavBar from "../components/NavBar";
-import style6 from '../components/NavBarPerfil.module.css';
 import style5 from '../components/Calendario.module.css';
 
 // feriados do Brasil
@@ -59,58 +58,6 @@ function Calendario() {
                     />
                 </div>
 
-                {showPrograList && (
-                    <div className={style6.prograList}>
-                        <div className={style6.prograDiv}>
-                            <div className={style6.prograItemImage}>
-                                <img src="/sino.png" alt="sino" style={{width: '50px', height: '50px'}}/>
-                            </div>
-
-                            <div className={style6.prograItem}>
-                                <p className={style6.prograTextT}>Desenvolvimento de sistemas</p>
-                                <p className={style6.prograTextC}>Python</p>
-
-                                <div className={style6.prograTextoDiv}>
-                                    <p className={style6.prograTextS}>Sala 2</p>
-                                    <p className={style6.prograTextH}>07:30</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className={style6.prograDiv}>
-                            <div className={style6.prograItemImage}>
-                                <img src="/sino.png" alt="sino" style={{width: '50px', height: '50px'}}/>
-                            </div>
-
-                            <div className={style6.prograItem}>
-                                <p className={style6.prograTextT}>Desenvolvimento de sistemas</p>
-                                <p className={style6.prograTextC}>Python</p>
-
-                                <div className={style6.prograTextoDiv}>
-                                    <p className={style6.prograTextS}>Sala 2</p>
-                                    <p className={style6.prograTextH}>07:30</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className={style6.prograDiv}>
-                            <div className={style6.prograItemImage}>
-                                <img src="/sino.png" alt="sino" style={{width: '50px', height: '50px'}}/>
-                            </div>
-
-                            <div className={style6.prograItem}>
-                                <p className={style6.prograTextT}>Desenvolvimento de sistemas</p>
-                                <p className={style6.prograTextC}>Python</p>
-
-                                <div className={style6.prograTextoDiv}>
-                                    <p className={style6.prograTextS}>Sala 2</p>
-                                    <p className={style6.prograTextH}>07:30</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                )}
-
                 <div>
                     <h2 className={style5.tituloHoliday}>Feriados e pontos facultativos do mês:</h2>
 
@@ -124,8 +71,9 @@ function Calendario() {
                                         </div>
 
                                         <div className={style5.holidayItem}>
-                                        <span className={style5.holiday}>{evento.title}</span>
-                                            <span className={style5.holidayData}>{new Date(evento.date).toLocaleDateString('pt-BR')}</span>
+                                            <span className={style5.holiday}>{evento.title}</span>
+                                            <span
+                                                className={style5.holidayData}>{new Date(evento.date).toLocaleDateString('pt-BR')}</span>
                                         </div>
                                     </div>
                                 </div>

@@ -190,7 +190,6 @@ function NavBarPerfil({ showPrograList, isCalendario }) {
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             )}

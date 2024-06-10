@@ -15,6 +15,7 @@
     top: 0;
     left: 0;
     z-index: 1;
+    transition: all 0.5s;
 }
 
 .logozinha {
@@ -49,4 +50,22 @@
     position: relative;
     font-weight: bold;
     bottom: -300px;
+}
+
+.botaoMenu {
+    display: none;
+}
+
+@media(max-width: 1024px){
+    .verticalNav {
+        left: -300px;
+    }
+
+    .botaoMenu{
+        display: block;
+        position: absolute;
+        z-index: 99;
+        top: 0;
+        left: 0;
+    }
 }

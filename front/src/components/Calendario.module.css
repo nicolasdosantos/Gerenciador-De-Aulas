@@ -118,9 +118,16 @@
     width: 100%;
 }
 
+
 @media(max-width: 1441px) {
     .principal {
         display: initial;
+    }
+}
+
+@media (max-width: 1025px) {
+    .calendario {
+        margin-left: 0;
     }
 }
 
@@ -138,8 +145,3 @@
     }
 }
 
-@media (max-width: 1025px) {
-    .prograList {
-        display: block;
-    }
-}

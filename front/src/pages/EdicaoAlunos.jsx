@@ -13,11 +13,11 @@ function EdicaoAlunos() {
                         <div className={css.card}>
                             <div className={css.divesquerda}>
                                 <img src="/Frame%206.svg" alt="Logo"/>
-                                <BtnCadastro nome="Voltar"/>
+                                <BtnCadastro style={{ marginLeft: "150px" }} nome="Voltar"/>
                             </div>
                             <div className={css.divdireita}>
                                 <div>
-                                    <TituloCadastro titulo="Edição de" titulo2="Alunos"/>
+                                    <TituloCadastro titulo="Edição de Alunos"/>
                                 </div>
                                 <div className={css.inputs}>
                                     <div >

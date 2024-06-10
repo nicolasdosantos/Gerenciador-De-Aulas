@@ -13,7 +13,7 @@ function CadastroAlunos() {
                         <div className={css.card}>
                             <div className={css.divesquerda}>
                                 <img src="/Frame%206.svg" alt="Logo"/>
-                                <BtnCadastro nome="Voltar"/>
+                                <BtnCadastro id={css.buttonnn} nome="Voltar"/>
                             </div>
                             <div className={css.divdireita}>
                                 <div>
