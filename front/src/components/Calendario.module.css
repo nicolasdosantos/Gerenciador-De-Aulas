@@ -136,7 +136,9 @@
     .holidayList {
         width: 100%;
     }
+}
 
+@media (max-width: 1025px) {
     .prograList {
         display: block;
     }
