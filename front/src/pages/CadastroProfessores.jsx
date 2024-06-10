@@ -18,17 +18,17 @@ function CadastroProfessores() {
                     <div className={css.divdireita}>
                         <TituloCadastro titulo="Cadastro de Professores" css={{margin: "0px", display: "flex", alignItems: "center", fontSize: "42px"}}></TituloCadastro>
                         <div className={css.inputs}>
-                            <InputCadastro nome="Nome: " />
-                            <InputCadastro nome="Email: " />
-                            <InputCadastro nome="CPF: " />
+                            <InputCadastro nome="Nome : " />
+                            <InputCadastro nome="Email : " />
+                            <InputCadastro nome="CPF : " />
                             <div className={css.grid}>
-                                <InputCadastro nome="NIF: " />
-                                <InputCadastro tipo="date" nome="Data de Nascimento: " />
+                                <InputCadastro nome="NIF : " />
+                                <InputCadastro tipo="date" nome="Data de Nascimento : " />
                             </div>
                             <div className={css.grid}>
-                                <InputCadastro nome="Carga horária: " tipo="number" />
+                                <InputCadastro nome="Carga horária : " tipo="number" />
                                 <div>
-                                    <h1 style={{fontSize: 17, fontWeight: "normal",}}>Turno:</h1>
+                                    <h1 style={{fontSize: 17, fontWeight: "normal",}}>Turno :</h1>
                                     <select className={css.select}>
                                         <option>Selecione um Turno</option>
                                         <option>Manhã</option>
@@ -41,7 +41,7 @@ function CadastroProfessores() {
                                 </div>
                             </div>
                             <div>
-                                <CheckBoxDias titulo="Dias de trabalho:"></CheckBoxDias>
+                                <CheckBoxDias titulo="Período de atuação:"></CheckBoxDias>
                             </div>
                         </div>
                         <BtnCadastro nome="Cadastrar"></BtnCadastro>
