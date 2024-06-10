@@ -45,26 +45,25 @@ function Dropdown({ title, items, redirectPath }) {
                     </div>
                     {isDropdownOpen && (
                         <div className={css.dropdownContent}>
+                            <div className={css.searchContainer}>
+                                <input
+                                    className={css.search}
+                                    type="text"
+                                    placeholder="| Pesquise o nome"
+                                    value={searchTerm}
+                                    onChange={handleSearchChange}
+                                />
+                            </div>
                             <div className={css.cardContainer}>
-                                <div className={css.searchContainer}>
-                                    <input
-                                        className={css.search}
-                                        type="text"
-                                        placeholder="| Pesquise o nome"
-                                        value={searchTerm}
-                                        onChange={handleSearchChange}
-                                    />
-
-                                </div>
                                 {filteredItems.map((item, idx) => (
                                     <CardGroup key={idx}>
                                         <div className={css.editIcon}>
                                             <Link to={item.editButton}>
-                                                <FaEdit style={{ color: 'white' }} />
+                                                <FaEdit style={{color: 'white'}}/>
                                             </Link>
                                         </div>
                                         <Card className={css.cardizin}>
-                                            <Card.Img variant="top" src={item.image} className={css.imgzinha} />
+                                            <Card.Img variant="top" src={item.image} className={css.imgzinha}/>
                                             <Card.Body>
                                                 <Card.Title id={css.nomePro}>{item.name}</Card.Title>
                                                 {item.nif && <Card.Text id={css.email}>NIF: {item.nif}</Card.Text>}
@@ -80,8 +79,9 @@ function Dropdown({ title, items, redirectPath }) {
                                                     <button onClick={handleAddItem} className={css.addButton}>
                                                         {item.buttin}
                                                     </button>
-                                                    <button onClick={() => handleDeleteItem(idx)} className={css.deleteButton}>
-                                                        <FaTrashAlt />
+                                                    <button onClick={() => handleDeleteItem(idx)}
+                                                            className={css.deleteButton}>
+                                                        <FaTrashAlt/>
                                                     </button>
                                                 </div>
                                             </Card.Body>
