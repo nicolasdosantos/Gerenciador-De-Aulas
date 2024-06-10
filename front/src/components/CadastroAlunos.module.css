@@ -46,4 +46,22 @@
     gap: 10px;
 }
 
+@media (max-width: 768px) {
+    .card{
+        grid-template-columns: 1fr;
+        height: auto;
+        width: 95vw;
+    }
 
+    .divdireita, .divesquerda{
+        padding: 10px;
+    }
+
+    .divesquerda img{
+        height: 15vh;
+    }
+
+    .divinput{
+        width: 90%;
+    }
+}

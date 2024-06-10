@@ -7,7 +7,17 @@ import InputCadastro from "../components/InputCadastro";
 function CadastroSalas() {
     return (
         <div className="App">
-            <div style={{ backgroundImage: "url('/bannerNuvenzinhas.png')", height: '100vh', width: '100%' }}>
+            <div style={{
+                backgroundImage: "url('/bannerNuvenzinhas.png')",
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                height: '100vh',
+                width: '100%',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
+                }}>
                 <div className={css.card}>
                     <div className={css.divesquerda}>
                         <img src="/Frame%206.svg" alt="Banner"/>
