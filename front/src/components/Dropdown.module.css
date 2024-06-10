@@ -6,6 +6,7 @@
     top: 70px;
     position: relative;
     box-sizing: border-box;
+
 }
 .imgzinha{
     width: 230px;
@@ -60,11 +61,12 @@
 }
 
 .cardContainer {
+    margin-left: -60px;
     margin-top: 8px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 50px;
+    gap: 40px;
 }
 #email{
     font-family: "Poppins", sans-serif;
@@ -167,4 +169,40 @@
 }
 .container{
     max-width: 10%;
+}
+:root {
+    --cor-principal: #8C52FF;
+    --branco: #fff;
+    --cinza-claro: #F0F0F0;
+    --cinza-escuro: #8A8C98;
+    --preto: #000;
+    background-color: #F0F0F0;
+}
+.search{
+    position: absolute;
+    left: 180px;
+    top: -10px;
+    width: 600px;
+    height: 35px;
+    border-radius: 42px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    box-shadow: 0px 4px 8px rgba(1, 0, 0, 0.3);
+}
+.searchContainer {
+    position: relative;
+    margin-bottom: 1rem;
+}
+.searchIcon {
+    position: absolute;
+    right: 10px;
+    top: 3%;
+    transform: translate(50%, 45%);
+    color: #6c757d;
+    pointer-events: none;
+}
+.search{
+    text-align: center;
 }
