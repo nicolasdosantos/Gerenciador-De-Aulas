@@ -7,7 +7,6 @@
     border-radius: 15px;
     display: grid;
     grid-template-columns: 1.6fr 2fr;
-    width: 70vw;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
     margin: 0 auto; /* Centraliza o card */
 }
