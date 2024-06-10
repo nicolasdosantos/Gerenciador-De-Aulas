@@ -50,7 +50,7 @@ function Dropdown({ title, items, redirectPath }) {
                                     <input
                                         className={css.search}
                                         type="text"
-                                        placeholder="Pesquise algo"
+                                        placeholder="| Pesquise o nome"
                                         value={searchTerm}
                                         onChange={handleSearchChange}
                                     />
