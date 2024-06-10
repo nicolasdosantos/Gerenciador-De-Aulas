@@ -31,7 +31,7 @@
     align-items: center;
     text-align: left;
     border-radius: 10px;
-    width: 950px;
+    width: 920px;
     background-color: #8C52FF;
     color: white;
     font-family: "Poppins", sans-serif;
@@ -45,7 +45,7 @@
 .dropdownContent {
     position: relative;
     top: -10px;
-    width: 950px;
+    width: 920px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     justify-content: center;
@@ -61,7 +61,7 @@
 }
 
 .cardContainer {
-    margin-left: -60px;
+    margin-left: -44px;
     margin-top: 8px;
     display: flex;
     flex-direction: row;
@@ -192,7 +192,8 @@
     box-shadow: 0px 4px 8px rgba(1, 0, 0, 0.3);
 }
 .search::placeholder{
-    height: 30px;
+    font-size: 15px;
+    color: #9A9A9A;
 }
 .searchContainer {
     position: relative;
