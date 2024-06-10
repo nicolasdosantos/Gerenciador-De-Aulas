@@ -58,7 +58,7 @@ function Calendario() {
                 </div>
 
                 <div>
-                    <h2 className={style5.tituloHoliday}>Feriados e ponto facultativo:</h2>
+                    <h2 className={style5.tituloHoliday}>Feriados e pontos facultativos do mês:</h2>
 
                     <div className={style5.holidayListsContainer}>
                         <div className={style5.holidayList}>
