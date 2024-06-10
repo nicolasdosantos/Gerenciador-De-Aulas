@@ -8,8 +8,7 @@ import CheckBoxDias from "../components/CheckBoxDias";
 
 function CadastroProfessores() {
     return (
-        <div className={css.app}>
-            <Banner>
+        <div className={css.app} style={{backgroundImage: "url(/bannerNuvenzinhas.png)"}}>
                 <div className={css.card}>
                     <div className={css.divesquerda}>
                         <img src="/Frame%206.svg" alt="Logo"/>
@@ -47,7 +46,6 @@ function CadastroProfessores() {
                         <BtnCadastro nome="Cadastrar"></BtnCadastro>
                     </div>
                 </div>
-            </Banner>
         </div>
     );
 }

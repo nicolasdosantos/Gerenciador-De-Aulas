@@ -7,6 +7,7 @@ import interactionPlugin from '@fullcalendar/interaction';
 import NavBarPerfil from "../components/NavBarPerfil";
 import NavBar from "../components/NavBar";
 import style5 from '../components/Calendario.module.css';
+
 // feriados do Brasil
 import Hd from 'date-holidays';
 
@@ -24,7 +25,7 @@ function getBrasilHolidays(year) {
 
 function Calendario() {
     // Estado para armazenar os feriados
-    const [events, setEvents] = useState(getBrasilHolidays(2024));
+    const [evento, setEvento] = useState(getBrasilHolidays(2024));
 
     // Estado para controlar a visibilidade da programaçãoLista
     const [showPrograList, setShowPrograList] = useState(false);
@@ -51,7 +52,7 @@ function Calendario() {
                             center: 'title',
                             right: 'dayGridMonth,timeGridWeek,timeGridDay'
                         }}
-                        events={events}
+                        events={evento}
                         height="auto"
                         dateClick={handleDateClick}
                     />
@@ -62,7 +63,7 @@ function Calendario() {
 
                     <div className={style5.holidayListsContainer}>
                         <div className={style5.holidayList}>
-                            {events.map((event, index) => (
+                            {evento.map((evento, index) => (
                                 <div className={style5.holidayItemNovo} key={index}>
                                     <div className={style5.holidayContent}>
                                         <div className={style5.holidayItemImage}>
@@ -70,8 +71,8 @@ function Calendario() {
                                         </div>
 
                                         <div className={style5.holidayItem}>
-                                            <span className={style5.holiday}>{event.title}</span>
-                                            <span className={style5.holidayData}>{new Date(event.date).toLocaleDateString('pt-BR')}</span>
+                                            <span className={style5.holiday}>{evento.title}</span>
+                                            <span className={style5.holidayData}>{new Date(evento.date).toLocaleDateString('pt-BR')}</span>
                                         </div>
                                     </div>
                                 </div>

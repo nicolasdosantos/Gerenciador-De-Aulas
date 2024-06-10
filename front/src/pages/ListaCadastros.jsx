@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "../components/NavBar";
 import Dropdown from "../components/Dropdown";
 import css from '../components/ListaProfessores.module.css';
+import NavBarPerfil from "../components/NavBarPerfil";
 
 function ListaCadastros() {
     const professors = [
@@ -141,13 +142,14 @@ function ListaCadastros() {
 
     return (
         <div className={css.container}>
-            <NavBar />
+            <NavBar/>
             <h2 className={css.title}>Cadastrados</h2>
-            <Dropdown src="" title="Professores" items={professors} redirectPath="/professores" />
-            <Dropdown src="" title="Cursos" items={courses} redirectPath="/curso" />
-            <Dropdown src="" title="Matérias" items={subjects} redirectPath="/materia" />
-            <Dropdown src="" title="Salas" items={rooms} redirectPath="/salas" />
-            <Dropdown src="" title="Alunos" items={students} redirectPath="/alunos" />
+            <Dropdown src="" title="Professores" items={professors} redirectPath="/professores"/>
+            <Dropdown src="" title="Cursos" items={courses} redirectPath="/curso"/>
+            <Dropdown src="" title="Matérias" items={subjects} redirectPath="/materia"/>
+            <Dropdown src="" title="Salas" items={rooms} redirectPath="/salas"/>
+            <Dropdown src="" title="Alunos" items={students} redirectPath="/alunos"/>
+            <NavBarPerfil/>
         </div>
     );
 }

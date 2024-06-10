@@ -7,7 +7,7 @@ import Scrollbar from "../components/ScrollBar.module.css"
 
 function CadastroAlunos() {
     return (
-        <div className="App">
+        <div >
             <Banner>
                 <div>
                     <Banner>

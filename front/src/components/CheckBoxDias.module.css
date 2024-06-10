@@ -1,11 +1,13 @@
 .grid{
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 31px;
     justify-content: center;
+    margin-top: 5px;
 }
 
 .titulo{
     font-size: 18px;
     font-weight: normal;
+    margin-top: 12px;
 }
