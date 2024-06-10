@@ -208,5 +208,17 @@
 }
 
 @media(max-width: 1025px) {
+    .principal {
+        display: none;
+    }
+}
 
+@media(max-width: 770px) {
+    .prograList {
+        height: 220px;
+    }
+
+    .prograItem, .prograItemImage {
+        background-color: var(--branco);
+    }
 }

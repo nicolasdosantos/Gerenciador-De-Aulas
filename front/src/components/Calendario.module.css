@@ -118,15 +118,26 @@
     width: 100%;
 }
 
-@media(max-width: 1440px) {
+@media(max-width: 1441px) {
     .principal {
         display: initial;
     }
 }
 
-@media(max-width: 1024px) {
+@media(max-width: 770px) {
     .holidayListsContainer {
         display: initial;
     }
-}
 
+    .calendarContainer {
+        width: 450px;
+    }
+
+    .holidayList {
+        width: 100%;
+    }
+
+    .prograList {
+        display: block;
+    }
+}

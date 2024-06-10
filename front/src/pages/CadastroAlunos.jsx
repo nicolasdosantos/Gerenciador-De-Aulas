@@ -17,7 +17,7 @@ function CadastroAlunos() {
                             </div>
                             <div className={css.divdireita}>
                                 <div>
-                                    <TituloCadastro titulo="Cadastro de" titulo2="Alunos"/>
+                                    <TituloCadastro titulo="Cadastro de Alunos"/>
                                 </div>
                                 <div className={css.inputs}>
                                     <div >
