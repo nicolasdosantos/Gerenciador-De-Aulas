@@ -16,7 +16,6 @@ import Calendario from "./pages/Calendario";
 import DashBoard from "./pages/DashBoard";
 import ListaCadastros from "./pages/ListaCadastros";
 
-
 function App() {
 
   return (
