@@ -41,6 +41,7 @@
     font-size: 21px;
     border: none;
     cursor: pointer;
+
 }
 .dropdownContent {
     position: relative;
@@ -211,4 +212,17 @@
 }
 .search{
     text-align: center;
+}
+
+/* Dropdown.module.css */
+
+/* Classes para controlar a animação do dropdown */
+.dropdownContent {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.show {
+    max-height: 500px; /* Altura máxima do dropdown quando está aberto */
 }
