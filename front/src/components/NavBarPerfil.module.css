@@ -136,7 +136,8 @@
 }
 
 .imgLogo {
-    width: 80px;
+    width: 30px;
+    height: auto;
 }
 
 .imgVoltar {
@@ -204,4 +205,8 @@
     color: var(--cor-principal);
     font-size: 20px;
     font-weight: bold;
+}
+
+@media(max-width: 1025px) {
+
 }

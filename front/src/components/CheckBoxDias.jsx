@@ -8,22 +8,22 @@ function CheckBoxDias(props){
             </div>
             <div className={css.grid}>
                 <div>
-                    <input type="checkbox"/>Segunda
+                    <input type="checkbox"/>Seg
                 </div>
                 <div>
-                    <input type="checkbox"/>Terça
+                    <input type="checkbox"/>Ter
                 </div>
                 <div>
-                    <input type="checkbox"/>Quarta
+                    <input type="checkbox"/>Qua
                 </div>
                 <div>
-                    <input type="checkbox"/>Quinta
+                    <input type="checkbox"/>Qui
                 </div>
                 <div>
-                    <input type="checkbox"/>Sexta
+                    <input type="checkbox"/>Sex
                 </div>
                 <div>
-                    <input type="checkbox"/>Sábado
+                    <input type="checkbox"/>Sáb
                 </div>
             </div>
         </div>

@@ -5,11 +5,12 @@ function NavBarPerfil({ showPrograList, isCalendario }) {
     const [exibirPerfil, setExibirPerfil] = useState(isCalendario);
     const [exibirCard, setExibirCard] = useState(false);
 
-    const togglePerfil = () => {
+    function togglePerfil(){
         if (!isCalendario) {
             setExibirPerfil(!exibirPerfil);
         }
-    };
+    }
+
     const toggleCard = () => {
         setExibirCard(!exibirCard);
     };
@@ -34,7 +35,8 @@ function NavBarPerfil({ showPrograList, isCalendario }) {
                     )}
 
                     <div className={style5.perfil}>
-                        <img src="/perfilPng.png" alt="perfil" style={{width: '150px', height: '150px', borderRadius: '70px'}}/>
+                        <img src="/perfilPng.png" alt="perfil"
+                             style={{width: '150px', height: '150px', borderRadius: '70px'}}/>
 
                         <p className={style5.perfilNome}>Gustavo Donato</p>
                         <p style={{color: '#8A8C98', marginBottom: '10px', fontSize: '18px'}}>Administrador</p>
@@ -45,7 +47,7 @@ function NavBarPerfil({ showPrograList, isCalendario }) {
                                 Criar
                             </button>
 
-                            <hr style={{border:'1px solid #fff', marginLeft: '10px', marginRight: '10px'}}/>
+                            <hr style={{border: '1px solid #fff', marginLeft: '10px', marginRight: '10px'}}/>
 
                             {exibirCard && (
                                 <div className={style5.card}>

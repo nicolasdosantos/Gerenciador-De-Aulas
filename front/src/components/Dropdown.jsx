@@ -3,12 +3,13 @@ import { useNavigate } from "react-router-dom";
 import css from './Dropdown.module.css';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
-import { FaTrashAlt, FaEdit, FaChevronDown, FaChevronUp, FaPlus } from 'react-icons/fa';
+import { FaTrashAlt, FaEdit, FaChevronDown, FaChevronUp, FaSearch } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 function Dropdown({ title, items, redirectPath }) {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [itemList, setItemList] = useState(items);
+    const [searchTerm, setSearchTerm] = useState("");
     const navigate = useNavigate();
 
     const toggleDropdown = () => {
@@ -24,6 +25,14 @@ function Dropdown({ title, items, redirectPath }) {
         setItemList(updatedList);
     };
 
+    const handleSearchChange = (event) => {
+        setSearchTerm(event.target.value);
+    };
+
+    const filteredItems = itemList.filter(item =>
+        item.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
     return (
         <div className={css.container}>
             <div className={css.content}>
@@ -33,12 +42,21 @@ function Dropdown({ title, items, redirectPath }) {
                             <span className={css.dropdownTitle}>{title}</span>
                             <span className={css.dropdownIcon}>{isDropdownOpen ? <FaChevronUp /> : <FaChevronDown />}</span>
                         </button>
-
                     </div>
                     {isDropdownOpen && (
                         <div className={css.dropdownContent}>
                             <div className={css.cardContainer}>
-                                {itemList.map((item, idx) => (
+                                <div className={css.searchContainer}>
+                                    <input
+                                        className={css.search}
+                                        type="text"
+                                        placeholder="Pesquise algo"
+                                        value={searchTerm}
+                                        onChange={handleSearchChange}
+                                    />
+
+                                </div>
+                                {filteredItems.map((item, idx) => (
                                     <CardGroup key={idx}>
                                         <div className={css.editIcon}>
                                             <Link to={item.editButton}>
@@ -50,16 +68,19 @@ function Dropdown({ title, items, redirectPath }) {
                                             <Card.Body>
                                                 <Card.Title id={css.nomePro}>{item.name}</Card.Title>
                                                 {item.nif && <Card.Text id={css.email}>NIF: {item.nif}</Card.Text>}
-                                                {item.turno && <Card.Text id={css.email}>Turno: {item.turno}</Card.Text>}
-                                                {item.date && <Card.Text id={css.email}>Dia do curso: {item.date}</Card.Text>}
-                                                {item.professor && <Card.Text id={css.email}>Curso: {item.professor}</Card.Text>}
-                                                {item.description && <Card.Text id={css.email}>Descrição: {item.description}</Card.Text>}
+                                                {item.turno &&
+                                                    <Card.Text id={css.email}>Turno: {item.turno}</Card.Text>}
+                                                {item.date &&
+                                                    <Card.Text id={css.email}>Dia do curso: {item.date}</Card.Text>}
+                                                {item.professor &&
+                                                    <Card.Text id={css.email}>Curso: {item.professor}</Card.Text>}
+                                                {item.description &&
+                                                    <Card.Text id={css.email}>Descrição: {item.description}</Card.Text>}
                                                 <div className={css.buttonContainer}>
                                                     <button onClick={handleAddItem} className={css.addButton}>
                                                         {item.buttin}
                                                     </button>
-                                                    <button onClick={() => handleDeleteItem(idx)}
-                                                            className={css.deleteButton}>
+                                                    <button onClick={() => handleDeleteItem(idx)} className={css.deleteButton}>
                                                         <FaTrashAlt />
                                                     </button>
                                                 </div>
@@ -70,8 +91,6 @@ function Dropdown({ title, items, redirectPath }) {
                                         </Card>
                                     </CardGroup>
                                 ))}
-                            </div>
-                            <div className={css.addItemContainer}>
                             </div>
                         </div>
                     )}
