@@ -34,7 +34,7 @@ function App() {
               <Route element={<CadastroProfessores/>} path="/professores"/>
               <Route element={<EdicaoProfessores/>} path="/edicaoProfessores"/>
 
-              <Route element={<ListaCadastros/>} path="/lista-professores"/>
+              <Route element={<ListaCadastros/>} path="/lista-cadastros"/>
 
 
               <Route element={<CadastroCurso/>} path="/curso"/>
