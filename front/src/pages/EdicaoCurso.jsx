@@ -7,10 +7,10 @@ import Banner from "../components/Banner";
 
 function CadastroCurso(){
     return (
-        <div style={{display: "grid", gridTemplateColumns: "1fr 1fr"}}>
+        <div >
             <Banner>
                 <div className={css.divdireita}>
-                    <TituloCadastro titulo="Edição de Curso" css={{margin: 0, marginBottom: 15, color: "#565656"}}/>
+                    <TituloCadastro titulo="Edição de Curso" css={{margin: 0, marginBottom: 15, color: "#8C52FF"}}/>
                     <div style={{display: "grid", gridTemplateColumns: "3fr 2fr", gap: 20}}>
                         <div>
                             <div className={css.primeiroBlocoDireita}>

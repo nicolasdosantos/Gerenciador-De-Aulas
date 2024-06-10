@@ -8,13 +8,11 @@ function NavBar() {
         setHamburguer(!hamburguer);
     }
 
-
     return (
         <div>
             <button className={css.botaoMenu} onClick={menu}>
                 Hamburguer
             </button>
-
 
             <div className={css.verticalNav} style={{left: hamburguer ? '0px' : '-300px'}}>
                 <img className={css.logozinha} src="/logozinha.png" alt="Logo"/>

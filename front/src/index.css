@@ -44,6 +44,11 @@ code {
 .fc .fc-daygrid-day-number {
   color: #000;
 }
+
+.fc .fc-view-harness {
+  position: sticky;
+}
+
 /*=================================*/
 
 

@@ -43,10 +43,11 @@
 .principal {
     background-color: #fff;
     position: fixed;
-    padding: 20px;
+    padding: 15px;
     top: 0;
     right: 0;
     z-index: 1;
+    transition: all 0.5s;
 }
 
 .logoNav {
@@ -206,14 +207,28 @@
     font-weight: bold;
 }
 
-@media(max-width: 1025px) {
-    .principal {
-        display: none;
-    }
+.botaoMenuPerfil {
+    display: none;
+}
+
+@media(max-width: 1024px){
+
 }
 
 @media(max-width: 770px) {
     .prograList {
         height: 220px;
+    }
+
+    .principal {
+        right: -400px;
+    }
+
+    .botaoMenuPerfil{
+        display: block;
+        position: absolute;
+        z-index: 99;
+        top: 0;
+        right: 0;
     }
 }
