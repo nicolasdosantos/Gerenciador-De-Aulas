@@ -5,6 +5,10 @@
     margin-top: -9px;
     color: #8C52FF
 }
+.titulo2{
+    font-size: 42px;
+    margin-top: -9px;
+}
 
 @media (max-width: 768px) {
     .titulo{

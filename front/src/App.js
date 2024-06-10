@@ -14,7 +14,6 @@ import Login from "./pages/Login";
 import NotFoundPage from "./pages/NotFoundPage";
 import Calendario from "./pages/Calendario";
 import DashBoard from "./pages/DashBoard";
-import Dropdown from "./components/Dropdown";
 import ListaCadastros from "./pages/ListaCadastros";
 
 
