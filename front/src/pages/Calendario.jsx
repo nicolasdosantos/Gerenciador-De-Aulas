@@ -87,7 +87,7 @@ function Calendario() {
 
                                     <div className={style5.holidayItem}>
                                         <span className={style5.holiday}>Ponto facultativo</span>
-                                        <span className={style5.holidayData}>aaa</span>
+                                        <span className={style5.holidayData}>31/05/2024</span>
                                     </div>
                                 </div>
                             </div>
