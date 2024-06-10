@@ -62,11 +62,14 @@
 
 .cardContainer {
     margin-left: -44px;
+    position: relative;
+    left: 20px;
+    top: -15px;
     margin-top: 8px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 40px;
+    gap: 20px;
 }
 #email{
     font-family: "Poppins", sans-serif;
