@@ -24,6 +24,12 @@ function App() {
 
               <Route element={<Login/>} path="/"/>
 
+              <Route element={<DashBoard/>} path="/dashboard"/>
+
+              <Route element={<Calendario/>} path="/calendario"/>
+
+              <Route element={<ListaCadastros/>} path="/lista-cadastros"/>
+
               <Route element={<CadastroSalas/>} path="/salas"/>
               <Route element={<EdicaoSalas/>} path="/edicaoSalas"/>
 
@@ -33,20 +39,11 @@ function App() {
               <Route element={<CadastroProfessores/>} path="/professores"/>
               <Route element={<EdicaoProfessores/>} path="/edicaoProfessores"/>
 
-              <Route element={<ListaCadastros/>} path="/lista-cadastros"/>
-
-
               <Route element={<CadastroCurso/>} path="/curso"/>
               <Route element={<EdicaoCurso/>} path="/edicaoCurso"/>
 
               <Route element={<CadastroMateria/>} path="/materia"/>
               <Route element={<EdicaoMateria/>} path="/edicaoMateria"/>
-
-              <Route element={<DashBoard/>} path="/dashboard"/>
-
-              <Route element={<Calendario/>} path="/calendario"/>
-
-              <Route element={<ListaCadastros/>} path="/lista-cadastros"/>
 
               <Route element={<NotFoundPage/>} path="/*"/>
 
