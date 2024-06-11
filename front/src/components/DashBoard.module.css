@@ -173,65 +173,120 @@ body::-webkit-scrollbar-thumb {
     --preto: #000;
     background-color: #ffffff;
 }
-
-@media (max-width: 1200px) {
+@media (min-width: 400px) {
     .content {
-        margin-left: 200px;
-        width: 80%;
+        margin-left: 0;
+        width: 100%;
+        padding: 0 10px;
     }
 
     .ola {
-        right: 200px;
+        font-size: 29px;
+        right: 0;
+        margin-left: 0;
+        text-align: start;
+        top: 17px;
+        margin-bottom: 10px;
     }
 
     #cadastrosd {
-        right: 300px;
-    }
-}
-
-@media (max-width: 992px) {
-    .content {
-        margin-left: 150px;
-        width: 85%;
-    }
-
-    .ola {
-        font-size: 26px;
-        right: 150px;
-    }
-
-    #cadastrosd {
-        right: 200px;
-    }
-}
-
-@media (max-width: 768px) {
-    .content {
-        margin-left: 50px;
-        width: 90%;
-    }
-
-    .ola {
-        font-size: 24px;
-        right: 100px;
+        position: static;
+        text-align: center;
+        margin-bottom: -15px;
     }
 
     .cadss, .qbranco {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        gap: 20px;
-    }
-
-    #cadastrosd {
-        right: 100px;
+        gap: 10px;
+        right: 0px;
+        font-size: 13px;
+        width: 400px;
     }
 
     .qazul, #cad {
         width: 100%;
     }
-}
 
-@media (max-width: 576px) {
+    .scrollContainer {
+        width: 100%;
+        margin-left: 0;
+        margin-top: -20px;
+        margin-bottom: 30px;
+    }
+
+    .slideImage {
+        max-width: 100%;
+        height: 200px; /* Ajuste a altura conforme necessário */
+        object-fit: fill;
+    }
+
+    .cardImage {
+        width: 100%;
+        height: 80px; /* Ajuste a altura conforme desejado */
+        object-fit: contain; /* Alterado de 'cover' para 'contain' */
+    }
+    .ImgzinhaFooter{
+        width: 126px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 60px;
+    }
+}
+@media (max-width: 360px) {
+    .sliderContainer {
+        display: none;
+    }
+    .content {
+        margin-left: 0;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .ola {
+        font-size: 29px;
+        right: 0;
+        margin-left: 0;
+        text-align: start;
+        top: 29px;
+    }
+
+    #cadastrosd {
+        position: static;
+        text-align: center;
+        margin-bottom: -18px;
+    }
+
+    .cadss, .qbranco {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        right: 11px;
+        font-size: 12px;
+        width: 348px;
+    }
+
+    .qazul, #cad {
+        width: 100%;
+    }
+
+    .scrollContainer {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .ImgzinhaFooter{
+        width: 126px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 60px;
+    }
+}
+@media (max-width: 320px) {
     .sliderContainer {
         display: none;
     }
@@ -258,9 +313,9 @@ body::-webkit-scrollbar-thumb {
         flex-direction: row;
         align-items: center;
         gap: 10px;
-        right: 5px;
+        right: 11px;
         font-size: 11px;
-        width: 319px;
+        width: 312px;
     }
 
     .qazul, #cad {
@@ -271,24 +326,12 @@ body::-webkit-scrollbar-thumb {
         width: 100%;
         margin-left: 0;
     }
-
-    .slideImage {
-        max-width: 100%;
-        height: 150px; /* Ajuste a altura conforme necessário */
-        object-fit: fill;
-    }
-
-    .cardImage {
-        width: 100%;
-        height: 80px; /* Ajuste a altura conforme desejado */
-        object-fit: contain; /* Alterado de 'cover' para 'contain' */
-    }
     .ImgzinhaFooter{
         width: 126px;
         display: flex;
         align-items: center;
         justify-content: center;
         position: relative;
-        top: 51px;
+        top: 47px;
     }
 }
