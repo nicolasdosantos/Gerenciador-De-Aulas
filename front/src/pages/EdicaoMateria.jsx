@@ -1,74 +1,81 @@
+import css from "../components/CadastroMateria.module.css";
+import TituloCadastro from "../components/TituloCadastro";
+import InputCadastro from "../components/InputCadastro";
+import BtnCadastro from "../components/BtnCadastro";
 import React from "react";
 import Banner from "../components/Banner";
-import CardCadastroGrande from "../components/CardCadastroGrande";
-import style3 from "../components/CardCadastroGrande.module.css";
+import CheckBoxDias from "../components/CheckBoxDias";
 
-function CadastroMateria() {
+function CadastroCurso(){
     return (
-        <div className="App">
-            <Banner>
-                <CardCadastroGrande nome={"Matéria"} nome2={"Edição de"}>
-                    <div style={{ width: '50%' }}>
-                        <div className={style3.formGroup}>
-                            <input type="text" placeholder="Nome da Matéria" style={{ width: "100%" }} />
-                        </div>
-
-                        <select style={{
-                            width: "100%", padding: "10px", border: "1px solid #ccc", borderRadius: "8px"
-                        }}>
-                            <option>Selecione uma sala</option>
-                            <option>Sala 1</option>
-                            <option>Sala 2</option>
-                        </select>
-
-                        <div className={style3.formGroup}>
-                            <input type="time" placeholder="Horário - Início" />
-                            <input type="time" placeholder="Horário - Término" />
-                        </div>
-
-                        <div className={style3.periodo}>
-                            <button>S</button>
-                            <button>T</button>
-                            <button>Q</button>
-                            <button>Q</button>
-                            <button>S</button>
-                            <button>S</button>
-                            <button>D</button>
-                        </div>
-
-                        <button className={style3.botao}>Salvar</button>
-                    </div>
-
-                    <div style={{ width: '50%', margin: "30px" }}>
-                        <div className={style3.formGroup} style={{ flexDirection: "column", marginTop: "-45px" }}>
-                            <p>Professores</p>
-                            <select style={{ width: '100%' }}>
-                                <option>Selecione um professor</option>
-                                <option>Laís Sinatra</option>
-                                <option>Fernando Silva</option>
-                            </select>
-                        </div>
-
-                        <div style={{display: "flex", gap: "150px"}}>
-                            <div className={style3.formGroup} style={{ flexDirection: "column" }}>
-                                <p>Quantidade de horas</p>
-                                <input type="number" style={{width: "100%"}}/>
+        <Banner>
+            <div style={{display: "grid", gridTemplateColumns: "1fr 1fr"}}>
+                <div className={css.divdireita}>
+                    <TituloCadastro titulo="Edição de Matéria" css={{margin: 0, marginBottom: 15}}/>
+                    <div style={{display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20}}>
+                        <div>
+                            <div style={{gap: 15, marginBottom: "10px"}}>
+                                <InputCadastro css={{background: "#ECEFF5", height: "35px", width: "34vw"}}
+                                               nome="Nome do curso: "/>
                             </div>
-                            <div className={style3.formGroup} style={{ flexDirection: "column", textAlign: "left" }}>
-                                <p>Turno</p>
-                                <select style={{width: "100%"}}>
-                                    <option>Selecione o turno</option>
-                                    <option>Manhã</option>
-                                    <option>Tarde</option>
-                                    <option>Noite</option>
+                            <div style={{display: "flex", flexDirection: "column", gap: 10, marginBottom: "10px"}}>
+                                <h2 style={{ fontSize: "18px", fontWeight: "normal" }}>Salas:</h2>
+                                <select className={css.select}>
+                                    <option>Selecione uma sala</option>
+                                    <option>Informatica</option>
+                                    <option>Biblioteca</option>
+                                    <option>Sala 5</option>
                                 </select>
                             </div>
+                            <div className={css.terceiroBlocoDireita}>
+                                <InputCadastro css={{background: "#ECEFF5", height: "35px", width: "16.5vw"}}
+                                               className={css.inputP}
+                                               tipo="time" nome="Horário - Início: "/>
+                                <InputCadastro css={{background: "#ECEFF5", height: "35px", width: "16.7vw"}}
+                                               tipo="time"
+                                               nome="Horário - Término: "/>
+                            </div>
+                            <div>
+                                <CheckBoxDias titulo="Dias de trabalho:"></CheckBoxDias>
+                            </div>
+                            <BtnCadastro css={{width: "34vw", height: "7vh"}} nome="Cadastrar"></BtnCadastro>
+                        </div>
+                        <div className={css.pessoas}>
+                            <div>
+                                <h2 style={{ fontSize: "18px", fontWeight: "normal" }} >Professores:</h2>
+                                <select className={css.select}>
+                                    <option>Selecione um Professor</option>
+                                    <option>Nicolas</option>
+                                    <option>Alexandre</option>
+                                    <option>Murilo</option>
+                                    <option>Caue</option>
+                                </select>
+                            </div>
+                            <div className={css.segundoBlocoEsquerda}>
+                                <div>
+                                    <InputCadastro css={{background: "#ECEFF5", height: "6vh", width: "16.7vw"}} className={css.inputP} tipo="number" nome="Carga horária: "/>
+                                </div>
+                                <div>
+                                    <h1 style={{fontSize: "18px", fontWeight: "normal"}}>Turno:</h1>
+                                    <select className={css.select} style={{width: "17vw", height: "6vh"}}>
+                                        <option>Selecione um turno</option>
+                                        <option>Manhã</option>
+                                        <option>Tarde</option>
+                                        <option>Noite</option>
+                                        <option>Matutino (Manhã e Tarde)</option>
+                                        <option>Vespertino (Tarde e Noite)</option>
+                                        <option>Manhã e Noite</option>
+                                    </select>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                </CardCadastroGrande>
-            </Banner>
-        </div>
-    );
+
+                </div>
+            </div>
+        </Banner>
+    )
 }
 
-export default CadastroMateria;
+export default CadastroCurso

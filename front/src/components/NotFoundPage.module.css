@@ -82,9 +82,9 @@
 }
 
 .coruja {
-    position: absolute;
-    top: 533px;
+    position: relative;
+    top: 272px;
     width: 75px;
     height: auto;
-    right: 605px;
+    right: -2px;
 }

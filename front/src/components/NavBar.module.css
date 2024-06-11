@@ -28,6 +28,11 @@
     margin-bottom: 62px;
 }
 
+.navbarNav {
+    list-style-type: none;
+    padding: 0;
+}
+
 .navbarNav .navItem {
     position: relative;
     top: -72px;
@@ -45,7 +50,8 @@
 .navbarNav .navLink:hover {
     text-decoration: underline;
 }
-#sair{
+
+#sair {
     top: 296px;
     position: relative;
     font-weight: bold;
@@ -54,18 +60,40 @@
 
 .botaoMenu {
     display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    font-size: 24px;
+    color: white;
 }
 
-@media(max-width: 1024px){
+@media(max-width: 990px) {
     .verticalNav {
         left: -300px;
+        width: 100px;
     }
 
-    .botaoMenu{
+    .verticalNav[style*="left: 0px;"] {
+        left: 0 !important;
+    }
+
+    .botaoMenu {
         display: block;
         position: absolute;
         z-index: 99;
-        top: 0;
-        left: 0;
+        top: -10px;
+        left: -10px;
+    }
+    .logozinha {
+        width: 120px;
+        height: auto;
+        margin-top: -24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 62px;
     }
 }
+

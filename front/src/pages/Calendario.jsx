@@ -30,7 +30,7 @@ function Calendario() {
     // Estado para controlar a visibilidade da programaçãoLista
     const [showPrograList, setShowPrograList] = useState(false);
 
-    // Função para lidar com cliques em dias
+    // Função para lidar com cliques nos dias
     function handleDateClick() {
         setShowPrograList(true);
     }
@@ -40,7 +40,7 @@ function Calendario() {
             <NavBar />
 
             <div className={style5.calendario}>
-                <h1 style={{ fontSize: '40px' }}>Calendário</h1>
+                <h1 className={style5.tituloCale}>Calendário</h1>
 
                 <div className={style5.calendarContainer}>
                     <FullCalendar
@@ -80,6 +80,8 @@ function Calendario() {
                             ))}
                         </div>
 
+                        <h2 className={style5.tituloHolidayH2}>Pontos facultativos:</h2>
+
                         <div className={style5.holidayList}>
                             <div className={style5.holidayItemNovo}>
                                 <div className={style5.holidayContent}>
@@ -87,9 +89,17 @@ function Calendario() {
                                         <img src="/casinha.png" alt="casinha" className={style5.holidayImage}/>
                                     </div>
 
-                                    <div className={style5.holidayItem}>
-                                        <span className={style5.holiday}>Ponto facultativo</span>
-                                        <span className={style5.holidayData}>31/05/2024</span>
+                                    <div className={style5.holidayItemPonto}>
+                                        <div style={{display: 'flex', flexDirection: 'column'}}>
+                                            <span className={style5.holiday}>Ponto facultativo</span>
+                                            <span className={style5.holidayData}>31/05/2024</span>
+                                        </div>
+
+                                        <div>
+                                            <button className={style5.ImagePontoBotao}>
+                                                <img src="/lixo.png" alt="casinha" className={style5.holidayImagePonto}/>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -98,7 +108,7 @@ function Calendario() {
                     </div>
                 </div>
 
-                <NavBarPerfil showPrograList={showPrograList} isCalendario={true}/>
+                <NavBarPerfil showPrograList={showPrograList}/>
             </div>
         </div>
     );

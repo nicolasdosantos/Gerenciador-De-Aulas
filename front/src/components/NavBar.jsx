@@ -1,22 +1,23 @@
 import React, { useState } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import css from './NavBar.module.css';
 
 function NavBar() {
-    const [hamburguer, setHamburguer] = useState(true)
+    const [hamburguer, setHamburguer] = useState(true);
 
-    function menu(){
+    function menu() {
         setHamburguer(!hamburguer);
     }
 
     return (
         <div>
-            <button className={css.botaoMenu} onClick={menu}>
-                Hamburguer
+            <button className={css.botaoMenu} onClick={menu} style={{color: hamburguer ? '#fff' : '#000'}}>
+                {hamburguer ? <FaTimes size={24} /> : <FaBars size={24} />}
             </button>
 
             <div className={css.verticalNav} style={{left: hamburguer ? '0px' : '-300px'}}>
                 <img className={css.logozinha} src="/logozinha.png" alt="Logo"/>
-                <ul className={css.navbarNav} style={{listStyleType: 'none', padding: '0'}}>
+                <ul className={css.navbarNav}>
                     <br/>
                     <br/>
                     <li className={css.navItem}>
@@ -33,7 +34,6 @@ function NavBar() {
                     </li>
                 </ul>
             </div>
-
         </div>
     );
 }

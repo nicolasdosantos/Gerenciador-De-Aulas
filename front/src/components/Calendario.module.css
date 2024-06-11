@@ -6,7 +6,7 @@
 :root {
     --cor-principal: #8C52FF;
     --branco: #fff;
-    --cinza-claro: #F0F0F0;
+    --cinza-claro: #000;
     --cinza-escuro: #8A8C98;
     --preto: #000;
 }
@@ -17,14 +17,14 @@
 }
 
 .holidayList::-webkit-scrollbar-track {
-    background: var(--cinza-claro);
+    background: #F0F0F0;
     border-radius: 5px;
 }
 
 .holidayList::-webkit-scrollbar-thumb {
     background-color: var(--cor-principal);
     border-radius: 5px;
-    border: 2px solid var(--cinza-claro);
+    border: 2px solid #F0F0F0;
 }
 
 .holidayList::-webkit-scrollbar-thumb:hover {
@@ -39,7 +39,11 @@
 .calendario {
     padding: 20px;
     margin-left: 245px;
-    background-color: var(--cinza-claro);
+    background-color: #F0F0F0;
+}
+
+.tituloCale {
+    font-size: 40px;
 }
 
 .calendarContainer {
@@ -59,6 +63,14 @@
     font-size: 25px;
     color: var(--cinza-escuro);
     margin-left: 0;
+}
+
+.tituloHolidayH2 {
+    margin: 15px;
+    font-size: 25px;
+    color: var(--cinza-escuro);
+    margin-left: 0;
+    display: none;
 }
 
 .holidayListsContainer {
@@ -92,6 +104,19 @@
     background: var(--branco);
 }
 
+.holidayItemPonto {
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: -3px 7px 8px -2px rgba(0,0,0,0.40);
+    width: 100%;
+    margin-left: 15px;
+    background: var(--branco);
+    gap: 50px;
+    align-items: center;
+}
+
 .holidayItemImage {
     display: flex;
     align-items: center;
@@ -105,6 +130,25 @@
     width: 30px;
     height: 30px;
 }
+
+.holidayImagePonto {
+    width: 25px;
+    height: 25px;
+    background-color: var(--cor-principal);
+    padding: 6px;
+    border-radius: 20px;
+    box-shadow: -3px 7px 8px -2px rgba(0,0,0,0.40);
+}
+
+.ImagePontoBotao {
+    border: none;
+    background-color: #fff;
+}
+
+.ImagePontoBotao:hover {
+    cursor: pointer;
+}
+
 
 .holiday {
     font-weight: bold;
@@ -125,9 +169,13 @@
     }
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 990px) {
     .calendario {
         margin-left: 0;
+    }
+
+    .tituloCale {
+        margin-top: 20px;
     }
 }
 
@@ -137,11 +185,70 @@
     }
 
     .calendarContainer {
-        width: 650px;
+        width: 500px;
     }
 
     .holidayList {
-        width: 100%;
+        width: 80%;
+    }
+
+    .tituloHolidayH2 {
+        display: block;
     }
 }
+
+@media(max-width: 630px) {
+    .calendarContainer {
+        width: 400px;
+    }
+}
+
+@media(max-width: 530px) {
+    .calendarContainer {
+        width: 350px;
+    }
+}
+
+@media(max-width: 426px) {
+    .tituloCale {
+        font-size: 30px;
+    }
+
+    .calendarContainer {
+        width: 250px;
+    }
+
+    .tituloHoliday, .tituloHolidayH2 {
+        font-size: 18px;
+    }
+
+    .holidayItem, .holidayItemImage {
+        margin-left: 0;
+    }
+
+    .holidayImage {
+        height: 25px;
+        width: 25px;
+    }
+
+    .holiday, .holidayData {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 323px) {
+    .calendario {
+        padding: 15px;
+    }
+
+    .calendarContainer {
+        width: 200px;
+        padding: 15px;
+    }
+
+    .tituloHoliday, .tituloHolidayH2 {
+        font-size: 14px;
+    }
+}
+
 

@@ -13,8 +13,8 @@ import EdicaoMateria from "./pages/EdicaoMateria";
 import Login from "./pages/Login";
 import NotFoundPage from "./pages/NotFoundPage";
 import Calendario from "./pages/Calendario";
-import DashBoard from "./pages/DashBoard";
 import ListaCadastros from "./pages/ListaCadastros";
+import DashBoard from "./pages/DashBoard";
 
 function App() {
 
@@ -40,15 +40,13 @@ function App() {
               <Route element={<EdicaoCurso/>} path="/edicaoCurso"/>
 
               <Route element={<CadastroMateria/>} path="/materia"/>
-              <Route element={<EdicaoMateria/>} path="/edicaoMateria"/>
-
-              <Route element={<DashBoard/>} path="/dashboard"/>
-
+              <Route element={<EdicaoMateria/>} path="/edicaoMateria" />
+                     
               <Route element={<Calendario/>} path="/calendario"/>
 
-              <Route element={<ListaCadastros/>} path="/lista-cadastros"/>
-
               <Route element={<NotFoundPage/>} path="/*"/>
+
+              <Route element={<DashBoard/>} path="/dashboard"/>
 
           </Routes>
       </BrowserRouter>
