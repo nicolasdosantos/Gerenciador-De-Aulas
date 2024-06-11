@@ -45,7 +45,6 @@ function NavBarPerfil({ showPrograList }) {
     return (
         <div className={style5.principal}>
             <div className={`${style5.barraLateral} ${barraLateralVisivel ? style5.visivel : ''}`}>
-                {/* Conteúdo da barra lateral */}
             </div>
 
             {!exibirPerfil && (
@@ -60,6 +59,10 @@ function NavBarPerfil({ showPrograList }) {
                 <div style={{left: animacaoPerfil ? '0px' : '-300px'}} className={style5.principalPerfil}>
                     <button onClick={togglePerfil} className={style5.botaoImgVoltar}>
                         <img src="/banner.png" alt="bannerVoltar" className={style5.imgVoltar} />
+                    </button>
+
+                    <button onClick={togglePerfil} className={style5.botaoFechar}>
+                        X
                     </button>
 
                     <div className={style5.perfil}>

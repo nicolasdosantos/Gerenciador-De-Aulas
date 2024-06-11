@@ -251,9 +251,9 @@ body::-webkit-scrollbar-thumb {
         flex-direction: row;
         align-items: center;
         gap: 10px;
-        right: 21px;
-        font-size: 10px;
-        width: 291px;
+        right: 5px;
+        font-size: 11px;
+        width: 319px;
     }
 
     .qazul, #cad {
