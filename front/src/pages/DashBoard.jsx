@@ -40,7 +40,7 @@ const DashBoard = () => {
                         </div>
                     </Slider>
                 </div>
-                <h2 style={{color: "rgb(102, 105, 124)", position: "relative", right: "456px", top: "28px"}}>Cursos</h2>
+                <h2 className={css.h2Curso}>Cursos</h2>
 
                 <div className={css.scrollContainer}>
                     {[...Array(20)].map((_, index) => (

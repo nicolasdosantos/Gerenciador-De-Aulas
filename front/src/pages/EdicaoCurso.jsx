@@ -10,7 +10,9 @@ function CadastroCurso(){
         <div >
             <Banner>
                 <div className={css.divdireita}>
-                    <TituloCadastro titulo="Edição de Curso" css={{margin: 0, marginBottom: 15, color: "#8C52FF"}}/>
+                    <TituloCadastro titulo="Edição de" css={{margin: 0, marginBottom: 1, color: "#333",position:'relative',right:'100px',top:'30px',fontWeight:600,letterSpacing:'2px'}}/>
+                    <TituloCadastro titulo="Curso" css={{margin: 0, marginBottom: 1, color: "#8C52FF",position:'relative',top:'-25px',left:'90px',fontWeight:600,letterSpacing:'2px'}}/>
+
                     <div style={{display: "grid", gridTemplateColumns: "3fr 2fr", gap: 20}}>
                         <div>
                             <div className={css.primeiroBlocoDireita}>

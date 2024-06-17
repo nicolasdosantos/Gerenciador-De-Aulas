@@ -11,11 +11,11 @@ function NavBar() {
 
     return (
         <div>
-            <button className={css.botaoMenu} onClick={menu} style={{color: hamburguer ? '#000' : '#fff'}}>
-                {hamburguer ? <FaBars size={24} /> : <FaTimes size={24} />}
+            <button className={css.botaoMenu} onClick={menu} style={{color: hamburguer ? '#fff' : '#000'}}>
+                {hamburguer ? <FaTimes size={24} /> : <FaBars size={24} />}
             </button>
 
-            <div className={css.verticalNav} style={{left: hamburguer ? '-300px' : '0px'}}>
+            <div className={css.verticalNav} style={{left: hamburguer ? '0px' : '-300px'}}>
                 <img className={css.logozinha} src="/logozinha.png" alt="Logo"/>
                 <ul className={css.navbarNav}>
                     <br/>
