@@ -58,6 +58,15 @@
 
 .principalPerfil {
     height: 100vh;
+    right: 0;
+    position: absolute;
+    background: #fff;
+    top: 0;
+    padding: 24px;
+    box-shadow: 0 0 10px 3px #ccc;
+    transition: all 0.5s;
+    width: 250px;
+    z-index: 99;
 }
 
 
