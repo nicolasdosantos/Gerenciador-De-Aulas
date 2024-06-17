@@ -47,11 +47,9 @@
 }
 
 .calendarContainer {
-    background-color: var(--branco);
-    border-radius: 25px;
     padding: 20px;
     margin-top: 20px;
-    width: 600px;
+    width: 870px;
 }
 
 .calendar {
@@ -76,7 +74,7 @@
 .holidayListsContainer {
     display: flex;
     justify-content: space-between;
-    width: 650px;
+    width: 90%;
 }
 
 .holidayList {
@@ -113,8 +111,8 @@
     width: 100%;
     margin-left: 15px;
     background: var(--branco);
-    gap: 50px;
     align-items: center;
+    justify-content: space-between;
 }
 
 .holidayItemImage {
@@ -132,8 +130,8 @@
 }
 
 .holidayImagePonto {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     background-color: #FEBE00;
     padding: 6px;
     border-radius: 20px;
@@ -226,7 +224,7 @@
         margin-left: 0;
     }
 
-    .holidayImage {
+    .holidayImage, .holidayImagePonto {
         height: 25px;
         width: 25px;
     }
@@ -240,6 +238,11 @@
 @media(max-width: 376px) {
     .calendarContainer {
         width: 250px;
+    }
+
+    .holidayImagePonto {
+        height: 20px;
+        width: 20px;
     }
 }
 

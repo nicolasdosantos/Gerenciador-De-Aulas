@@ -361,11 +361,12 @@ body::-webkit-scrollbar-thumb {
     }
 
     .cadss, .qbranco {
+        margin-left: -45px;
         flex-direction: row;
         align-items: center;
         gap: 10px;
-        font-size: 11px;
-        width: 312px;
+        font-size: 10px;
+        width: 284px;
     }
 
     .qazul, #cad {
@@ -377,6 +378,7 @@ body::-webkit-scrollbar-thumb {
         margin-left: 0;
     }
     .ImgzinhaFooter{
+        margin-left: -18px;
         width: 126px;
         display: flex;
         align-items: center;

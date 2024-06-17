@@ -9,6 +9,7 @@ function NavBarPerfil({ showPrograList }) {
     const [barraLateralVisivel, setBarraLateralVisivel] = useState(false);
     const [animacaoPerfil, setPerfil] = useState(true);
 
+
     function menuPerfil() {
         setPerfil(!animacaoPerfil);
     }
