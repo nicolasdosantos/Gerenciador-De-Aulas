@@ -97,7 +97,7 @@ function Calendario() {
 
                                         <div>
                                             <button className={style5.ImagePontoBotao}>
-                                                <img src="/lixo.png" alt="casinha" className={style5.holidayImagePonto}/>
+                                                <img src="/lixoBranc.png" alt="casinha" className={style5.holidayImagePonto}/>
                                             </button>
                                         </div>
                                     </div>

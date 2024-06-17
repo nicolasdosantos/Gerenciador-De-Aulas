@@ -10,3 +10,8 @@
     color: #5e5c65;
     font-weight: 550;
 }
+body {
+    overflow-x: hidden;
+}
+
+

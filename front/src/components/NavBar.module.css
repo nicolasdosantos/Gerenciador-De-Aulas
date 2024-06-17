@@ -69,6 +69,12 @@
     color: white;
 }
 
+@media(max-width: 1025px) {
+    #sair{
+        top: 200px;
+    }
+}
+
 @media(max-width: 990px) {
     .verticalNav {
         left: -300px;

@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import style5 from '../components/NavBarPerfil.module.css';
+import { SlArrowLeft } from "react-icons/sl";
 
 function NavBarPerfil({ showPrograList }) {
     const [exibirPerfil, setExibirPerfil] = useState(false);
@@ -58,11 +59,7 @@ function NavBarPerfil({ showPrograList }) {
             {exibirPerfil && (
                 <div style={{left: animacaoPerfil ? '0px' : '-300px'}} className={style5.principalPerfil}>
                     <button onClick={togglePerfil} className={style5.botaoImgVoltar}>
-                        <img src="/banner.png" alt="bannerVoltar" className={style5.imgVoltar} />
-                    </button>
-
-                    <button onClick={togglePerfil} className={style5.botaoFechar}>
-                        X
+                        <SlArrowLeft className={style5.imgVoltar}/>
                     </button>
 
                     <div className={style5.perfil}>

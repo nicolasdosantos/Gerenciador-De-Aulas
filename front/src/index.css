@@ -74,8 +74,8 @@ code {
   .fc-direction-ltr .fc-button-group > .fc-button:not(:last-child),
   .fc-direction-ltr .fc-button-group > .fc-button:not(:first-child),
   .fc-direction-ltr .fc-toolbar > * > :not(:first-child){
-    width: 35px;
-    font-size: 10px;
+    width: 50px;
+    font-size: 13px;
   }
 
   .fc-theme-standard th, .fc .fc-view-harness {
@@ -120,6 +120,13 @@ code {
   .fc .fc-daygrid-body-natural, .fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
     margin-bottom: 0;
     min-height: 12px;
+  }
+
+  .fc-direction-ltr .fc-button-group > .fc-button:not(:last-child),
+  .fc-direction-ltr .fc-button-group > .fc-button:not(:first-child),
+  .fc-direction-ltr .fc-toolbar > * > :not(:first-child){
+    width: 40px;
+    font-size: 10px;
   }
 }
 

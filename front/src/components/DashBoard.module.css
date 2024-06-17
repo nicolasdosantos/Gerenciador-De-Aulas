@@ -196,11 +196,12 @@ body::-webkit-scrollbar-thumb {
     }
 
     #cadastrosd{
-        right: 0px;
+        right: 30px;
     }
 
     .cadss, .qbranco{
         gap: 20px;
+        right: 30px;
     }
 
     #cad, .qazul{
@@ -219,21 +220,23 @@ body::-webkit-scrollbar-thumb {
         right: 200px;
     }
 
-
 }
 
+@media (max-width: 426px) {
+    .content {
+        margin-left: 15px;
+    }
 
-
-
-
-
-@media (max-width: 400px) {
     .ola {
-        font-size: 29px;
-        margin-left: 0;
-        text-align: start;
         top: 17px;
         margin-bottom: 10px;
+        font-size: 20px;
+        right: 68px;
+    }
+
+    .h2Curso {
+        right: 0;
+        top: 0;
     }
 
     .cadss, .qbranco {
@@ -251,9 +254,12 @@ body::-webkit-scrollbar-thumb {
 
     .scrollContainer {
         width: 100%;
-        margin-left: 0;
-        margin-top: -20px;
-        margin-bottom: 30px;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    #cadastrosd{
+        right: 0;
     }
 
     .slideImage {
@@ -277,19 +283,7 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-@media (max-width: 992px) {
-
-
-
-
-    /*#cadastrosd {*/
-    /*    right: 200px;*/
-
-    /*}*/
-}
-
-
-@media (max-width: 360px) {
+@media (max-width: 376px) {
     .sliderContainer {
         display: none;
     }
@@ -301,11 +295,9 @@ body::-webkit-scrollbar-thumb {
     }
 
     .ola {
-        font-size: 29px;
-        right: 0;
-        margin-left: 0;
-        text-align: start;
-        top: 29px;
+        font-size: 20px;
+        right: 43px;
+        margin-bottom: 20px;
     }
 
     #cadastrosd {
@@ -318,7 +310,6 @@ body::-webkit-scrollbar-thumb {
         flex-direction: row;
         align-items: center;
         gap: 10px;
-        right: 11px;
         font-size: 12px;
         width: 348px;
     }
@@ -357,11 +348,11 @@ body::-webkit-scrollbar-thumb {
     }
 
     .ola {
-        font-size: 29px;
+        font-size: 20px;
         right: 0;
         margin-left: 0;
         text-align: start;
-        top: 29px;
+        margin-bottom: 20px;
     }
 
     #cadastrosd {
@@ -373,7 +364,6 @@ body::-webkit-scrollbar-thumb {
         flex-direction: row;
         align-items: center;
         gap: 10px;
-        right: 11px;
         font-size: 11px;
         width: 312px;
     }
