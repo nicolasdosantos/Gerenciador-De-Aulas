@@ -12,7 +12,7 @@ function NavBar() {
     return (
         <div>
             <button className={css.botaoMenu} onClick={menu} style={{color: hamburguer ? '#fff' : '#000'}}>
-                {hamburguer ? <FaTimes size={24} /> : <FaBars size={24} />}
+                {hamburguer ? <FaTimes size={24} style={{position: 'fixed'}} /> : <FaBars size={24} />}
             </button>
 
             <div className={css.verticalNav} style={{left: hamburguer ? '0px' : '-300px'}}>

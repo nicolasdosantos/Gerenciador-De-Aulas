@@ -59,10 +59,10 @@
 .principalPerfil {
     height: 100vh;
     right: 0;
-    position: absolute;
+    position: fixed;
     background: #fff;
     top: 0;
-    padding: 24px;
+    padding: 15px;
     box-shadow: 0 0 10px 3px #ccc;
     transition: all 0.5s;
     width: 250px;
@@ -172,7 +172,7 @@
 
 .prograDiv {
     display: flex;
-    width: 260px;
+    width: 240px;
 }
 
 .prograItemImage {
