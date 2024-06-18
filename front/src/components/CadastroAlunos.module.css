@@ -55,7 +55,8 @@
     }
 
     .divdireita, .divesquerda{
-        padding: 10px;
+        padding: 4px;
+        gap: 0;
     }
 
     .divesquerda img{

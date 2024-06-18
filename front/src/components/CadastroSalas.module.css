@@ -54,7 +54,8 @@
     }
 
     .divdireita, .divesquerda {
-        padding: 10px; /* Reduz o padding em telas menores */
+        padding: 4px; /* Reduz o padding em telas menores */
+        gap: 0;
     }
 
     .divesquerda img {

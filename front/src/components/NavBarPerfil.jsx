@@ -1,5 +1,7 @@
 import React, { useState, useRef } from 'react';
 import style5 from '../components/NavBarPerfil.module.css';
+import { useNavigate } from "react-router-dom";
+
 import { SlArrowLeft } from "react-icons/sl";
 
 function NavBarPerfil({ showPrograList }) {
@@ -8,6 +10,8 @@ function NavBarPerfil({ showPrograList }) {
     const prograListRef = useRef(null);
     const [barraLateralVisivel, setBarraLateralVisivel] = useState(false);
     const [animacaoPerfil, setPerfil] = useState(true);
+
+    const navigate = useNavigate();
 
 
     function menuPerfil() {
@@ -50,7 +54,6 @@ function NavBarPerfil({ showPrograList }) {
                 <div className={`${style5.barraLateral} ${barraLateralVisivel ? style5.visivel : ''}`}>
                 </div>
 
-
                 <div className={style5.logoNav}>
                     <button onClick={() => {
                         menuPerfil();
@@ -68,8 +71,7 @@ function NavBarPerfil({ showPrograList }) {
                 </button>
 
                 <div className={style5.perfil}>
-                    <img src="/perfilPng.png" alt="perfil"
-                         style={{width: '150px', height: '150px', borderRadius: '70px'}}/>
+                    <img src="/perfilPng.png" alt="perfil" className={style5.imgPerfill}/>
                     <p className={style5.perfilNome}>Gustavo Donato</p>
                     <p style={{color: '#8A8C98', marginBottom: '10px', fontSize: '18px'}}>Administrador</p>
 

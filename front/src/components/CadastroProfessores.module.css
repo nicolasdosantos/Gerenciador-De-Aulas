@@ -12,7 +12,6 @@
     display: grid;
     grid-template-columns: 1.7fr 2fr;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
-    width: 70vw;
     max-width: 1200px;
     margin: 20px;
 }
@@ -26,7 +25,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 491px;
     justify-content: center;
     border-radius: 0px 15px 15px 0px;
 }
@@ -77,6 +75,12 @@
 
     .divdireita, .divesquerda {
         align-items: flex-start;
+    }
+}
+
+@media (max-width: 426px) {
+    .select{
+        width: 50vw;
     }
 }
 

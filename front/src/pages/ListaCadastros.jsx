@@ -142,14 +142,14 @@ function ListaCadastros() {
 
     return (
         <div className={css.container}>
-            <NavBar/>
+            <NavBar />
             <h2 className={css.title}>Cadastrados</h2>
-            <Dropdown src="" title="Professores" items={professors} redirectPath="/professores"/>
-            <Dropdown src="" title="Cursos" items={courses} redirectPath="/curso"/>
-            <Dropdown src="" title="Matérias" items={subjects} redirectPath="/materia"/>
-            <Dropdown src="" title="Salas" items={rooms} redirectPath="/salas"/>
-            <Dropdown src="" title="Alunos" items={students} redirectPath="/alunos"/>
-            <NavBarPerfil/>
+            <Dropdown src="" title="Professores" items={professors} redirectPath="/professores" showAddButton={false} />
+            <Dropdown src="" title="Cursos" items={courses} redirectPath="/curso" showAddButton={true} />
+            <Dropdown src="" title="Matérias" items={subjects} redirectPath="/materia" showAddButton={false} />
+            <Dropdown src="" title="Salas" items={rooms} redirectPath="/salas" showAddButton={false} />
+            <Dropdown src="" title="Alunos" items={students} redirectPath="/alunos" showAddButton={false} />
+            <NavBarPerfil />
         </div>
     );
 }

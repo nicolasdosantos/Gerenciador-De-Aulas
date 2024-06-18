@@ -102,4 +102,23 @@
         margin-bottom: 62px;
     }
 }
+@media(max-width: 320px) {
+    .verticalNav{
+        width: 50px;
+    }
+    a.navLink{
+        position: relative;
+        right: 22px;
+        text-align: center;
+        top: 35px;
+        font-size: 16px;
+    }
+    .logozinha{
+        position: relative;
+        top: 30px;
+        right: 22px;
+        width: 100px;
+        height: auto;
+    }
+}
 

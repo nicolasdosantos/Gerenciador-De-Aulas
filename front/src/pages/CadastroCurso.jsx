@@ -9,7 +9,7 @@ import CheckBoxDias from "../components/CheckBoxDias";
 function CadastroCurso(){
     return (
         <Banner>
-            <div style={{display: "grid", gridTemplateColumns: "1fr 1fr"}}>
+            <div>
                     <div className={css.divdireita}>
                         <TituloCadastro titulo="Cadastro de Curso" css={{margin: 0, marginBottom: 15}}/>
                         <div style={{display: "grid", gridTemplateColumns: "3fr 2fr", gap: 20}}>

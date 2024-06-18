@@ -13,5 +13,17 @@
 body {
     overflow-x: hidden;
 }
+@media (max-width: 480px){
+    .title{
+        left: 15px;
+    }
+}
+
+@media(max-width: 320px) {
+    .title{
+        font-size: 25px;
+    }
+
+}
 
 

@@ -181,6 +181,35 @@ body::-webkit-scrollbar-thumb {
     background-color: #ffffff;
 }
 
+@media(max-width: 1441px) {
+    .content {
+        margin-left: 220px;
+    }
+
+    .ola{
+        margin-left: 0;
+    }
+
+    .scrollContainer {
+        width: 88%;
+    }
+}
+
+@media(max-width: 1300px) {
+    .content {
+        margin-left: 264px;
+    }
+
+    .ola {
+        margin-left: 20px;
+    }
+
+    .scrollContainer {
+        width: 99%;
+    }
+
+}
+
 @media(max-width: 1025px) {
     .ola{
         right: 174px;
@@ -307,6 +336,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .cadss, .qbranco {
+        margin-left: -20px;
         flex-direction: row;
         align-items: center;
         gap: 10px;
@@ -361,7 +391,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .cadss, .qbranco {
-        margin-left: -45px;
+        margin-left: -15px;
         flex-direction: row;
         align-items: center;
         gap: 10px;
@@ -377,8 +407,8 @@ body::-webkit-scrollbar-thumb {
         width: 100%;
         margin-left: 0;
     }
+
     .ImgzinhaFooter{
-        margin-left: -18px;
         width: 126px;
         display: flex;
         align-items: center;
