@@ -57,6 +57,7 @@
     background-color: #8C52FF;
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
     z-index: 0;
+    flex-direction: column;
 }
 .cardContainer {
     margin-left: -44px;
