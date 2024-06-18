@@ -248,7 +248,7 @@
 }
 @media (max-width: 480px){
     .principal{
-    display: none;
+      display: none;
     }
     .imgLogo {
          margin-top: 90px;
@@ -271,6 +271,9 @@
 
     .principalPerfil{
         padding: 10px;
+    }
+    .principal{
+        display: none;
     }
 }
 @media(max-width: 320px) {
