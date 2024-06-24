@@ -37,7 +37,7 @@ function ListaCadastros() {
 
     const courses = [
         {
-            name: "Course 1",
+            name: "Desenvolvimento de Sistemas",
             date: "Seg, Ter",
             image: "/imgTeste.jpg",
             button: "/materia",
@@ -45,7 +45,7 @@ function ListaCadastros() {
             editButton: "/edicaoCurso"
         },
         {
-            name: "Course 2",
+            name: "Eletromecânica ",
             date: "Qua, Qui",
             image: "/imgTeste.jpg",
             button: "/materia",
@@ -53,7 +53,7 @@ function ListaCadastros() {
             editButton: "/edicaoCurso"
         },
         {
-            name: "Course 3",
+            name: "Elétrica",
             date: "Sex",
             image: "/imgTeste.jpg",
             button: "/materia",
