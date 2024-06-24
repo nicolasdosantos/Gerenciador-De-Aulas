@@ -12,14 +12,14 @@ function CadastroCurso(){
             <div style={{display: "grid", gridTemplateColumns: "1fr 1fr"}}>
                     <div className={css.divdireita}>
                         <TituloCadastro titulo="Cadastro de Matéria" css={{margin: 0, marginBottom: 15}}/>
-                        <div style={{display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20}}>
+                        <div className={css.divsDire}>
                             <div>
-                                <div style={{gap: 15, marginBottom: "10px"}}>
-                                    <InputCadastro css={{background: "#ECEFF5", height: "35px", width: "34vw"}}
+                                <div className={css.nomessssss} style={{gap: 15, marginBottom: "10px"}}>
+                                    <InputCadastro css={{background: "#ECEFF5", height: "32px"}}
                                                    nome="Nome do curso: "/>
                                 </div>
                                 <div style={{display: "flex", flexDirection: "column", gap: 10, marginBottom: "10px"}}>
-                                    <h2 style={{ fontSize: "18px", fontWeight: "normal" }}>Salas:</h2>
+                                    <h2 style={{ fontSize: "12px", fontWeight: "normal" }}>Salas:</h2>
                                     <select className={css.select}>
                                         <option>Selecione uma sala</option>
                                         <option>Informatica</option>
@@ -38,7 +38,7 @@ function CadastroCurso(){
                                 <div>
                                     <CheckBoxDias titulo="Dias de trabalho:"></CheckBoxDias>
                                 </div>
-                                <BtnCadastro css={{width: "34vw", height: "7vh"}} nome="Cadastrar"></BtnCadastro>
+                                <BtnCadastro css={{width: "30vw", height: "6vh"}} nome="Cadastrar"></BtnCadastro>
                             </div>
                             <div className={css.pessoas}>
                                 <div>
